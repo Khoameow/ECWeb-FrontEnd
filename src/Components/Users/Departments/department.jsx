@@ -9,16 +9,16 @@ function Department(props) {
 
 
   return (
-    <div key={departments._id} className="departmentBox" onClick={(e)=>{
+    <div key={departments.categoryId} className="departmentBox" onClick={(e)=>{
         e.preventDefault()
-        navigate(`/product/${departments._id}`)
+        navigate(`/product/${departments.categoryId}`)
       }}>
-      <a className='departmentTitleLink'><h2 className='departmentTitle'>{departments.name}</h2></a>
-      <a className='departmentImageLink'><img src={departments.image} className='departmentImage' alt="" /></a>
+      <a className='departmentTitleLink'><h2 className='departmentTitle'>{departments.categoryName}</h2></a>
+      <a className='departmentImageLink'><img src={departments.categoryImage} className='departmentImage' alt="" /></a>
       <br />
       <p className='departmentShopLink' onClick={(e)=>{
         e.preventDefault()
-        navigate(`/product/${departments._id}`)
+        navigate(`/product/${departments.categoryId}`)
       }}>Shop now</p>
     </div>
   )

@@ -20,9 +20,10 @@ function RowPost() {
   
         try{
           setLoading(false)
-          const{data}=await axios.post('/api/products/62e93ab19d39866975775821')
+          const{data}=await axios.get('/app/api/product/getproductpresent')
           setLoading(false)
           setProducts(data)
+          console.log("test1", data);
         }catch(err){
           setError(err.message)
           setLoading(false)
@@ -43,9 +44,9 @@ function RowPost() {
                 <div className="divRow">
                     <div className="posters">
                         {products.map(products=>(
-                            <img key={products._id} className='poster' src={products.image} alt="" onClick={(e)=>{
+                            <img key={products.productId} className='poster' src={products.imagePresent} alt="" onClick={(e)=>{
                               e.preventDefault()
-                              navigate(`/products/${products._id}`)
+                              navigate(`/products/${products.productId}`)
                             }}/>
                         ))}
                     </div>
