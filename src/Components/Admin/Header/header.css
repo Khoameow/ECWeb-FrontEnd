@@ -1,0 +1,125 @@
+.containerheader{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    background-color: #131921;
+}
+.logo{
+    width: 96px;
+    margin: 1.1rem;
+    position: absolute;
+    cursor: pointer;
+}
+.panelTextDiv{
+    margin-left: 70%;
+}
+.productsText{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    float: left;
+    cursor: pointer;
+}
+.usersText{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    float: left;
+    cursor: pointer;
+}
+.ordersText{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    float: left;
+    cursor: pointer;
+}
+.adminText{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    float: left;
+    cursor: pointer;
+}
+.panelText{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: darkgray;
+    cursor: pointer;
+    
+}
+.panelText:hover{
+    color: whitesmoke;
+}
+.headerSignOutBtn{
+    display: block;
+    height: 33px;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid;
+    border-color: #c89411 #b0820f #99710d;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: inset 0 1px 0 0 #fcf3dc;
+    background: -webkit-linear-gradient(top,#f8e3ad,#EEBA37);
+    text-align: center;
+    line-height: 31px;
+    color: #111;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 13px;
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerSignOutDiv{
+    width: 8rem;
+    height: 4rem;
+    background-color: #fff;
+    z-index: 10000;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+    overflow: visible;
+    border: 1px solid #bbb;
+    border-radius: 3px 3px 3px 3px;
+    margin-left: -2.5rem;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+}
+.panelText:hover .dropdown-content{
+    display: block;
+}
+
+.adminSearchBarDiv{
+    margin-left: 2rem;
+    margin-top: 0.65rem;
+    float: left;
+    width: 70%;
+    justify-items: end;
+    justify-content: end;
+    display: flex;
+}
+.adminSearchBar{
+    height: 39px;
+    width: 80%;
+    outline: none;
+    border-right: none;
+    box-shadow: none;
+    border-bottom: none;
+}
+.headerSearchList{
+    width: 755px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    margin-top: 49px;
+    margin-left: 183px;
+    border: 1px solid #ccc;
+}
+.headerSearchList div{
+    margin: 1rem;
+}
+.headerSearchList p{
+    font-weight: 700;
+    cursor: pointer;
+}
