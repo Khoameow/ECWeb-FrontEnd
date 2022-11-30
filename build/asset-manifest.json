@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df146b0e.css",
+    "main.js": "/static/js/main.176c1d48.js",
+    "static/js/787.9c2888cf.chunk.js": "/static/js/787.9c2888cf.chunk.js",
+    "static/media/mobilelogo.png": "/static/media/mobilelogo.d3e44d190edd333368ba.png",
+    "static/media/dollar-symbol.png": "/static/media/dollar-symbol.79c2e7f1d8679a7af837.png",
+    "static/media/package.png": "/static/media/package.2ba2ec9fa53ba04cdcff.png",
+    "static/media/checked.png": "/static/media/checked.ff714e8648581386f981.png",
+    "static/media/Box.png": "/static/media/Box.59bb3bb7f95d39185214.png",
+    "static/media/shopping-basket.png": "/static/media/shopping-basket.97d08e2ae0a4d5b4dfc7.png",
+    "static/media/user.png": "/static/media/user.81f1a46a8a34fd1bcc0b.png",
+    "static/media/location.png": "/static/media/location.367a39b6530397b845a1.png",
+    "index.html": "/index.html",
+    "main.df146b0e.css.map": "/static/css/main.df146b0e.css.map",
+    "main.176c1d48.js.map": "/static/js/main.176c1d48.js.map",
+    "787.9c2888cf.chunk.js.map": "/static/js/787.9c2888cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df146b0e.css",
+    "static/js/main.176c1d48.js"
+  ]
+}
