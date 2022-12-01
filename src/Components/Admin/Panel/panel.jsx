@@ -17,7 +17,7 @@ function AdminPanel() {
       <section className="adminPanelOverviewSection">
         <div className="adminPanelOverviewContainer">
           <div className="adminPanelOverviewTitleDiv">
-            <p className="adminPanelOverviewTitle">Amazon Dashboard</p>
+            <p className="adminPanelOverviewTitle">Mobile Shop Dashboard</p>
           </div>
           <div className="adminPanelOverviewSubTitleDiv">
             <p className="adminPanelOverviewSubTitleText">
@@ -26,7 +26,7 @@ function AdminPanel() {
               </span>
               {">"}
               <span className="adminPanelOverviewSubAmazonDashboardTitle">
-                Amazon Dashboard
+              Mobile Shop Dashboard
               </span>
             </p>
           </div>

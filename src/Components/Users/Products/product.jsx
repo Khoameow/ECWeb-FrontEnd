@@ -3,6 +3,7 @@ import './products.css'
 import {useNavigate} from 'react-router-dom'
 import LoadingBox from '../LoadingBox/loadingBox';
 import axios from '../../../../node_modules/axios/index';
+import { apiGetProductByCategoryPath } from '../../../path/Users/pathApi';
 
 
 function Product() {
@@ -17,7 +18,7 @@ function Product() {
         let path = window.location.pathname
         path = path.split('/')[2]
         
-        const data = await axios.post(`/api/products/${path}`)
+        const data = await axios.get(apiGetProductByCategoryPath(path))
 
         setProducts(data.data)
     }
