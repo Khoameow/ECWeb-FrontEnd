@@ -47,9 +47,14 @@ function Cart(props) {
         }
     }
 
-    const toPrice = (num) => Number(num.toFixed(2))
+    // const toPrice = (num) => {
+    //     console.log("num", num);
 
+    //     // Number(num.toFixed(2))
+    // };
 
+    console.log("cartItems", cartItems);
+    console.log((cartItems.reduce((a,v) =>  a = a + v.qty , 0 )))
 
     return (
         <div className='cartSection'>
@@ -71,25 +76,25 @@ function Cart(props) {
                         {cartItems.map(product => (
                             <div key={product.product} className="cartBox">
                                 <div className="cartImageDiv">
-                                    <img className='cartImage' src={product.image} alt="" />
+                                    <img className='cartImage' src={product.imagePresent} alt="" />
                                 </div>
                                 <div className="cartContentBox">
                                     <div className="cartProductTitleDiv">
-                                        <p className="cartProductTitle">{product.name}</p>
+                                        <p className="cartProductTitle">{product.productName}</p>
                                     </div>
                                     <div className="cartStockDiv">
-                                        {product.countInStock ? <p className="cartStockText">In Stock</p> : <p className="productScreenUnavailableText">Out of Stock</p>}
+                                        {product.stockTotal ? <p className="cartStockText">In Stock</p> : <p className="productScreenUnavailableText">Out of Stock</p>}
                                     </div>
-                                    {product.countInStock ? <div className="cartQtyBtnDiv">
+                                    {product.stockTotal ? <div className="cartQtyBtnDiv">
                                         <button className='cartBtnQty'>
                                             <span className='cartBtnText'>Qty: </span>
-                                            <select className='cartSelectBtnQty' defaultValue={product.qty} onChange={(e) =>
+                                            <select className='cartSelectBtnQty' defaultValue={1} onChange={(e) =>
                                                 dispatch(
                                                     addToCart(product.product, Number(e.target.value))
                                                 )
                                             }>
 
-                                                {[...Array(product.countInStock)].map((x, i) =>
+                                                {[...Array(product.stockTotal)].map((x, i) =>
                                                     <option key={i + 1}>{i + 1}</option>
 
                                                 )}
@@ -105,20 +110,20 @@ function Cart(props) {
 
                                 </div>
                                 <div className="cartProductPriceDiv">
-                                    <p className="cartProductPrice">${toPrice(product.price)}</p>
+                                    <p className="cartProductPrice">{product.priceValue}</p>
                                 </div>
                                 <hr className='cartBottomHr' />
 
                             </div>
                         ))}
 
-
+                        
                         <div className="subTotalCartDiv">
-                            <p className="subTotalCartText"><span className='cartSubTotalText'>Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} {cartItems.length <= 1 ? "item" : "items"}) : </span><span className='cartSubTotalPrice'> ${toPrice(cartItems.reduce((a, c) => a + c.price * c.qty, 0))}</span></p>
+                            <p className="subTotalCartText"><span className='cartSubTotalText'>Subtotal ({cartItems.reduce((a, c) => a + Number(c.qty), 0)} {cartItems.length <= 1 ? "item" : "items"}) : </span><span className='cartSubTotalPrice'> ${cartItems.reduce((a, c) => a + c.priceValue * c.qty, 0)}</span></p>
                         </div>
                     </div>
                     <div className="checkoutBox">
-                        <p className="subTotalText"><span className='checkOutSubTotalText'>Subtotal ({cartItems.reduce((a, c) => (a + c.qty), 0)} {cartItems.length <= 1 ? "item" : "items"}) : </span><span className='checkOutSubTotalPrice'> ${toPrice(cartItems.reduce((a, c) => a + c.price * c.qty, 0))}</span></p>
+                        <p className="subTotalText"><span className='checkOutSubTotalText'>Subtotal ({cartItems.reduce((a, c) => a + Number(c.qty) , 0)} {cartItems.length <= 1 ? "item" : "items"}) : </span><span className='checkOutSubTotalPrice'> ${cartItems.reduce((a, c) => a + c.priceValue * c.qty, 0)}</span></p>
                         <button type='button' className='checkOutBtn' disabled={cartItems.length === 0} onClick={(e) => {
                             e.preventDefault()
                             checkoutHandler()

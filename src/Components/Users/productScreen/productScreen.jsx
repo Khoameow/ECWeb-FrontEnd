@@ -21,7 +21,6 @@ function ProductScreen(props) {
 
 
     const productId= proId[2]
-
     const productDetails = useSelector((state) => state.productDetails);
     const { loading, error, product } = productDetails;
 
@@ -39,9 +38,9 @@ function ProductScreen(props) {
     const handleAddCart=(e)=>{
         setCart([
             {
-                id: product._id,
-                title: product.name,
-                brand: product.brand,
+                id: product.productId,
+                title: product.productName,
+                brand: product.manufactureName,
                 category: product.category,
                 image: product.image,
                 price: product.price,
@@ -85,39 +84,39 @@ function ProductScreen(props) {
         ) : product ? (
             <div className='productScreenSection'>
                 <div className="productScreenImageDiv">
-                    <img className='productScreenImage' src={product.image} alt="" />
+                    <img className='productScreenImage' src={product.imagePresent} alt="" />
                 </div>
                 <div className="productScreenContentDiv">
                     <div className="productScreenContentTextDiv">
                         <div className="productScreenTitleDiv">
-                            <p className='productScreenTitle'>{product.name}</p>
+                            <p className='productScreenTitle'>{product.productName}</p>
                         </div>
                         <div className="productScreenBrandDiv">
-                            <p className='productScreenBrand'>{product.brand}</p>
+                            <p className='productScreenBrand'>{product.manufactureName}</p>
                         </div>
                         <div className="productScreenRatingDiv">
-                                <span> <i className={product.rating >= 1 ? "fa fa-star" : product.rating >= 0.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
-                                <span> <i className={product.rating >= 2 ? "fa fa-star" : product.rating >= 1.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
-                                <span> <i className={product.rating >= 3 ? "fa fa-star" : product.rating >= 2.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
-                                <span> <i className={product.rating >= 4 ? "fa fa-star" : product.rating >= 3.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
-                                <span> <i className={product.rating >= 5 ? "fa fa-star" : product.rating >= 4.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
+                                <span> <i className={product.ratingValue >= 1 ? "fa fa-star" : product.ratingValue >= 0.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
+                                <span> <i className={product.ratingValue >= 2 ? "fa fa-star" : product.ratingValue >= 1.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
+                                <span> <i className={product.ratingValue >= 3 ? "fa fa-star" : product.ratingValue >= 2.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
+                                <span> <i className={product.ratingValue >= 4 ? "fa fa-star" : product.ratingValue >= 3.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
+                                <span> <i className={product.ratingValue >= 5 ? "fa fa-star" : product.ratingValue >= 4.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
                         </div>
-                        <div className='productScreenReviewDiv'><span className='productScreenReviewText'>{product.numReviews} ratings</span></div>
+                        <div className='productScreenReviewDiv'><span className='productScreenReviewText'>100 ratings</span></div>
                         <br />
                         <div className="productScreenDescriptionDiv">
-                            <p className='productScreenDescription'>{product.description}</p>
+                            <p className='productScreenDescription'>{product.decription}</p>
                         </div>
                         <div className='productScreenPriceDiv'>
-                            <p className='productScreenPrice'><span className='productScreenPriceTitle'>Price: </span><span className='productScreenPriceValue'>$</span><span className='productScreenPriceValue'>{product.price}</span></p>
+                            <p className='productScreenPrice'><span className='productScreenPriceTitle'>Price: </span><span className='productScreenPriceValue'>$</span><span className='productScreenPriceValue'>{product.priceValue}</span></p>
                         </div>
                         <div className="productScreenInStockDiv">
-                           {product.countInStock ? <p className="productScreenInStockText">In Stock</p> : <p className="productScreenUnavailableText">Out of Stock</p>}
+                           {product.stockTotal ? <p className="productScreenInStockText">In Stock</p> : <p className="productScreenUnavailableText">Out of Stock</p>}
                         </div>
-                        {product.countInStock ? <div className="productScreenQtyBtnDiv">
+                        {product.stockTotal ? <div className="productScreenQtyBtnDiv">
                             <button className='btnQty'>
                                 <span className='btnText'>Qty: </span>
                                 <select name="" id="" value={qty} className='selectBtnQty' onChange={(e)=>setQty(e.target.value)}>
-                                    {[...Array(product.countInStock)].map((x, i)=>
+                                    {[...Array(product.stockTotal)].map((x, i)=>
                                         <option key={i+1}>{i+1}</option>
                                         
                                     )}
@@ -125,7 +124,7 @@ function ProductScreen(props) {
                             </button>
                         </div> : ''}
                         
-                        {product.countInStock ? <div className="CartBuyButtonsDiv">
+                        {product.stockTotal ? <div className="CartBuyButtonsDiv">
                             <button onClick={()=>handleAddCart()} className='ProductCartBtn'><span className='ProductCartBtnText'>Add to Cart</span></button>
                             <button onClick={()=>handleBuyNow()} className='ProductBuyBtn'><span className='ProductBuyBtnText'>Buy Now</span></button>
                         </div> : ''}
