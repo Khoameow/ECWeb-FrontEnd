@@ -4,6 +4,7 @@ import axios from 'axios';
 import LoadingBox from '../LoadingBox/loadingBox';
 import MessageBox from '../MessageBox/messageBox';
 import { useNavigate } from "react-router-dom";
+import { apiGetProductPresentPath } from '../../../path/Users/pathApi';
 
 
 function RowPost() {
@@ -20,7 +21,7 @@ function RowPost() {
   
         try{
           setLoading(false)
-          const{data}=await axios.get('/app/api/product/getproductpresent')
+          const{data}=await axios.get(apiGetProductPresentPath)
           setLoading(false)
           setProducts(data)
           console.log("test1", data);

@@ -11,6 +11,7 @@ import { List, X } from "react-bootstrap-icons";
 import { Icon } from "@iconify/react";
 import axios from "axios";
 import { Scrollbars } from "react-custom-scrollbars";
+import { apiGetAllCategoryPath, apiGetAllProductPath } from "../../../path/Users/pathApi";
 
 function Home() {
   const navigate = useNavigate();
@@ -33,16 +34,18 @@ function Home() {
   };
 
   const get_departments = async () => {
-    let url = "/api/departments";
-    const { data } = await axios.post(url);
+    let url = apiGetAllCategoryPath;
+    const { data } = await axios.get(url);
     setDepartments(data);
   };
 
   const get_products = async () => {
-    let url = "/api/products";
-    const { data } = await axios.get(url);
+
+    const {data}  = await axios.get(apiGetAllProductPath);
+   
     setProducts(data);
   };
+  console.log("datanav", products);
 
   const activate_sidebar = () => {
     setSidebar(true);
@@ -123,8 +126,11 @@ function Home() {
                   .filter((product) => {
                     if (search === "") {
                       return false;
-                    }else if(product.name.toLowerCase().includes(search) || product.category.toLowerCase().includes(search) || product.brand.toLowerCase().includes(search)){
-                      return product
+                    // }else if(product.name.toLowerCase().includes(search) || product.category.toLowerCase().includes(search) || product.brand.toLowerCase().includes(search)){
+                    }else if(product.productName !=null){
+                      if (product.productName.toLowerCase().includes(search)){
+                        return product
+                      }
                     }
                   })
                   .map((product, key) => {
@@ -312,11 +318,11 @@ function Home() {
                               </p>
                               {departments.map((department) => (
                                 <div
-                                  key={department._id}
+                                  key={department.categoryId}
                                   className="sidebarBodyTextDiv"
                                   onClick={(e) => {
                                     e.preventDefault();
-                                    navigate(`/product/${department._id}`);
+                                    navigate(`/product/${department.categoryId}`);
                                     deactivate_sidebar();
                                   }}
                                 >
@@ -324,7 +330,7 @@ function Home() {
                                     className="sidebarBodyText"
                                     onClick={(e) => {
                                       e.preventDefault();
-                                      navigate(`/product/${department._id}`);
+                                      navigate(`/product/${department.categoryId}`);
                                       deactivate_sidebar();
                                     }}
                                   >
@@ -394,15 +400,15 @@ function Home() {
               {departments && (
                 <div>
                   {departments.map((department) => (
-                    <div key={department._id} className="departmentRowHomeHeaderContentDiv">
+                    <div key={department.categoryId} className="departmentRowHomeHeaderContentDiv">
                       <p
                         className="departmentRowHomeHeaderContentText"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate(`/product/${department._id}`);
+                          navigate(`/product/${department.categoryId}`);
                         }}
                       >
-                        {department.name}
+                        {department.categoryName}
                       </p>
                     </div>
                   ))}
