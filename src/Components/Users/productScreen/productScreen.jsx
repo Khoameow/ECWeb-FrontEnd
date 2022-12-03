@@ -53,15 +53,26 @@ function ProductScreen(props) {
     const handleBuyNow=(e)=>{
         setCart([
             {
-                id: product._id,
-                title: product.name,
-                brand: product.brand,
+                id: product.productId,
+                title: product.productName,
+                brand: product.manufactureName,
                 category: product.category,
-                image: product.image,
+                image: product.category,
                 price: product.price,
                 quantity: qty
             }
         ])
+        // const cartItem = [{
+        //     id: product.productId,
+        //     title: product.productName,
+        //     brand: product.manufactureName,
+        //     category: product.category,
+        //     image: product.category,
+        //     price: product.price,
+        //     quantity: qty
+        // }]
+        // console.log("carbuy", cartItem);
+        // localStorage.setItem('Cart', JSON.stringify(cartItem))
         navigate('/shipping')
     }
 

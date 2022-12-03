@@ -1,7 +1,7 @@
 import Axios from "axios";
 import { CART_EMPTY } from "../constants/cartConstants";
 import { ORDER_CREATE_FAIL, ORDER_CREATE_REQUEST, ORDER_CREATE_SUCCESS, ORDER_DETAILS_FAIL, ORDER_DETAILS_REQUEST, ORDER_DETAILS_SUCCESS, ORDER_MINE_LIST_FAIL, ORDER_MINE_LIST_REQUEST, ORDER_MINE_LIST_SUCCESS, ORDER_PAY_FAIL, ORDER_PAY_REQUEST, ORDER_PAY_SUCCESS } from "../constants/orderConstants"
-import { apiInsertDeliveryPath } from "../path/Users/pathApi";
+import { apiGetDeliverybyIdsPath, apiInsertDeliveryPath } from "../path/Users/pathApi";
 
 export const createOrder = (order) => async (dispatch, getState) => {
   dispatch({ type: ORDER_CREATE_REQUEST, payload: order });
@@ -39,9 +39,10 @@ export const detailsOrder = (orderId) => async (dispatch, getState) => {
     userSignin: { userInfo },
   } = getState();
   try {
-    const { data } = await Axios.get(`/api/orders/${orderId}`, {
-      headers: { Authorization: `Bearer ${userInfo.token}` },
+    const { data } = await Axios.get(apiGetDeliverybyIdsPath(orderId), {
+      // headers: { Authorization: `Bearer ${userInfo.token}` },
     });
+
     
     dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data });
     localStorage.setItem('orderDetails', JSON.stringify(data));

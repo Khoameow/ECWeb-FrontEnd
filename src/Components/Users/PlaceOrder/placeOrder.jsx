@@ -16,7 +16,6 @@ import { ORDER_PAY_RESET } from '../../../constants/orderConstants';
 
 
 function PlaceOrder() {
-
     const navigate = useNavigate()
     const dispatch = useDispatch();
 
@@ -34,61 +33,64 @@ function PlaceOrder() {
     const orderPay = useSelector((state) => state.orderPay);
     const { error: errorPay, success: successPay, loading: loadingPay } = orderPay
 
-
-
-    useEffect(() => {
-        const addPayPalScript = async () => {
-            const { data } = await Axios.get('/api/config/paypal')
-            const script = document.createElement('script')
-            script.type = "text/javascript"
-            script.src = `https://www.paypal.com/sdk/js?client-id=${data}`
-            script.async = true
-            script.onload = () => {
-                setSdkReady(true)
-            }
-            document.body.appendChild(script)
-        }
-        if (successPay) {
-            dispatch({ type: ORDER_PAY_RESET });
-            navigate('/orders')
-        }
-        if (!order || (order && order._id !== orderId)) {
-            dispatch({ type: ORDER_PAY_RESET });
-            dispatch(detailsOrder(orderId));
-        } else {
-            if (!order.isPaid) {
-                if (!window.paypal) {
-                    addPayPalScript();
-                } else {
-                    setSdkReady(true);
-                }
-            }
-        }
-    }, [dispatch, order, orderId, sdkReady, successPay, navigate]);
-
-
-
-
-
-
+    // dispatch(detailsOrder(orderId));
 
     useEffect(() => {
-        if (!userInfo) {
-            navigate('/login?redirect=shipping')
-        }
-    })
+        dispatch(detailsOrder(orderId));
+        // dispatch({ type: ORDER_PAY_RESET });
+        //     navigate('/orders')
+        // const addPayPalScript = async () => {
+        //     const { data } = await Axios.get('/api/config/paypal')
+        //     const script = document.createElement('script')
+        //     script.type = "text/javascript"
+        //     script.src = `https://www.paypal.com/sdk/js?client-id=${data}`
+        //     script.async = true
+        //     script.onload = () => {
+        //         setSdkReady(true)
+        //     }
+        //     document.body.appendChild(script)
+        // }
+        // if (successPay) {
+        //     dispatch({ type: ORDER_PAY_RESET });
+        //     navigate('/orders')
+        // }
+        // if (!order || (order && order._id !== orderId)) {
+        //     dispatch({ type: ORDER_PAY_RESET });
+        //     dispatch(detailsOrder(orderId));
+        // } else {
+        //     if (!order.isPaid) {
+        //         if (!window.paypal) {
+        //             // addPayPalScript();
+        //         } else {
+        //             setSdkReady(true);
+        //         }
+        //     }
+        // }
+    }, []);
 
 
-    const [giftVoucherError, setGiftVoucherError] = useState('');
 
-    const giftVoucherHandler = () => {
-        setGiftVoucherError(true)
-    }
 
-    const successPaymentHandler = (paymentResult) => {
-        // TODO: dispatch pay order
-        dispatch(payOrder(order, paymentResult));
-    };
+
+
+
+    // useEffect(() => {
+    //     if (!userInfo) {
+    //         navigate('/login?redirect=shipping')
+    //     }
+    // })
+
+
+    // const [giftVoucherError, setGiftVoucherError] = useState('');
+
+    // const giftVoucherHandler = () => {
+    //     setGiftVoucherError(true)
+    // }
+
+    // const successPaymentHandler = (paymentResult) => {
+    //     // TODO: dispatch pay order
+    //     dispatch(payOrder(order, paymentResult));
+    // };
 
 
 
@@ -102,6 +104,7 @@ function PlaceOrder() {
             ) : error ? (
                 <MessageBox>{error}</MessageBox>
             ) : (
+
                 <div className="placeOrderContainer">
                     <div className="placeOrderImageDiv">
                         <img src={placeOrderLogo} alt="" />
@@ -110,7 +113,7 @@ function PlaceOrder() {
                         <p className="placeOrderTitle">Review your order</p>
                     </div>
                     <div className="placeOrderIdTitleDiv">
-                        <p className="placeOrderIdTitle">Order {order._id}</p>
+                        <p className="placeOrderIdTitle">Order {order.deliveryId}</p>
                     </div>
 
                     <div className="placeOrderShippingSection">
@@ -146,7 +149,7 @@ function PlaceOrder() {
                             </div>
                         </div>
 
-                        {!order.isPaid &&
+                        {/* {!order.isPaid &&
                             <div className="placeOrderGiftVoucherContainer">
                                 <div className="placeOrderGiftVoucherTitleDiv">
                                     <p className="placeOrderGiftVoucherTitle">Gift cards, Voucher & Promotional<br />codes</p>
@@ -160,7 +163,7 @@ function PlaceOrder() {
                                     {giftVoucherError && <p className='placeOrderGiftVoucherCodeOutput'>!  The promotional code you entered is not valid.</p>}
                                 </div>
                             </div>
-                        }
+                        } */}
 
 
                     </div>
@@ -245,7 +248,7 @@ function PlaceOrder() {
                                 </ul>
                             </div>
 
-                            {!order.isPaid && (
+                            {/* {!order.isPaid && (
 
                                 !sdkReady ? (
                                     <LoadingBox></LoadingBox>
@@ -263,7 +266,7 @@ function PlaceOrder() {
                                     </>
                                 )
 
-                            )}
+                            )} */}
                         </div>
                     </div>
 

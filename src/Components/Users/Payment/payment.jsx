@@ -12,7 +12,7 @@ function Payment() {
   const navigate = useNavigate();
 
   const cart = useSelector((state) => state.cart);
-  
+  var dta = localStorage.getItem("Cart");
   console.log("cart", cart);
   const { cartItems, shippingAddress } = cart;
 
