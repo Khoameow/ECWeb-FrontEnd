@@ -14,16 +14,16 @@
     margin: 0%;
     padding: 0%;
 }
-.logoRowHomeHeader{
-    height: 60px;
+.logoRowHomeHeader {
+    min-height: 60px;
     width: 100%;
     position: static;
     float: none;
     display: flex;
     background-color: #131921;
 }
-.departmentRowHomeHeader{
-    height: 40px;
+.departmentRowHomeHeader {
+    min-height: 40px;
     width: 100%;
     position: static;
     float: none;
@@ -34,26 +34,26 @@
     width: 12%;
     height: 60px;
 }
-.amazonNavLogo{
-    width: 96px;
+.amazonNavLogo {
+    width: 90px;
     /* margin: 1.1rem; */
     height: 60px;
     position: absolute;
     cursor: pointer;
 }
-.navTextDivAccount{
-    width: 9.4%;
+
+.navTextDivAccount {
+    width: auto;
     height: 60px;
-    margin-top: 15px;
+    margin-top: 1%;
     justify-content: space-between;
-    margin-left: 2rem;
+    margin-left: 2%;
 }
-.navTextDivOrders{
-    width: 6.2%;
-    margin-top: 15px;
-}
-.navTextDivCart{
-    width: 7.4%;
+
+.navTextDivOrders {
+    width: auto;
+    margin-top: 1%;
+    margin-left: 2%;
 }
 .navText{
     color: #ccc;;
@@ -77,10 +77,10 @@
 .navHighText:hover .navText{
     color: #ffa53f;
 }
-.cartNavLogo{
+.cartNavLogo {
     height: 35px;
     width: auto;
-    margin-top: 12px;
+    margin-top: 1%;
 }
 .cartText{
     margin-top: -5px;
@@ -226,14 +226,14 @@ a{
     text-decoration: underline;
     color: #e47911;
 }
-.locationRowHomeHeader{
+.locationRowHomeHeader {
     height: 60px;
-    position: static;
     float: none;
     display: flex;
     background-color: #131921;
-    width: auto;
+    width: auto;  
 }
+
 .locationNavLogoDiv{
     height: 60px;
 }
@@ -242,25 +242,30 @@ a{
     margin-top: 1.5rem;
     cursor: pointer;
 }
-.navShippingAddressDiv{
+.navShippingAddressDiv {
     height: 60px;
     margin-top: 15px;
     margin-left: 5px;
     justify-content: space-between;
+    width: auto;
 }
-.navSearchBarDiv{
-    margin-left: 2rem;
-    margin-top: 0.65rem;
+
+.navSearchBarDiv {
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 50%;
+    height: 30px;
 }
-.navSearchBar{
+.navSearchBar {
     height: 39px;
-    width: 600px;
+    width: 47%;
     outline: none;
     border-right: none;
     box-shadow: none;
     border-bottom: none;
+    position: absolute;
 }
-.searchIconContainer{
+.searchIconContainer {
     background-color: #febd69;
     width: 40px;
     height: 37px;
@@ -270,6 +275,7 @@ a{
     border-left: none;
     cursor: pointer;
     margin-top: 2px;
+    position: relative;
 }
 .searchIconContainer:hover{
     background-color: #f90;
@@ -278,14 +284,14 @@ a{
     margin-left: 8px;
     margin-top: 8px;
 }
-.navSearchList{
-    width: 598px;
+.navSearchList {
+    width: 91%;
     height: auto;
     background-color: white;
-    position: absolute;
+    position: relative;
     z-index: 999;
-    margin-top: 49px;
-    margin-left: 342px;
+    margin-top: 37px;
+    margin-left: 1%;
     border: 1px solid #ccc;
 }
 .navSearchList div{
@@ -302,13 +308,16 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
-.navbarToggleIcon{
+
+.navbarToggleIcon {
     color: white;
     font-weight: 900;
     font-size: 1.5rem;
     cursor: pointer;
     float: left;
+    height: 100%;
 }
+
 .navSidebarCloseIcon{
     margin-top: -3rem;
     margin-left: 18rem;
@@ -344,8 +353,8 @@ p{
     transition: 0.3s;
     z-index: 999;
 }
-.sidebarContainer{
-    width: 27%;
+.sidebarContainer {
+    width: auto;
     height: auto;
     z-index: 1000;
     display: flex;
@@ -353,6 +362,7 @@ p{
     background-color: black;
     overflow: auto;
 }
+
 .sidebarHeader{
     width: 100%;
     height: 50px;
@@ -401,3 +411,25 @@ p{
     padding-top: 1rem;
     margin-left: 2.5rem;
 }
+
+/**/
+
+.navTextDivCart {
+    width: auto;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+@media only screen and (max-width: 650px){
+    .amazonNavLogo {
+        width: 50px;
+        height: 40px;
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+

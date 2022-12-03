@@ -119,8 +119,7 @@ function Home() {
                   <Search className="searchIcon" />
                 </div>
               </div>
-            </div>
-            {products && (
+              {products && (
               <div className="navSearchList">
                 {products
                   .filter((product) => {
@@ -145,6 +144,8 @@ function Home() {
                   })}
               </div>
             )}
+            </div>
+           
             <div className="navTextDivAccount">
               <a>
                 {" "}
