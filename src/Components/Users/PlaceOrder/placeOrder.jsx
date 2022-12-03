@@ -87,10 +87,10 @@ function PlaceOrder() {
     //     setGiftVoucherError(true)
     // }
 
-    // const successPaymentHandler = (paymentResult) => {
-    //     // TODO: dispatch pay order
-    //     dispatch(payOrder(order, paymentResult));
-    // };
+    const successPaymentHandler = (paymentResult) => {
+        // TODO: dispatch pay order
+        dispatch(payOrder(order, paymentResult));
+    };
 
 
 
@@ -247,7 +247,10 @@ function PlaceOrder() {
                                     </li>
                                 </ul>
                             </div>
-
+                            <PayPalButton
+                                            amount={order.totalPrice}
+                                            onSuccess={successPaymentHandler}
+                                        ></PayPalButton>
                             {/* {!order.isPaid && (
 
                                 !sdkReady ? (
