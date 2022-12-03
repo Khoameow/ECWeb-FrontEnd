@@ -414,3 +414,27 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 650px){
+    .placeOrderImageDiv img{
+        width: 100%;
+    }
+
+    .placeOrderPlaceSection {
+        margin-left: 1px;
+        min-width: 100%;
+        height: auto;
+        border-width: 1px;
+        position: static;
+        margin-top: 2px;
+
+    }
+
+    .placeOrderShippingSection {
+        width: 100%;
+    }
+
+    .placeOrderContentContainer {
+        width: 100%;
+    }
+}
