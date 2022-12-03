@@ -243,3 +243,32 @@
     cursor: pointer;
     margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 650px){ 
+    .addressImageDiv img{
+        width: 100%;
+    }
+
+    .selectStateDiv {
+        margin-top: 1rem;
+        margin-left: 2px;
+    }
+
+    .selectState {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 1100px){ 
+    .selectState {
+        width: 85%;
+        min-width: 100px;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 480px){ 
+    .inputCity{
+        width: 180px;
+    }
+}

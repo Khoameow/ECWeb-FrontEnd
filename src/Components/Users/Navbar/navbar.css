@@ -310,12 +310,12 @@ a{
 }
 
 .navbarToggleIcon {
+    width: auto;
     color: white;
     font-weight: 900;
     font-size: 1.5rem;
     cursor: pointer;
     float: left;
-    height: 100%;
 }
 
 .navSidebarCloseIcon{
@@ -425,6 +425,10 @@ p{
         width: 50px;
         height: 40px;
         margin-top: 15px;
+    }
+
+    .navSearchList {
+        width: 75%;
     }
 }
 

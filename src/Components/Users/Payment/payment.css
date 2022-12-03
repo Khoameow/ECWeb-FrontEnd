@@ -37,6 +37,7 @@
 .paymentContentImage{
     margin: 1rem;
     max-height: 100px;
+
 }
 .paymentContentContainerDiv{
     width: 40%;
@@ -270,4 +271,19 @@
     margin-bottom: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 650px){
+    .paymentPlaceSection {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .paymentContentContainer {
+        width: 100%;
+    }
+
+    .paymentImageDiv img{
+        width: 100%;
+    }
 }
