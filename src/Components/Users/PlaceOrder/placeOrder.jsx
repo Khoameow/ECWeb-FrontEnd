@@ -10,6 +10,8 @@ import MessageBox from '../MessageBox/messageBox';
 import Axios from 'axios';
 import { PayPalButton } from 'react-paypal-button-v2'
 import { ORDER_PAY_RESET } from '../../../constants/orderConstants';
+import Order from '../Order/order';
+import { Button } from 'bootstrap';
 
 
 
@@ -89,7 +91,8 @@ function PlaceOrder() {
 
     const successPaymentHandler = (paymentResult) => {
         // TODO: dispatch pay order
-        dispatch(payOrder(order, paymentResult));
+        navigate('/orders')
+       
     };
 
 
@@ -119,7 +122,8 @@ function PlaceOrder() {
                     <div className="placeOrderShippingSection">
                         <div className="placeOrderShippingAddressContainer">
                             <div className="placeOrderShippingAddressTitleDiv">
-                                <p className="placeOrderShippingAddressTitle">Shipping address {!order.isPaid && <span className='placeOrderShippingAddressTitleChange'> Change</span>}</p>
+                                {/* <p className="placeOrderShippingAddressTitle">Shipping address {!order.isPaid && <span className='placeOrderShippingAddressTitleChange'> Change</span>}</p> */}
+                                <p className="placeOrderShippingAddressTitle">Shipping address </p>
                             </div>
                             <div className="placeOrderShippingAddressNameDiv">
                                 <p className="placeOrderShippingAddressName">{order.shippingAddress.name}</p>
@@ -142,10 +146,11 @@ function PlaceOrder() {
                         </div>
                         <div className="placeOrderPaymentMethodContainer">
                             <div className="placeOrderPaymentMethodTitleDiv">
-                                <p className="placeOrderPaymentMethodTitle">Payment method {!order.isPaid && <span className='placeOrderPaymentMethodChange'> Change</span>}</p>
+                                {/* <p className="placeOrderPaymentMethodTitle">Payment method {!order.isPaid && <span className='placeOrderPaymentMethodChange'> Change</span>}</p> */}
+                                <p className="placeOrderPaymentMethodTitle">Payment method </p>
                             </div>
                             <div className="placeOrderPaymentMethodDiv">
-                                <p className="placeOrderPaymentMethod">{order.paymentMethod}</p>
+                                <p className="placeOrderPaymentMethod">cash</p>
                             </div>
                         </div>
 
@@ -179,21 +184,22 @@ function PlaceOrder() {
                             {order.orderItems.map(product => (
                                 <div key={product.product} className="placeOrderContentDiv">
                                     <div className="placeOrderContentImageDiv">
-                                        <img src={product.image} alt="" className='placeOrderContentImage' />
+                                        <img src={product.imagePresent} alt="" className='placeOrderContentImage' />
                                     </div>
                                     <div className='placeOrderContentContainerDiv'>
                                         <div className="placeOrderContentProductTitleDiv">
-                                            <p className="placeOrderContentProductTitle">{product.name}</p>
+                                            <p className="placeOrderContentProductTitle">{product.productName}</p>
                                         </div>
 
                                         <div className="placeOrderContentProductPriceDiv">
-                                            <p className="placeOrderContentProductPrice">${product.price}</p>
+                                            <p className="placeOrderContentProductPrice">${product.priceValue}</p>
                                         </div>
                                         <div className="placeOrderContentProductQtyDiv">
-                                            <p className="placeOrderContentProductQtyTitle">Quantity: <span className='placeOrderContentProductQty'>{product.qty} </span> {!order.isPaid && <span className='placeOrderContentProductQtyChange' onClick={(e) => {
+                                            {/* <p className="placeOrderContentProductQtyTitle">Quantity: <span className='placeOrderContentProductQty'>{product.qty} </span> {!order.isPaid && <span className='placeOrderContentProductQtyChange' onClick={(e) => {
                                                 e.preventDefault()
                                                 navigate('/cart/:id')
-                                            }}> Change</span>}</p>
+                                            }}> Change</span>}</p> */}
+                                             <p className="placeOrderContentProductQtyTitle">Quantity: <span className='placeOrderContentProductQty'>{product.qty} </span></p>
                                         </div>
 
                                     </div>
@@ -247,10 +253,11 @@ function PlaceOrder() {
                                     </li>
                                 </ul>
                             </div>
-                            <PayPalButton
-                                            amount={order.totalPrice}
-                                            onSuccess={successPaymentHandler}
-                                        ></PayPalButton>
+                            <button onClick={()=>successPaymentHandler()} className='ProductBuyBtn'><span className='ProductBuyBtnText'>Buy Now</span></button>             
+                            {/* <PayPalButton
+                                            // amount={order.totalPrice}
+                                            // onSuccess={successPaymentHandler}
+                                        ></PayPalButton> */}
                             {/* {!order.isPaid && (
 
                                 !sdkReady ? (
