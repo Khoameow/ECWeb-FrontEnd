@@ -5,6 +5,7 @@ import Department from './department';
 import LoadingBox from '../LoadingBox/loadingBox';
 import MessageBox from '../MessageBox/messageBox';
 import Banner from '../Banner/Banner';
+import { apiGetAllCategoryPath } from '../../../path/Users/pathApi';
 
 
 function Departments() {
@@ -19,7 +20,7 @@ function Departments() {
 
       try{
         setLoading(true)
-        const {data} =await axios.get('/apicategory/getallcategory')
+        const {data} =await axios.get(apiGetAllCategoryPath)
         setLoading(false)
         setDepartments(data)
         console.log("data", data)

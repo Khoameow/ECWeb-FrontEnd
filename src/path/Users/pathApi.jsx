@@ -1,5 +1,5 @@
-const apiCategoryPath = "/apicategory";
-const apiProductPath = "/apiproduct";
+const apiCategoryPath = "/app/api/category";
+const apiProductPath = "/app/api/product";
 
 export const apiGetAllCategoryPath = apiCategoryPath + "/getallcategory";
 export const apiGetAllProductPath = apiProductPath + "/getallproduct";

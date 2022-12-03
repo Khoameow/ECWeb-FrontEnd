@@ -20,11 +20,13 @@ function Payment() {
   const toPrice = (num) => Number(num.toFixed(2));
 
   const itemsPrice = toPrice(
-    cartItems.reduce((a, c) => a + c.price * c.qty, 0)
+    cartItems.reduce((a, c) => a + Number(c.priceValue) * Number(c.qty), 0)
   );
   const shippingPrice = Math.ceil(
-    cartItems.reduce((a, c) => a + (c.price * c.qty * 5) / 100, 0)
+    cartItems.reduce((a, c) => a + ( Number(c.priceValue) * Number(c.qty) * 5) / 100, 0)
   );
+  console.log("itemsPrice",  cartItems.reduce((a, c) => a + (Number(c.priceValue) * Number(c.qty)), 0));
+  console.log("shippingPrice", shippingPrice);
   const totalOrderPrice = itemsPrice + shippingPrice;
   const promotionalApplied =
     totalOrderPrice - shippingPrice - (itemsPrice * 5) / 100;
@@ -76,7 +78,7 @@ function Payment() {
       dispatch({ type: ORDER_CREATE_RESET });
     }
   }, [dispatch, order, success, navigate]);
-
+  console.log("cartitem", cartItems)
   return (
     <div className="paymentSection">
       {error && (
@@ -105,19 +107,19 @@ function Payment() {
               <div key={product.product} className="paymentContentDiv">
                 <div className="paymentContentImageDiv">
                   <img
-                    src={product.image}
+                    src={product.imagePresent}
                     alt=""
                     className="paymentContentImage"
                   />
                 </div>
                 <div className="paymentContentContainerDiv">
                   <div className="paymentContentProductTitleDiv">
-                    <p className="paymentContentProductTitle">{product.name}</p>
+                    <p className="paymentContentProductTitle">{product.productName}</p>
                   </div>
 
                   <div className="paymentContentProductPriceDiv">
                     <p className="paymentContentProductPrice">
-                      ${product.price}
+                      ${product.priceValue}
                     </p>
                   </div>
                   <div className="paymentContentProductQtyDiv">

@@ -43,7 +43,7 @@ function Product() {
                                 <a className='productsImageLink'><img className='productsImage' src={product.imagePresent} alt="" /></a>
                             </div>
                             <div className='productsTitleDiv'>
-                                <a className='productsTitleLink'><p className='productsTitle'>{product.productName  }</p></a>
+                                <a className='productsTitleLink'><p className='productsTitle'>{product.productName}</p></a>
                             </div>
 
                             <div className="productsRatingDiv">
@@ -56,7 +56,7 @@ function Product() {
                             <div className='productsReviewDiv'><span className='productsReviewText'>200</span></div>
                             <br />
                             <div className='productsPriceDiv'>
-                                <p className='productsPrice'><span className='productsPriceDollar'>$</span><span className='productsPriceText'>{product.price}</span></p>
+                                <p className='productsPrice'><span className='productsPriceDollar'>$</span><span className='productsPriceText'>{product.priceValue}</span></p>
                             </div>
                             <hr />
                         </div>
