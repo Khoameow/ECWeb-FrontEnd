@@ -12,6 +12,8 @@ function Payment() {
   const navigate = useNavigate();
 
   const cart = useSelector((state) => state.cart);
+  
+  console.log("cart", cart);
   const { cartItems, shippingAddress } = cart;
 
   const userSignIn = useSelector((state) => state.userSignin);
@@ -34,6 +36,7 @@ function Payment() {
   const totalPrice = toPrice(totalOrderPrice - discountPrice);
 
   const orderCreate = useSelector((state) => state.orderCreate);
+  console.log("orderCreate" , orderCreate)
   const { loading, success, error, order } = orderCreate;
 
   cart.itemsPrice = itemsPrice;
@@ -60,7 +63,7 @@ function Payment() {
 
   const placeOrderHandler = () => {
     
-
+    debugger
     for (let i = 0; i < cart.cartItems.length; i++) {
       let countInStock = cart.cartItems[i].countInStock - cart.cartItems[i].qty;
       let proId = cart.cartItems[i].product;
@@ -70,12 +73,15 @@ function Payment() {
       };
       update_stock(data)
     }
+
     dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
   };
   useEffect(() => {
     if (success) {
-      navigate(`/order/${order._id}`);
+      console.log("order111", order)
+      navigate(`/order/${order.deliveryId}`);
       dispatch({ type: ORDER_CREATE_RESET });
+      
     }
   }, [dispatch, order, success, navigate]);
   console.log("cartitem", cartItems)

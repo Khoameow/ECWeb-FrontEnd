@@ -12,7 +12,7 @@ export const addToCart = (productId, qty) => async (dispatch, getState) => {
       priceValue: data.priceValue,
       decimal: data.decimal,
       stockTotal: data.stockTotal,
-      product: data.productId,
+      productId: data.productId,
       qty,
     },
   });
