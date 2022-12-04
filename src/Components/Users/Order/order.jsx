@@ -78,7 +78,7 @@ function Order() {
                                 <p className="orderPlaceShipping">Shipping to</p>
                             </div>
                             <div className="orderPlacePaidAtDiv">
-                                <p className="orderPlacePaidAt"><span className='orderPlacePaidAtText'>Payment paid on:</span> {date},{' '}{paidAt}</p>
+                                <p className="orderPlacePaidAt"><span className='orderPlacePaidAtText'>Payment paid on:</span> order</p>
                             </div>
                             <hr className='orderPlaceHr' />
                         </div>

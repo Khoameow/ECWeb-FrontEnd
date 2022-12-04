@@ -32,6 +32,7 @@ function ProductScreen(props) {
 
     useEffect(() => {
         dispatch(detailsProduct(productId));
+        
       }, [dispatch, productId]);
 
 
@@ -112,7 +113,7 @@ function ProductScreen(props) {
                                 <span> <i className={product.ratingValue >= 4 ? "fa fa-star" : product.ratingValue >= 3.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
                                 <span> <i className={product.ratingValue >= 5 ? "fa fa-star" : product.ratingValue >= 4.5 ? "fa fa-star-half" : "fa fa-star-o"}></i> </span>
                         </div>
-                        <div className='productScreenReviewDiv'><span className='productScreenReviewText'>100 ratings</span></div>
+                        <div className='productScreenReviewDiv'><span className='productScreenReviewText'> ratings</span></div>
                         <br />
                         <div className="productScreenDescriptionDiv">
                             <p className='productScreenDescription'>{product.decription}</p>

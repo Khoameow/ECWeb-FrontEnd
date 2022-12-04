@@ -73,7 +73,7 @@ function Payment() {
         _id: proId,
         countInStock: countInStock+'',
       };
-      update_stock(data)
+      // update_stock(data)
     }
 
     dispatch(createOrder({ ...cart, orderItems: cart.cartItems }));
