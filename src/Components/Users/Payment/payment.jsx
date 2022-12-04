@@ -43,6 +43,8 @@ function Payment() {
   cart.shippingPrice = shippingPrice;
   cart.discountPrice = discountPrice;
   cart.totalPrice = totalPrice;
+  cart.userName = userInfo ? userInfo.username : "";
+
 
   useEffect(() => {
     if (!userInfo) {
@@ -63,7 +65,7 @@ function Payment() {
 
   const placeOrderHandler = () => {
     
-    debugger
+
     for (let i = 0; i < cart.cartItems.length; i++) {
       let countInStock = cart.cartItems[i].countInStock - cart.cartItems[i].qty;
       let proId = cart.cartItems[i].product;

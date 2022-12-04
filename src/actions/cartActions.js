@@ -4,7 +4,7 @@ import { apiGetProductDetailPath } from "../path/Users/pathApi";
 
 export const addToCart = (productId, qty) => async (dispatch, getState) => {
   const { data } = await Axios.get(apiGetProductDetailPath(productId));
-  debugger;
+
   dispatch({
     type: CART_ADD_ITEM,
     payload: {

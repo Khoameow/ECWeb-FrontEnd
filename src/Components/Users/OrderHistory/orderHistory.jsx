@@ -56,8 +56,27 @@ function OrderHistory() {
                         <div className="orderHistoryOrderNumberDiv">
                             <p className="orderHistoryOrderNumber">{orders && orders.length} {orders && orders.length > 1 ? ' orders' : ' order'} <span className='orderHistoryOrderNumberText'>placed</span></p>
                         </div>
-                        {orders.map(order => (
-                            <div className="orderHistoryProductContainer" key={order._id}>
+                        {orders.map(order => {
+                            console.log("order", order.createDate);  
+                            const date = new Date(order.createDate); 
+                            console.log("date",date);  
+                            const dateShow = dayName + ', ' + date.getDate() + ' ' + monthNames[date.getMonth()] + ' ' + date.getFullYear();
+                            console.log("dateShow", dateShow);  
+                            let status = '';
+                            let statusTranfer = '';
+                            if (order.status == 1){
+                                status = 'Shipped';
+                                statusTranfer = 'Your product has been shipped.';
+                            }else if (order.status == 2){
+                                status = 'Complete your payment';
+                                statusTranfer = 'Complete your transaction.';
+                            }else {
+                                status = 'Cancelled';
+                                statusTranfer = 'Order canceled.';
+                            }
+                            return(
+                            
+                            <div className="orderHistoryProductContainer" key={order.deliveryId}>
                                 <div className="orderHistoryProductHeadContainer">
                                     <div className="orderHistoryProductHeadDiv">
                                         <div className="orderHistoryOrderPlacedContainer">
@@ -66,7 +85,7 @@ function OrderHistory() {
                                                 <p className="orderHistoryOrderPlacedText">ORDER PLACED</p>
                                             </div>
                                             <div className="orderHistoryOrderDateDiv">
-                                                <p className="orderHistoryOrderDateText">{order.updatedAt}</p>
+                                                <p className="orderHistoryOrderDateText">{dateShow} </p>
                                             </div>
                                             <br />
                                         </div>
@@ -105,12 +124,12 @@ function OrderHistory() {
                                         <div className="orderHistoryOrderIdContainer">
                                             <br />
                                             <div className="orderHistoryOrderIdDiv">
-                                                <p className="orderHistoryOrderIdText">ORDER # {order._id}</p>
+                                                <p className="orderHistoryOrderIdText">ORDER # {order.deliveryId}</p>
                                             </div>
                                             <div className="orderHistoryOrderDetailsDiv">
                                                 <p className="orderHistoryOrderDetailsText"><span className='orderHistoryOrderViewDetailsText' onClick={(e) => {
                                                     e.preventDefault()
-                                                    navigate(`/order/${order._id}`)
+                                                    navigate(`/order/${order.deliveryId}`)
                                                 }}>View order details </span> | <span className='orderHistoryOrderInvoiceText'> Invoice</span></p>
                                             </div>
                                             <br />
@@ -123,18 +142,18 @@ function OrderHistory() {
                                     <div className="orderHistoryProductContentDiv">
                                         <div className="orderHistoryProductContentOrderDiv">
                                             <div className="orderHistoryProductOrderStatusDiv">
-                                                <p className="orderHistoryProductOrderStatus">{order.isPaid ? 'Shipped' : 'Complete your payment'}</p>
+                                                <p className="orderHistoryProductOrderStatus">{status}</p>
                                             </div>
                                             <div className="orderHistoryProductOrderStatusTextDiv">
-                                                <p className="orderHistoryProductOrderStatusText">{order.isPaid ? 'Your product has been shipped.' : 'Complete your transaction'}</p>
+                                                <p className="orderHistoryProductOrderStatusText">{statusTranfer}</p>
                                             </div>
                                             {order.orderItems.map(product => (
-                                                <div key={product._id}>
+                                                <div key={product.product}>
                                                     <div className="orderHistoryProductImageDiv">
-                                                        <img className='orderHistoryProductImage' src={product.image} alt="" />
+                                                        <img className='orderHistoryProductImage' src={product.imagePresent} alt="" />
                                                     </div>
                                                     <div className="orderHistoryProductNameDiv">
-                                                        <p className="orderHistoryProductName">{product.name}</p>
+                                                        <p className="orderHistoryProductName">{product.productName}</p>
                                                     </div>
                                                 </div>
                                             ))}
@@ -142,7 +161,7 @@ function OrderHistory() {
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        )})}
                     </div>
                 </div>
             )}

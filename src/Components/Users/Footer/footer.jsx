@@ -22,7 +22,7 @@ function footer() {
           <img className='footerLogo' src={logo} alt="" />
         </div>
         <div className="row footerContentDiv">
-          <p className='footerContentText'>© 1996-{date}, Amazon.com, Inc. or its affiliates</p>
+          <p className='footerContentText'>© 1996-{date}, Mobile Shop, Inc. or its affiliates</p>
         </div>
       </footer>
     </div>

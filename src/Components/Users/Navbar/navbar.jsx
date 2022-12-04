@@ -150,7 +150,7 @@ function Home() {
               <a>
                 {" "}
                 <p className="navText">
-                  Hello, {userInfo ? userInfo.name : "Sign in"} <br />
+                  Hello, {userInfo ? userInfo.username : "Sign in"} <br />
                   <span className="navHighText">Account & Lists </span>
                   <i class="fas fa-caret-down"></i>
                 </p>
