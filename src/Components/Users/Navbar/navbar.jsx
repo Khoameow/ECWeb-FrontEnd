@@ -315,7 +315,7 @@ function Home() {
                           {departments && (
                             <div className="sidebarTrendingSection">
                               <p className="sidebarBodyTitle">
-                                Shop By Department
+                                Shop By Category
                               </p>
                               {departments.map((department) => (
                                 <div
@@ -335,7 +335,7 @@ function Home() {
                                       deactivate_sidebar();
                                     }}
                                   >
-                                    {department.name}
+                                    {department.categoryName}
                                   </p>
                                 </div>
                               ))}

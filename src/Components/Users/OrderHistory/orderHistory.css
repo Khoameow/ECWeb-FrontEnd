@@ -220,6 +220,7 @@
     line-height: 20px;
     color: #007185;
     cursor: pointer;
+    margin-left: 10px;
 }
 .orderHistoryProductName:hover{
     text-decoration: underline;
