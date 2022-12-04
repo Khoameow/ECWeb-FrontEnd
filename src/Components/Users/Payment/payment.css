@@ -286,4 +286,25 @@
     .paymentImageDiv img{
         width: 100%;
     }
+
+    .paymentContentImageDiv {
+        float: left;
+        width: 200px;
+        height: 150px;
+    }
 }
+
+@media only screen and (min-width: 1010px){
+    .paymentContentContainerDiv {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1010px){
+    .paymentContentImageDiv {
+        float: left;
+        width: 200px;
+        height: 150px;
+    }
+}
+
