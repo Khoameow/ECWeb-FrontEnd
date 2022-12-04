@@ -104,12 +104,13 @@
 .placeOrderPlaceSection{
     float: left;
     margin-left: 1rem;
+    margin-top: 20px;
     width: 25%;
     height: auto;
     border-style: solid;
     border-width: 1px;
     border-color: #ddd;
-    margin-top: -12.5rem;
+    margin-top: -15.5rem;
     position: static;
 
 }
@@ -217,7 +218,7 @@
     font-size: 13px;
     line-height: 19px;
     color: #b12704;
-    padding-left: 6rem;
+    padding-left: 0rem;
 }
 .liText{
     color: #333;
@@ -431,7 +432,7 @@
         border-width: 1px;
         position: static;
         margin-top: 2px;
-
+        margin-bottom: 20px;
     }
 
     .placeOrderShippingSection {
@@ -446,4 +447,15 @@
          width: auto; 
          height: auto; 
     }
+}
+.ProductCompleteBtn{
+    background-color: #FFA41C;
+    border-color: #FF8F00;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1%;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 1%;
 }
