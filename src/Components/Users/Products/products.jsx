@@ -31,7 +31,7 @@ function Products() {
                             navigate(`/products/${product.productId}`)
                         }}>
                             <div className="productsImageDiv">
-                                <a className='productsImageLink'><img className='productsImage' src={product.imagePresent} alt="" /></a>
+                                <a className='productsImageLink'><img className='productsImage zoom' src={product.imagePresent} alt="" /></a>
                             </div>
                             <div className='productsTitleDiv'>
                                 <a className='productsTitleLink'><p className='productsTitle'>{product.productName}</p></a>
@@ -49,7 +49,6 @@ function Products() {
                             <div className='productsPriceDiv'>
                                 <p className='productsPrice'><span className='productsPriceDollar'>$</span><span className='productsPriceText'>{product.priceValue}</span></p>
                             </div>
-                            <hr />
                         </div>
                     ))}
 

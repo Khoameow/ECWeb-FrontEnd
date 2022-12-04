@@ -58,7 +58,7 @@ function Product() {
                             <div className='productsPriceDiv'>
                                 <p className='productsPrice'><span className='productsPriceDollar'>$</span><span className='productsPriceText'>{product.priceValue}</span></p>
                             </div>
-                            <hr />
+
                         </div>
                     ))}
 

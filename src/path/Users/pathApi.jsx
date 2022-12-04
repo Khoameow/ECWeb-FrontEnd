@@ -6,6 +6,7 @@ export const apiGetAllCategoryPath = apiCategoryPath + "/getallcategory";
 export const apiGetAllProductPath = apiProductPath + "/getallproduct";
 export const apiGetProductPresentPath = apiProductPath + "/getproductpresent";
 export const apiInsertDeliveryPath = apiDeliveryPath + "/insertdelivery";
+export const apiRegisterPath = "/api/register";
 
 
 export const apiGetProductDetailPath = (productId)   => {

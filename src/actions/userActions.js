@@ -17,14 +17,15 @@ import {
     USER_VERIFY_SIGNIN_REQUEST,
     USER_VERIFY_SIGNIN_SUCCESS
 } from '../constants/userconstants';
+import { apiRegisterPath } from '../path/Users/pathApi';
 
 
 
-export const register = (name, email, password) => async (dispatch) => {
-    dispatch({ type: USER_REGISTER_REQUEST, payload: { name, email, password } });
+export const register = (yourName, email, password) => async (dispatch) => {
+    dispatch({ type: USER_REGISTER_REQUEST, payload: { yourName, email, password } });
     try {
-        const { data } = await Axios.post('/api/users/register', {
-            name,
+        const { data } = await Axios.post(apiRegisterPath, {
+          yourName,
             email,
             password,
         });

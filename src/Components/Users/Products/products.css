@@ -16,6 +16,7 @@
     margin: 1rem;
     cursor: pointer;
     margin-bottom: 5rem;
+    border: 1px solid #d0d0d0;
 }
 .productsImageDiv{
     margin: 1rem;
@@ -65,3 +66,13 @@
     font-size: smaller;
     color: #007185;
 }
+
+.zoom {
+    
+    transition: transform .2s; /* Animation */
+
+  }
+
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

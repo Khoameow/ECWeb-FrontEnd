@@ -18,7 +18,7 @@
     color: #333;
   }
   #login-btn {
-    width: 20rem;
+    width: 80%;
     height: 2rem;
     margin-left: 10%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -31,7 +31,7 @@
     cursor: pointer;
   }
   #create-btn {
-    width: 20rem;
+    width: 80%;
     height: 2rem;
     margin-left: 3rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -64,7 +64,7 @@
     margin-left: 10%;
   }
   .email-input {
-    width: 20rem;
+    width: 80%;
     margin-left: 10%;
     height: 28px;
     margin-top: 0.3rem;
@@ -85,7 +85,7 @@
     margin-left: 10%;
   }
   .password-input {
-    width: 20rem;
+    width: 80%;
     margin-left: 10%;
     height: 28px;
     margin-top: 0.3rem;
@@ -117,7 +117,14 @@
   }
   .loginErrorDiv{
     background-color: #ffe0e0;
-    width: 20rem;
+    width: 80%;
     margin-left: 10%;
     height: auto;
+  }
+
+  @media only screen and (max-width: 1090px) {
+    #create-btn {
+      height: 4rem;
+      
+    }
   }

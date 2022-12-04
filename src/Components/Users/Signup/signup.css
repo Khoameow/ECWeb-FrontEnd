@@ -19,7 +19,7 @@
     padding: 10px;
   }
   #signup-btn {
-    width: 20rem;
+    width: 80%;
     height: 2rem;
     margin-left: 10%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -48,7 +48,7 @@
     margin-left: 10%;
   }
   .input{
-      width: 20rem; 
+      width: 80%; 
       margin-left: 10%;
       height: 31px;
       margin-top: 0.3rem;
@@ -97,7 +97,7 @@
   }
   .signupErrorDiv{
     background-color: #ffe0e0;
-    width: 20rem;
+    width: 80%;
     margin-left: 10%;
     height: auto;
   }

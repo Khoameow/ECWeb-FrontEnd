@@ -87,7 +87,7 @@ function Signup() {
                             <br />
                             <button id="signup-btn" >Continue</button>
                             <br />
-                            <p className='privacy-text'>By continuing, you agree to Amazon's Conditions of Use <br />and Privacy Notice.</p>
+                            <p className='privacy-text'>By continuing, you agree to Mobile Shop Conditions of Use <br />and Privacy Notice.</p>
 
                             <br />
                             <br />
