@@ -253,7 +253,7 @@ function PlaceOrder() {
                                     </li>
                                 </ul>
                             </div>
-                            <button onClick={()=>successPaymentHandler()} className='ProductBuyBtn'><span className='ProductBuyBtnText'>Complete</span></button>             
+                            <button onClick={()=>successPaymentHandler()} className='ProductCompleteBtn'><span className='ProductCompleteBtnText'>Complete</span></button>             
                             {/* <PayPalButton
                                             // amount={order.totalPrice}
                                             // onSuccess={successPaymentHandler}
