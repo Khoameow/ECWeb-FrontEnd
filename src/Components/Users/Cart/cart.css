@@ -53,6 +53,7 @@
     margin: 0;
     width: 200px;
     height: 200px;
+    margin-right: 20px;
     float: left;
 }
 .cartImage{
@@ -61,7 +62,7 @@
 }
 .cartContentBox {
     margin-left: 2%;
-    width: 100%;
+    width: 80%;
 }
 .cartProductTitleDiv {
     width: 100%;
@@ -129,7 +130,7 @@
     line-height: 24px;
     font-weight: 700;
     position: absolute;
-    left: 66%;
+    right: 31%;
     font-family: sans-serif;
 }
 .subTotalCartDiv{
@@ -226,6 +227,7 @@
         width: 200px;
         height: 100px;
         margin-top: 1%;
+        border: solid;
     }
 
     .checkOutBtn {
@@ -255,6 +257,10 @@
     .cartProductPrice {
         left: 64%;
     }
+
+    .cartSection {
+        background-color: white;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -266,6 +272,7 @@
         margin: 0;
         width: 200px;
         height: 200px;
+        margin-right: 20px;
         float: left;
     }
 

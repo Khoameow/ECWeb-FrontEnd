@@ -36,8 +36,8 @@
 }
 .paymentContentImage{
     margin: 1rem;
-    max-height: 100px;
-
+    height: 100px;
+    width: 200px;
 }
 .paymentContentContainerDiv{
     width: 40%;
@@ -109,6 +109,7 @@
 .paymentPlaceSection{
     float: left;
     margin-left: 1rem;
+    margin-bottom: 20px;
     width: 25%;
     height: auto;
     border-style: solid;
@@ -219,7 +220,7 @@
     font-size: 13px;
     line-height: 19px;
     color: #b12704;
-    padding-left: 6rem;
+    padding-left: 4rem;
 }
 .liText{
     color: #333;
@@ -277,6 +278,7 @@
 @media only screen and (max-width: 650px){
     .paymentPlaceSection {
         margin-left: 0px;
+        margin-bottom: 20px;
         width: 100%;
     }
     .paymentContentContainer {
@@ -287,11 +289,6 @@
         width: 100%;
     }
 
-    .paymentContentImageDiv {
-        float: left;
-        width: 200px;
-        height: 150px;
-    }
 }
 
 @media only screen and (min-width: 1010px){
@@ -305,6 +302,7 @@
         float: left;
         width: 200px;
         height: 150px;
+        margin-right: 40px;
     }
 }
 

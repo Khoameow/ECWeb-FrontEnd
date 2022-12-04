@@ -40,10 +40,12 @@
 }
 .placeOrderContentImageDiv{
     float: left;
+    margin: 20px;
 }
 .placeOrderContentImage{
     margin: 1rem;
     max-height: 100px;
+    width: 200px;
 }
 .placeOrderContentContainerDiv{
     width: 40%;
@@ -54,11 +56,13 @@
 .placeOrderContentProductTitleDiv{
     padding-top: 2rem;
 }
-.placeOrderContentProductTitle{
+.placeOrderContentProductTitle {
     font-weight: 700;
     font-size: 13px;
     line-height: 19px;
     color: #333;
+    width: 350px;
+    height: 70px;
 }
 .placeOrderContentProductPriceDiv{
     margin-top: 0.2rem;
@@ -75,7 +79,7 @@
 .placeOrderContentProductQtyTitle{
     font-weight: 700;
     font-size: 13px;
-    line-height: 19px;
+    line-height: 15px;
     color: #333;
 }
 .placeOrderContentProductQty{
@@ -436,5 +440,10 @@
 
     .placeOrderContentContainer {
         width: 100%;
+    }
+
+    .placeOrderContentProductTitle {
+         width: auto; 
+         height: auto; 
     }
 }
