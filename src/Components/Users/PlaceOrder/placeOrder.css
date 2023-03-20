@@ -1,461 +1,489 @@
-.placeOrderSection{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    height: auto;
-    min-height: 530px;
+.placeOrderSection {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  height: auto;
+  min-height: 530px;
 }
-.placeOrderTitleDiv{
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+.placeOrderTitleDiv {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
-.placeOrderTitle{
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 400;
-    font-family: Arial,sans-serif;
-    text-rendering: optimizeLegibility;
-    color: #333;
+.placeOrderTitle {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #333;
 }
-.placeOrderIdTitleDiv{
-    margin-bottom: 0.5rem;
+.placeOrderIdTitleDiv {
+  margin-bottom: 0.5rem;
 }
-.placeOrderIdTitle{
-    color: #333;
+.placeOrderIdTitle {
+  color: #333;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-weight: bold;
 }
-.placeOrderContentContainer{
-    width: 70%;
-    height: auto;
-    min-height: 150px;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 2rem;
-    border-color: #ddd;
-    float: left;
-    margin-top: 0rem;
+.placeOrderContentContainer {
+  width: 70%;
+  height: auto;
+  min-height: 150px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 2rem;
+  border-color: #ddd;
+  float: left;
+  margin-top: 0rem;
 }
-.placeOrderContentContainerDivSection{
-    margin-top: 0rem;
+.placeOrderContentContainerDivSection {
+  margin-top: 0rem;
 }
-.placeOrderContentImageDiv{
-    float: left;
-    margin: 20px;
+.placeOrderContentImageDiv {
+  float: left;
+  margin: 20px;
 }
-.placeOrderContentImage{
-    margin: 1rem;
-    max-height: 100px;
-    width: 200px;
+.placeOrderContentImage {
+  margin: 1rem;
+  height: 150px;
+  width: 200px;
 }
-.placeOrderContentContainerDiv{
-    width: 40%;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-
+.placeOrderContentContainerDiv {
+  width: 40%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 30px;
+  top: 30px;
+  float: left;
 }
-.placeOrderContentProductTitleDiv{
-    padding-top: 2rem;
+.placeOrderContentProductTitleDiv {
+  padding-top: 2rem;
 }
 .placeOrderContentProductTitle {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-    width: 350px;
-    height: 70px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
 }
-.placeOrderContentProductPriceDiv{
-    margin-top: 0.2rem;
+.placeOrderContentProductPriceDiv {
+  margin-top: 0.2rem;
 }
-.placeOrderContentProductPrice{
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 19px;
-    color: #b12d2a;
+.placeOrderContentProductPrice {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #b12d2a;
 }
-.placeOrderContentProductQtyDiv{
-    margin-top: 0.2rem;
+.placeOrderContentProductQtyDiv {
+  margin-top: 0.2rem;
 }
-.placeOrderContentProductQtyTitle{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 15px;
-    color: #333;
+.placeOrderContentProductQtyTitle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333;
 }
-.placeOrderContentProductQty{
-    font-weight: 400;
+.placeOrderContentProductQty {
+  font-weight: 400;
 }
-.placeOrderContentProductQtyChange{
-    color: #007eb9;
-    font-weight: 400;
-    cursor: pointer;
+.placeOrderContentProductQtyChange {
+  color: #007eb9;
+  font-weight: 400;
+  cursor: pointer;
 }
-.placeOrderContentProductQtyChange:hover{
-    text-decoration: underline;
+.placeOrderContentProductQtyChange:hover {
+  text-decoration: underline;
 }
 
-.ulSection{
-    color: #aaa;
-    list-style-type: disc;
-    margin-left: 2rem;
-    font-size: 13px;
-    line-height: 19px;
+.ulSection {
+  color: #aaa;
+  list-style-type: disc;
+  margin-left: 2rem;
+  font-size: 13px;
+  line-height: 19px;
 }
-.placeOrderPlaceSection{
-    float: left;
-    margin-left: 1rem;
-    margin-top: 20px;
-    width: 25%;
+.placeOrderPlaceSection {
+  float: left;
+  margin-left: 1rem;
+  margin-top: 20px;
+  width: 25%;
+  height: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  margin-top: -15.5rem;
+  position: static;
+}
+.placeOrderShippingAddressContainer {
+  position: relative;
+  left: 40px;
+  margin-top: 10px;
+}
+.placeOrderPaymentMethodContainer {
+  position: relative;
+  left: 80px;
+  top: 0;
+}
+.placeOrderPaymentMethodTitle {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+.placeOrderPaymentMethod {
+  color: #007eb9;
+  cursor: pointer;
+}
+.placeOrderPlaceContainer {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+.placeOrderPlaceOrderTitle {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #333;
+}
+.placeOrderPlaceItemsTextDiv {
+  margin-top: 0.25rem;
+}
+.placeOrderPlaceItemsText {
+  font-size: 12px;
+  color: #333;
+  float: left;
+}
+.placeOrderPlaceItemsPrice {
+  font-size: 12px;
+  color: #333;
+  text-align: right;
+}
+.placeOrderPlaceDeliveryTextDiv {
+  margin-top: 0.25rem;
+}
+.placeOrderPlaceDeliveryText {
+  font-size: 12px;
+  color: #333;
+  float: left;
+}
+.placeOrderPlaceDeliveryPrice {
+  font-size: 12px;
+  color: #333;
+  text-align: right;
+}
+.placeOrderPlaceTotalTextDiv {
+  margin-top: 0.25rem;
+}
+.placeOrderPlaceTotalText {
+  font-size: 12px;
+  color: #333;
+  float: left;
+}
+.placeOrderPlaceTotalPrice {
+  font-size: 12px;
+  color: #333;
+  text-align: right;
+}
+.placeOrderPlacePromotionTextDiv {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.placeOrderPlacePromotionText {
+  font-size: 12px;
+  color: #333;
+  float: left;
+}
+.placeOrderPlacePromotionPrice {
+  font-size: 12px;
+  color: #333;
+  text-align: right;
+}
+.placeOrderPlaceOrderTotalDiv {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.placeOrderPlaceOrderTotal {
+  font-size: 17px;
+  line-height: 1.24;
+  font-family: Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 700;
+  color: #b12704;
+  float: left;
+}
+.placeOrderPlaceOrderTotalPrice {
+  font-size: 17px;
+  line-height: 1.24;
+  font-family: Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 700;
+  color: #b12704;
+  text-align: right;
+}
+.placeOrderPlaceSavingsTextDiv {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.placeOrderPlaceSavingsText {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #b12704;
+  float: left;
+}
+.placeOrderPlaceSavingPrice {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #b12704;
+  padding-left: 0rem;
+}
+.liText {
+  color: #333;
+}
+.placeOrderPlacePrice {
+  text-align: right;
+}
+.placeOrderPlaceContinueBtnDiv {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.placeOrderPlaceContinueBtn {
+  width: 90%;
+  height: 31px;
+  outline: 0;
+  color: #111;
+  text-align: center;
+  font-size: 13px;
+  line-height: 29px;
+  display: block;
+  font-family: Arial, sans-serif;
+  border-color: #cba957 #bf942a #aa8326;
+  background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  text-decoration: none;
+  outline: none;
+  border-width: 0.5px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.placeOrderShippingSection {
+  width: 70%;
+  height: auto;
+  min-height: 183px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 1rem;
+  border-color: #ddd;
+  float: left;
+}
+.placeOrderShippingAddressContainer {
+  margin: 1rem 0 0 2rem;
+  float: left;
+  width: 29.3%;
+}
+
+.placeOrderShippingAddressTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderShippingAddressTitleChange {
+  font-size: 11px;
+  line-height: 1.465;
+  font-weight: 400;
+  color: #007eb9;
+  cursor: pointer;
+}
+.placeOrderShippingAddressTitleChange:hover {
+  text-decoration: underline;
+}
+.placeOrderShippingAddressNameDiv {
+  margin-top: 0.5rem;
+}
+.placeOrderShippingAddressName {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderShippingAddressText {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderShippingAddressPlace {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderShippingAddressCity {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderShippingAddressCountry {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderShippingAddressMobile {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderPaymentMethodContainer {
+  margin: 1rem;
+  float: left;
+  width: 29.3%;
+}
+.placeOrderShippingAddressMobileDiv .placeOrderPaymentMethodTitle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderPaymentMethodChange {
+  font-size: 11px;
+  line-height: 1.465;
+  font-weight: 400;
+  color: #007eb9;
+  cursor: pointer;
+}
+.placeOrderPaymentMethodChange:hover {
+  text-decoration: underline;
+}
+.placeOrderPaymentMethodDiv {
+  margin-top: 0.5rem;
+}
+.placeOrderPaymentMethod {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.AddressTitle {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.placeOrderGiftVoucherContainer {
+  margin: 1rem;
+  float: left;
+  width: 29.3%;
+}
+.placeOrderGiftVoucherTitle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+}
+.placeOrderGiftVoucherDiv {
+  margin-top: 0.5rem;
+}
+.placeOrderGiftVoucherInput {
+  width: 157px;
+  height: 31px;
+  border-radius: 3px;
+  border-color: #ddd;
+  border-width: 1.5px;
+  border-style: solid;
+  outline: none;
+}
+.placeOrderGiftVoucherInput:hover {
+  outline-style: solid;
+  outline-color: #ffa53f;
+  outline-width: 0.1px;
+}
+.placeOrderGiftVoucherBtn {
+  width: 53px;
+  height: 29px;
+  margin-left: 0.5rem;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  border: 1px solid;
+  border-color: #bcc1c8 #bababa #adb2bb;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.placeOrderGiftVoucherBtn:hover {
+  background-color: #dddddd;
+}
+.placeOrderGiftVoucherCodeOutput {
+  color: #b12704;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 0.5rem;
+}
+.paymentErrorDiv {
+  background-color: #ffe0e0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+.paymentErrorContent {
+  color: #a02020;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .placeOrderImageDiv img {
+    width: 100%;
+  }
+
+  .placeOrderPlaceSection {
+    margin-left: 1px;
+    min-width: 100%;
     height: auto;
-    border-style: solid;
     border-width: 1px;
-    border-color: #ddd;
-    margin-top: -15.5rem;
     position: static;
+    margin-top: 2px;
+    margin-bottom: 20px;
+  }
 
-}
-.placeOrderPlaceContainer{
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: auto;
-}
-.placeOrderPlaceOrderTitle{
-    font-size: 13px;
-    line-height: 19px;
-    font-weight: 700;
-    color: #333;
-}
-.placeOrderPlaceItemsTextDiv{
-    margin-top: 0.25rem;
-}
-.placeOrderPlaceItemsText{
-    font-size: 12px;
-    color: #333;
-    float: left;
-}
-.placeOrderPlaceItemsPrice{
-    font-size: 12px;
-    color: #333;
-    text-align: right;
-}
-.placeOrderPlaceDeliveryTextDiv{
-    margin-top: 0.25rem;
-}
-.placeOrderPlaceDeliveryText{
-    font-size: 12px;
-    color: #333;
-    float: left;
-}
-.placeOrderPlaceDeliveryPrice{
-    font-size: 12px;
-    color: #333;
-    text-align: right;
-}
-.placeOrderPlaceTotalTextDiv{
-    margin-top: 0.25rem;
-}
-.placeOrderPlaceTotalText{
-    font-size: 12px;
-    color: #333;
-    float: left;
-}
-.placeOrderPlaceTotalPrice{
-    font-size: 12px;
-    color: #333;
-    text-align: right;
-}
-.placeOrderPlacePromotionTextDiv{
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-}
-.placeOrderPlacePromotionText{
-    font-size: 12px;
-    color: #333;
-    float: left;
-}
-.placeOrderPlacePromotionPrice{
-    font-size: 12px;
-    color: #333;
-    text-align: right;
-}
-.placeOrderPlaceOrderTotalDiv{
-    margin-top: 0.5rem;
-    margin-bottom: 0.25rem;
-}
-.placeOrderPlaceOrderTotal{
-    font-size: 17px;
-    line-height: 1.24;
-    font-family: Arial,sans-serif;
-    text-rendering: optimizeLegibility;
-    font-weight: 700;
-    color: #b12704;
-    float: left;
-}
-.placeOrderPlaceOrderTotalPrice{
-    font-size: 17px;
-    line-height: 1.24;
-    font-family: Arial,sans-serif;
-    text-rendering: optimizeLegibility;
-    font-weight: 700;
-    color: #b12704;
-    text-align: right;
-}
-.placeOrderPlaceSavingsTextDiv{
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-}
-.placeOrderPlaceSavingsText{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    color: #b12704;
-    float: left;
-}
-.placeOrderPlaceSavingPrice{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    color: #b12704;
-    padding-left: 0rem;
-}
-.liText{
-    color: #333;
-}
-.placeOrderPlacePrice{
-    text-align: right;
-}
-.placeOrderPlaceContinueBtnDiv{
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+  .placeOrderShippingSection {
     width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.placeOrderPlaceContinueBtn{
-    width: 90%;
-    height: 31px;
-    outline: 0;
-    color: #111;
-    text-align: center;
-    font-size: 13px;
-    line-height: 29px;
-    display: block;
-    font-family: Arial,sans-serif;
-    border-color: #cba957 #bf942a #aa8326;
-    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
-    border-radius: 3px;
-    text-align: center;
-    overflow: hidden;
-    max-width: 100%;
-    text-decoration: none;
-    outline: none;
-    border-width: 0.5px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-}
-.placeOrderShippingSection{
-    width: 70%;
-    height: auto;
-    min-height: 183px;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 1rem;
-    border-color: #ddd;
-    float: left;
-}
-.placeOrderShippingAddressContainer{
-    margin: 1rem;
-    float: left;
-    width: 29.3%;
-}
+  }
 
-.placeOrderShippingAddressTitle{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderShippingAddressTitleChange{
-    font-size: 11px;
-    line-height: 1.465;
-    font-weight: 400;
-    color: #007eb9;
-    cursor: pointer;
-}
-.placeOrderShippingAddressTitleChange:hover{
-    text-decoration: underline;
-}
-.placeOrderShippingAddressNameDiv{
-    margin-top: 0.5rem;
-}
-.placeOrderShippingAddressName{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderShippingAddressText{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderShippingAddressPlace{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderShippingAddressCity{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderShippingAddressCountry{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderShippingAddressMobile{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderPaymentMethodContainer{
-    margin: 1rem;
-    float: left;
-    width: 29.3%;
-}
-.placeOrderPaymentMethodTitle{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderPaymentMethodChange{
-    font-size: 11px;
-    line-height: 1.465;
-    font-weight: 400;
-    color: #007eb9;
-    cursor: pointer;
-}
-.placeOrderPaymentMethodChange:hover{
-    text-decoration: underline;
-}
-.placeOrderPaymentMethodDiv{
-    margin-top: 0.5rem;
-}
-.placeOrderPaymentMethod{
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderGiftVoucherContainer{
-    margin: 1rem;
-    float: left;
-    width: 29.3%;
-}
-.placeOrderGiftVoucherTitle{
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-}
-.placeOrderGiftVoucherDiv{
-    margin-top: 0.5rem;
-}
-.placeOrderGiftVoucherInput{
-    width: 157px;
-    height: 31px;
-    border-radius: 3px;
-    border-color: #ddd;
-    border-width: 1.5px;
-    border-style: solid;
-    outline: none;    
-}
-.placeOrderGiftVoucherInput:hover{
-    outline-style: solid;
-    outline-color: #ffa53f;
-    outline-width: 0.1px;
-}
-.placeOrderGiftVoucherBtn{
-    width: 53px;
-    height: 29px;
-    margin-left: 0.5rem;
-    font-size: 13px;
-    line-height: 19px;
-    color: #333;
-    font-family: "Amazon Ember",Arial,sans-serif;
-    border: 1px solid;
-    border-color: #bcc1c8 #bababa #adb2bb;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.placeOrderGiftVoucherBtn:hover{
-    background-color: #dddddd;
-}
-.placeOrderGiftVoucherCodeOutput{
-    color: #b12704;
-    font-size: 12px;
-    line-height: 15px;
-    margin-bottom: 0;
-    text-align: left;
-    padding-top: 0.5rem;
-}
-.paymentErrorDiv{
-    background-color: #ffe0e0;
+  .placeOrderContentContainer {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  .placeOrderContentProductTitle {
+    width: auto;
     height: auto;
+  }
 }
-.paymentErrorContent{
-    color: #a02020;
-    text-align: center;
-    margin-bottom: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-@media only screen and (max-width: 650px){
-    .placeOrderImageDiv img{
-        width: 100%;
-    }
-
-    .placeOrderPlaceSection {
-        margin-left: 1px;
-        min-width: 100%;
-        height: auto;
-        border-width: 1px;
-        position: static;
-        margin-top: 2px;
-        margin-bottom: 20px;
-    }
-
-    .placeOrderShippingSection {
-        width: 100%;
-    }
-
-    .placeOrderContentContainer {
-        width: 100%;
-    }
-
-    .placeOrderContentProductTitle {
-         width: auto; 
-         height: auto; 
-    }
-}
-.ProductCompleteBtn{
-    background-color: #FFA41C;
-    border-color: #FF8F00;
-    border-radius: 20px;
-    width: 100%;
-    margin-bottom: 1%;
-    height: 45px;
-    cursor: pointer;
-    margin-left: 2%;
-    margin-top: 1%;
+.ProductCompleteBtn {
+  background-color: #ffa41c;
+  border-color: #ff8f00;
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+  margin-bottom: 1%;
+  height: 45px;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-top: 1%;
 }

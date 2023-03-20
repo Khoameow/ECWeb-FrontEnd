@@ -1,221 +1,230 @@
-.productScreenSection{
-    height: auto;
+.productScreenSection {
+  height: auto;
+  margin-left: 10%;
 }
 .productScreenImageDiv {
-    width: 500px;
-    height: 400px;
-    float: left;
+  width: 500px;
+  height: 500px;
+  float: left;
+  position: relative;
+  bottom: 30px;
 }
 .productScreenContentDiv {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 }
 
 .productScreenImage {
-    width: 350px;
-    height: 300px;
-    margin: 5%;
+  width: 350px;
+  height: 450px;
+  margin: 0 0 5% 0;
 }
 
-.productScreenTitle{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 5rem;
-    margin-left: 5rem;
+.productScreenTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
-.productScreenRatingDiv{
-    margin-left: 5rem;
-    margin-top: 1rem;
+.productScreenRatingDiv {
+  margin-left: 5rem;
+  margin-top: 1rem;
 }
-.productScreenRatingDiv span{
-    color: #ffa53f;
-    margin: 0.1rem;
-    float: left;
+.productScreenRatingDiv span {
+  color: #ffa53f;
+  margin: 0.1rem;
+  float: left;
 }
 .productScreenReviewDiv {
-    padding-top: 0.3rem;
-    font-size: smaller;
-    color: #007185;
-    padding-left: 11.5rem;
-    min-height: 10px;
+  padding-top: 0.3rem;
+  font-size: smaller;
+  color: #007185;
+  padding-left: 11.5rem;
+  min-height: 10px;
 }
-.productScreenPriceDiv{
-    margin-left: 5rem;
-    margin-top: 1rem;
+.productScreenPriceDiv {
+  margin-left: 5rem;
+  margin-top: 1rem;
 }
-.productScreenPriceTitle{
-    color: #565959;
-    font-style: 14px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.productScreenPriceTitle {
+  color: #565959;
+  font-style: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.productScreenPriceValue{
-    font-size: 18px;
-    line-height: 24px;
-    color: #B12704;
+.productScreenPriceValue {
+  font-size: 18px;
+  line-height: 24px;
+  color: #b12704;
 }
-.productScreenInStockDiv{
-    margin-top: 1rem;
-    margin-left: 5rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #007600;
-    font-size: 18px;
-    line-height: 24px;
+.productScreenInStockDiv {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #007600;
+  font-size: 18px;
+  line-height: 24px;
 }
-.productScreenUnavailableText{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #B12704;
-    font-size: 18px;
-    line-height: 24px;
+.productScreenUnavailableText {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #b12704;
+  font-size: 18px;
+  line-height: 24px;
 }
-.btnQty{
-    width: 5rem;
-    height: 2rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: #e6e6e6;
-    margin-left: 5rem;
-    margin-top: 1rem;
+.btnQty {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #e6e6e6;
+  margin-left: 0;
+  margin-top: 1rem;
 }
-.btnText{
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.btnText {
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.selectBtnQty{
-    border: none;
-    outline: none;
-    background-color: #e6e6e6;
+.selectBtnQty {
+  border: none;
+  outline: none;
+  background-color: #e6e6e6;
 }
 .CartBuyButtonsDiv {
-    margin-left: 5rem;
-    margin-top: 2rem;
-    width: 100%;
-    margin-bottom: 1%;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  width: 100%;
+  margin-bottom: 1%;
 }
 .ProductCartBtn {
-    background-color: #ffd93c;
-    border-color: #FCD200;
-    border-width: 0.5px;
-    border-radius: 20px;
-    width: 232px;
-    height: 45px;
-    cursor: pointer;
-    margin-left: 2%;
-    margin-top: 1%;
+  background-color: #ffd93c;
+  border: none;
+  border-width: 0.5px;
+  border-radius: 20px;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  margin-left: 0;
+  margin-top: 1%;
 }
-.ProductCartBtn:hover{
-    background-color: #FCD200;
+.ProductCartBtn:hover {
+  background-color: #f2ca28;
+  font-weight: bold;
 }
-.ProductCartBtnText{
-    font-size: 14px;
-    font-weight: 600;
+.ProductCartBtnText {
+  font-size: 14px;
+  font-weight: 600;
 }
 .ProductBuyBtn {
-    background-color: #FFA41C;
-    border-color: #FF8F00;
-    border-radius: 20px;
-    width: 232px;
-    margin-bottom: 1%;
-    height: 45px;
-    cursor: pointer;
-    margin-left: 2%;
-    margin-top: 1%;
+  background-color: #ffa41c;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  margin-bottom: 1%;
+  height: 45px;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-top: 1%;
 }
-.ProductBuyBtn:hover{
-    background-color: #FF8F00;
+.ProductBuyBtn:hover {
+  background-color: #ff8f00;
 }
-.ProductBuyBtnText{
-    font-size: 14px;
-    font-weight: 600;
+.ProductBuyBtnText {
+  font-size: 14px;
+  font-weight: 600;
 }
-.productScreenBrandDiv{
-    margin-top: 0.5rem;
-    margin-left: 5rem;
+.productScreenBrandDiv {
+  margin-top: 0.5rem;
+  margin-left: 5rem;
 }
-.productScreenBrand{
-    color: #565959;
-    font-style: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.productScreenBrand {
+  color: #565959;
+  font-style: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .productScreenDescriptionDiv {
-    margin-left: 5rem;
-    width: 100%;
+  margin-left: 5rem;
+  width: 100%;
 }
-.productScreenDescription{
-    font-size: small;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.productScreenDescription {
+  font-size: small;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 
 @media only screen and (max-width: 650px) {
-    .ProductBuyBtn {
-        width: 100%;
-        height: 45px;
-    }
+  .ProductBuyBtn {
+    width: 100%;
+    height: 45px;
+  }
 
-    .productScreenImage {
-        width: 140px;
-        height: auto;
-        margin: 5%;
-    }
+  .productScreenImage {
+    width: 140px;
+    height: auto;
+    margin: 5%;
+  }
 
-    .productScreenDescriptionDiv {
-        margin-left: 3%;
-        width: 100%;
-    }
-    .productScreenTitle {
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-    .productScreenInStockDiv {
-        margin-left: 2%;
-    }
-    .productScreenPriceDiv {
-        margin-left: 2%;
-    }
-    .btnQty {
-        margin-left: 2%;
-    }
+  .productScreenDescriptionDiv {
+    margin-left: 3%;
+    width: 100%;
+  }
+  .productScreenTitle {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .productScreenInStockDiv {
+    margin-left: 2%;
+  }
+  .productScreenPriceDiv {
+    margin-left: 2%;
+  }
+  .btnQty {
+    margin-left: 2%;
+  }
 
-    .CartBuyButtonsDiv {
-        margin-left: 14%;
-    }
+  .CartBuyButtonsDiv {
+    margin-left: 14%;
+  }
 
-    .placeOrderShippingAddressContainer {
-        width: 36.3%;
-    }
+  .placeOrderShippingAddressContainer {
+    width: 36.3%;
+  }
 
-    .placeOrderPaymentMethodContainer {
-        width: 36.3%;
-    }
+  .placeOrderPaymentMethodContainer {
+    width: 36.3%;
+  }
 
-    .placeOrderContentImageDiv {
-        float: none;
-        width: 200px;
-        height: 150px;
-        margin-bottom: 24px;
-    }
-    .ProductCartBtn {
-       
-        width: 100%;
-    }
+  .placeOrderContentImageDiv {
+    float: none;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 24px;
+  }
+  .ProductCartBtn {
+    width: 100%;
+  }
 
-    .productScreenImageDiv {
-        width: 100%;
-        height: auto;
-        float: left;
-    }
+  .productScreenImageDiv {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
 }
 .placeOrderContentImage {
-    margin: 1rem;
-    height: 100px;
-    width: 140px;
+  margin: 1rem;
+  height: 100px;
+  width: 140px;
 }
 
-@media only screen and (max-width: 1100px ){
-@media only screen and (min-width: 650px ) {
+@media only screen and (max-width: 1100px) {
+  @media only screen and (min-width: 650px) {
     .productScreenImageDiv {
-        height: auto;
+      height: auto;
     }
-}
+  }
 }

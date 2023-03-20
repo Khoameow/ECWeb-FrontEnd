@@ -6,14 +6,9 @@ import dashProductImg from "../../../Images/products.png";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 
-
 function AdminPanel() {
-
-  
-
   return (
     <div className="adminPanelSectionContainer">
-      
       <section className="adminPanelOverviewSection">
         <div className="adminPanelOverviewContainer">
           <div className="adminPanelOverviewTitleDiv">
@@ -26,7 +21,7 @@ function AdminPanel() {
               </span>
               {">"}
               <span className="adminPanelOverviewSubAmazonDashboardTitle">
-              Mobile Shop Dashboard
+                MetaShop Dashboard
               </span>
             </p>
           </div>
@@ -125,7 +120,6 @@ function AdminPanel() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

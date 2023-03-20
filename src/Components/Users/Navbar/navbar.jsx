@@ -11,7 +11,10 @@ import { List, X } from "react-bootstrap-icons";
 import { Icon } from "@iconify/react";
 import axios from "axios";
 import { Scrollbars } from "react-custom-scrollbars";
-import { apiGetAllCategoryPath, apiGetAllProductPath } from "../../../path/Users/pathApi";
+import {
+  apiGetAllCategoryPath,
+  apiGetAllProductPath,
+} from "../../../path/Users/pathApi";
 
 function Home() {
   const navigate = useNavigate();
@@ -40,9 +43,8 @@ function Home() {
   };
 
   const get_products = async () => {
+    const { data } = await axios.get(apiGetAllProductPath);
 
-    const {data}  = await axios.get(apiGetAllProductPath);
-   
     setProducts(data);
   };
   console.log("datanav", products);
@@ -73,6 +75,7 @@ function Home() {
                 }}
               >
                 <img className="amazonNavLogo" src={Logo} alt="" />
+                <p class="logoName">MetaShop</p>
               </div>
             </div>
             <div className="locationRowHomeHeader">
@@ -96,12 +99,12 @@ function Home() {
                 >
                   {userInfo && shippingAddress.name
                     ? "Deliver to " + shippingAddress.name
-                    : "Hello"}
+                    : "こんにちは"}
                   <br />
                   <span className="navHighText">
                     {userInfo && shippingAddress.name
                       ? shippingAddress.city + " " + shippingAddress.pinCode
-                      : "Select your address"}
+                      : "住所を選択する"}
                   </span>
                 </p>
               </div>
@@ -120,38 +123,44 @@ function Home() {
                 </div>
               </div>
               {products && (
-              <div className="navSearchList">
-                {products
-                  .filter((product) => {
-                    if (search === "") {
-                      return false;
-                    // }else if(product.name.toLowerCase().includes(search) || product.category.toLowerCase().includes(search) || product.brand.toLowerCase().includes(search)){
-                    }else if(product.productName !=null){
-                      if (product.productName.toLowerCase().includes(search)){
-                        return product
+                <div className="navSearchList">
+                  {products
+                    .filter((product) => {
+                      if (search === "") {
+                        return false;
+                        // }else if(product.name.toLowerCase().includes(search) || product.category.toLowerCase().includes(search) || product.brand.toLowerCase().includes(search)){
+                      } else if (product.productName != null) {
+                        if (
+                          product.productName.toLowerCase().includes(search)
+                        ) {
+                          return product;
+                        }
                       }
-                    }
-                  })
-                  .map((product, key) => {
-                    return (
-                      <div key={key}>
-                        <p onClick={(e)=>{
-                          e.preventDefault()
-                          navigate(`/product/${product.department}`)
-                        }}>{product.name}</p>
-                      </div>
-                    );
-                  })}
-              </div>
-            )}
+                    })
+                    .map((product, key) => {
+                      return (
+                        <div key={key}>
+                          <p
+                            onClick={(e) => {
+                              e.preventDefault();
+                              navigate(`/product/${product.department}`);
+                            }}
+                          >
+                            {product.name}
+                          </p>
+                        </div>
+                      );
+                    })}
+                </div>
+              )}
             </div>
-           
+            <div className="navTranslateIcon"></div>
             <div className="navTextDivAccount">
               <a>
                 {" "}
                 <p className="navText">
-                  Hello, {userInfo ? userInfo.username : "Sign in"} <br />
-                  <span className="navHighText">Account & Lists </span>
+                  こんにちは, {userInfo ? userInfo.username : "ログイン"} <br />
+                  <span className="navHighText">アカウント & リスト </span>
                   <i class="fas fa-caret-down"></i>
                 </p>
               </a>
@@ -160,7 +169,7 @@ function Home() {
                   <div className="navSignOutDiv">
                     <br />
                     <div className="navSignOutContainer">
-                      <p className="navSignOutTitle">Your Account</p>
+                      <p className="navSignOutTitle">アカウント</p>
                       <p
                         className="navSignOutYourAccount"
                         onClick={(e) => {
@@ -168,7 +177,7 @@ function Home() {
                           navigate("/login&security");
                         }}
                       >
-                        Your Account
+                        あなたのアカウント
                       </p>
                       <p
                         className="navSignOutWishList"
@@ -177,7 +186,7 @@ function Home() {
                           navigate("/cart/:id");
                         }}
                       >
-                        Your Wish List
+                        あなたのリスト
                       </p>
                       <p
                         className="navSignOutOrders"
@@ -186,10 +195,10 @@ function Home() {
                           navigate("/orderhistory");
                         }}
                       >
-                        Your Orders
+                        ご注文
                       </p>
                       <p className="navSignOutSignOut" onClick={signOutHandler}>
-                        Sign Out
+                        サイアウト
                       </p>
                     </div>
                   </div>
@@ -203,7 +212,7 @@ function Home() {
                         navigate("/login");
                       }}
                     >
-                      Sign in
+                      ログイン
                     </button>
                   </div>
                 )}
@@ -212,8 +221,9 @@ function Home() {
             <div className="navTextDivOrders">
               <Link to={"/orderhistory"} style={{ textDecoration: "none" }}>
                 <p className="navText">
-                  Returns <br />
-                  <span className="navHighText">& Orders</span>
+                  返品もこちら
+                  <br />
+                  <span className="navHighText">& 注文履歴</span>
                 </p>
               </Link>
             </div>
@@ -223,7 +233,7 @@ function Home() {
                 <div className="navCartCountDiv">
                   <span className="navCartCountText">{cartItems.length}</span>
                 </div>
-                <p className="navHighText cartText">Cart</p>
+                <p className="navHighText cartText">カート</p>
               </Link>
             </div>
           </div>
@@ -243,7 +253,7 @@ function Home() {
                             />
                           </span>{" "}
                           <p className="sidebarHeaderText sidebarHeaderTextSpan">
-                            Hello, {userInfo ? userInfo.name : "Sign in"}
+                            こんにちは, {userInfo ? userInfo.name : "ログイン"}
                           </p>
                           <p className="navSidebarCloseIcon">
                             <X
@@ -273,7 +283,7 @@ function Home() {
                                   deactivate_sidebar();
                                 }}
                               >
-                                Best Sellers
+                                ベストセール
                               </p>
                             </div>
                             <div
@@ -290,7 +300,7 @@ function Home() {
                                   deactivate_sidebar();
                                 }}
                               >
-                                New Releases
+                                新しい商品
                               </p>
                             </div>
                             <div
@@ -307,7 +317,7 @@ function Home() {
                                   deactivate_sidebar();
                                 }}
                               >
-                                Movers and Shakers
+                                問い合わせ
                               </p>
                             </div>
                             <hr />
@@ -315,7 +325,7 @@ function Home() {
                           {departments && (
                             <div className="sidebarTrendingSection">
                               <p className="sidebarBodyTitle">
-                                Shop By Category
+                                カテゴリーから買う
                               </p>
                               {departments.map((department) => (
                                 <div
@@ -323,7 +333,9 @@ function Home() {
                                   className="sidebarBodyTextDiv"
                                   onClick={(e) => {
                                     e.preventDefault();
-                                    navigate(`/product/${department.categoryId}`);
+                                    navigate(
+                                      `/product/${department.categoryId}`
+                                    );
                                     deactivate_sidebar();
                                   }}
                                 >
@@ -331,7 +343,9 @@ function Home() {
                                     className="sidebarBodyText"
                                     onClick={(e) => {
                                       e.preventDefault();
-                                      navigate(`/product/${department.categoryId}`);
+                                      navigate(
+                                        `/product/${department.categoryId}`
+                                      );
                                       deactivate_sidebar();
                                     }}
                                   >
@@ -343,7 +357,7 @@ function Home() {
                             </div>
                           )}
                           <div className="sidebarTrendingSection">
-                            <p className="sidebarBodyTitle">Help & Settings</p>
+                            <p className="sidebarBodyTitle">ヘルプ & 設定</p>
                             <div
                               className="sidebarBodyTextDiv"
                               onClick={(e) => {
@@ -358,7 +372,7 @@ function Home() {
                                   navigate("/login&security");
                                 }}
                               >
-                                Your Account
+                                あなたのアカウント
                               </p>
                             </div>
                             <div className="sidebarBodyTextDiv">
@@ -371,7 +385,7 @@ function Home() {
                                     deactivate_sidebar();
                                   }}
                                 >
-                                  Sign Out
+                                  ログアウト
                                 </p>
                               ) : (
                                 <p
@@ -381,7 +395,7 @@ function Home() {
                                     navigate("/login");
                                   }}
                                 >
-                                  Sign In
+                                  ログイン
                                 </p>
                               )}
                             </div>
@@ -401,7 +415,10 @@ function Home() {
               {departments && (
                 <div>
                   {departments.map((department) => (
-                    <div key={department.categoryId} className="departmentRowHomeHeaderContentDiv">
+                    <div
+                      key={department.categoryId}
+                      className="departmentRowHomeHeaderContentDiv"
+                    >
                       <p
                         className="departmentRowHomeHeaderContentText"
                         onClick={(e) => {

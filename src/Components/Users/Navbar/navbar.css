@@ -1,439 +1,505 @@
-.navcontainer{
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-    margin-left: 15px;
+.navcontainer {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 15px;
 }
-.navbarContainer{
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
+.logoName {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  float: left;
+  left: 60px;
+  top: 23px;
 }
-.userHomeHeader{
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
+.navbarContainer {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
 }
+
+.userHomeHeader {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
 .logoRowHomeHeader {
-    min-height: 60px;
-    width: 100%;
-    position: static;
-    float: none;
-    display: flex;
-    background-color: #131921;
+  min-height: 60px;
+  width: 100%;
+  position: static;
+  float: none;
+  display: flex;
+  background-color: #131921;
 }
+
 .departmentRowHomeHeader {
-    min-height: 40px;
-    width: 100%;
-    position: static;
-    float: none;
-    display: flex;
-    background-color: #232f3e;
+  min-height: 40px;
+  width: 100%;
+  position: static;
+  float: none;
+  display: flex;
+  background-color: #232f3e;
 }
-.amazonNavLogoDiv{
-    width: 12%;
-    height: 60px;
+
+.amazonNavLogoDiv {
+  width: 10%;
+  height: 60px;
 }
+
 .amazonNavLogo {
-    width: 90px;
-    /* margin: 1.1rem; */
-    height: 60px;
-    position: absolute;
-    cursor: pointer;
+  width: 65px;
+  /* margin: 1.1rem; */
+  height: auto;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .navTextDivAccount {
-    width: auto;
-    height: 60px;
-    margin-top: 1%;
-    justify-content: space-between;
-    margin-left: 2%;
+  width: auto;
+  height: 60px;
+  margin-top: 1%;
+  justify-content: space-between;
+  margin-left: 2%;
 }
 
 .navTextDivOrders {
-    width: auto;
-    margin-top: 1%;
-    margin-left: 2%;
+  width: auto;
+  margin-top: 1%;
+  margin-left: 2%;
 }
-.navText{
-    color: #ccc;;
-    font-size: 12px;
-    line-height: 14px;
-    height: 14px;
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    cursor: pointer;
+
+.navText {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 14px;
+  height: 14px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
 }
-.navText:hover{
-    color: #ffa53f;
+
+.navText:hover {
+  color: #ffa53f;
 }
-.navHighText{
-    font-size: 14px;
-    line-height: 15px;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
+
+.navHighText {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
 }
-.navHighText:hover .navText{
-    color: #ffa53f;
+
+.navHighText:hover .navText {
+  color: #ffa53f;
 }
+
 .cartNavLogo {
-    height: 35px;
-    width: auto;
-    margin-top: 1%;
+  height: 35px;
+  width: auto;
+  margin-top: 1%;
 }
-.cartText{
-    margin-top: -5px;
-    margin-left: 42px;
-    color: white;
-}
-.cartNavLogo:hover .cartText{
-    color: #ffa53f;
-}
-.cartText:hover{
-    color: #ffa53f;
-}
-.navCartCountText{
-    font-size: larger;
-    font-weight: 700;
-    color: #ffa53f;
 
+.cartText {
+  margin-top: -5px;
+  margin-left: 42px;
+  color: white;
 }
-.navCartCountDiv{
-    margin-top: -40px;
-    margin-left: 22px;
+
+.cartNavLogo:hover .cartText {
+  color: #ffa53f;
 }
-a{
-    text-decoration: none;
+
+.cartText:hover {
+  color: #ffa53f;
 }
-.navSignInBtn{
-    display: block;
-    height: 33px;
-    cursor: pointer;
-    outline: 0;
-    border: 1px solid;
-    border-color: #c89411 #b0820f #99710d;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: inset 0 1px 0 0 #fcf3dc;
-    background: -webkit-linear-gradient(top,#f8e3ad,#EEBA37);
-    text-align: center;
-    line-height: 31px;
-    color: #111;
-    text-decoration: none;
-    line-height: 30px;
-    font-size: 13px;
-    width: 5rem;
-    margin-left: auto;
-    margin-right: auto;
+
+.navCartCountText {
+  font-size: larger;
+  font-weight: 700;
+  color: #ffa53f;
 }
-.dropdown-content{
-    position: absolute;
-    display: none;
+
+.navCartCountDiv {
+  margin-top: -40px;
+  margin-left: 22px;
 }
-.navTextDivAccount:hover .dropdown-content{
-    display: block;
+
+a {
+  text-decoration: none;
 }
-.navSignInDiv{
-    width: 8rem;
-    height: 4rem;
-    background-color: #fff;
-    margin-left: -0.5rem;
-    margin-top: 1rem;
-    z-index: 10000;
-    position: relative;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
-    overflow: visible;
-    border: 1px solid #bbb;
-    border-radius: 3px 3px 3px 3px;
+
+.navSignInBtn {
+  display: block;
+  height: 33px;
+  cursor: pointer;
+  outline: 0;
+  border: 1px solid;
+  border-color: #c89411 #b0820f #99710d;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: inset 0 1px 0 0 #fcf3dc;
+  background: -webkit-linear-gradient(top, #f8e3ad, #eeba37);
+  text-align: center;
+  line-height: 31px;
+  color: #111;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 13px;
+  width: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.navSignOutDiv{
-    width: auto;
-    height: auto;
-    overflow: visible;
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
-    background: #fff;
-    border: 1px solid #bbb;
-    margin-left: -1.5rem;
-    margin-top: 1rem;
-    overflow: auto;
-    border-radius: 3px 3px 3px 3px;
-    z-index: 10000;
-    position: relative;
+
+.dropdown-content {
+  position: absolute;
+  display: none;
 }
-.navSignOutContainer{
-    margin-left: 1rem;
-    margin-right: 2rem;
+
+.navTextDivAccount:hover .dropdown-content {
+  display: block;
 }
-.navSignOutTitle{
-    font-size: 16px;
-    font-weight: 700;
-    color: #0F1111;
+
+.navSignInDiv {
+  width: 8rem;
+  height: 4rem;
+  background-color: #fff;
+  margin-left: -0.5rem;
+  margin-top: 1rem;
+  z-index: 10000;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+  overflow: visible;
+  border: 1px solid #bbb;
+  border-radius: 3px 3px 3px 3px;
 }
-.navSignOutYourAccount{
-    font-size: 13px;
-    color: #444;
-    font-weight: 400;
-    white-space: normal;
-    line-height: 16px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+
+.navSignOutDiv {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+  background: #fff;
+  border: 1px solid #bbb;
+  margin-left: -1.5rem;
+  margin-top: 1rem;
+  overflow: auto;
+  border-radius: 3px 3px 3px 3px;
+  z-index: 10000;
+  position: relative;
 }
-.navSignOutYourAccount:hover{
-    text-decoration: underline;
-    color: #e47911;
+
+.navSignOutContainer {
+  margin-left: 1rem;
+  margin-right: 2rem;
 }
-.navSignOutWishList{
-    font-size: 13px;
-    color: #444;
-    font-weight: 400;
-    white-space: normal;
-    line-height: 16px;
-    cursor: pointer;
-    margin-top: 0.25rem;
-    margin-left: 0.5rem;
+
+.navSignOutTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f1111;
 }
-.navSignOutWishList:hover{
-    text-decoration: underline;
-    color: #e47911;
+
+.navSignOutYourAccount {
+  font-size: 13px;
+  color: #444;
+  font-weight: 400;
+  white-space: normal;
+  line-height: 16px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
-.navSignOutOrders{
-    font-size: 13px;
-    color: #444;
-    font-weight: 400;
-    white-space: normal;
-    line-height: 16px;
-    cursor: pointer;
-    margin-top: 0.25rem;
-    margin-left: 0.5rem;
+
+.navSignOutYourAccount:hover {
+  text-decoration: underline;
+  color: #e47911;
 }
-.navSignOutOrders:hover{
-    text-decoration: underline;
-    color: #e47911;
+
+.navSignOutWishList {
+  font-size: 13px;
+  color: #444;
+  font-weight: 400;
+  white-space: normal;
+  line-height: 16px;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
 }
-.navSignOutSignOut{
-    font-size: 13px;
-    color: #444;
-    font-weight: 400;
-    white-space: normal;
-    line-height: 16px;
-    cursor: pointer;
-    margin-top: 0.25rem;
-    margin-left: 0.5rem;
-    margin-bottom: 1rem;
+
+.navSignOutWishList:hover {
+  text-decoration: underline;
+  color: #e47911;
 }
-.navSignOutSignOut:hover{
-    text-decoration: underline;
-    color: #e47911;
+
+.navSignOutOrders {
+  font-size: 13px;
+  color: #444;
+  font-weight: 400;
+  white-space: normal;
+  line-height: 16px;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
 }
+
+.navSignOutOrders:hover {
+  text-decoration: underline;
+  color: #e47911;
+}
+
+.navSignOutSignOut {
+  font-size: 13px;
+  color: #444;
+  font-weight: 400;
+  white-space: normal;
+  line-height: 16px;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.navSignOutSignOut:hover {
+  text-decoration: underline;
+  color: #e47911;
+}
+
 .locationRowHomeHeader {
-    height: 60px;
-    float: none;
-    display: flex;
-    background-color: #131921;
-    width: auto;  
+  height: 60px;
+  float: none;
+  display: flex;
+  background-color: #131921;
+  width: auto;
+  margin-left: 30px;
 }
 
-.locationNavLogoDiv{
-    height: 60px;
+.locationNavLogoDiv {
+  height: 60px;
 }
-.locationNavLogo{
-    max-height: 20px;
-    margin-top: 1.5rem;
-    cursor: pointer;
+
+.locationNavLogo {
+  max-height: 20px;
+  margin-top: 1.5rem;
+  cursor: pointer;
 }
+
 .navShippingAddressDiv {
-    height: 60px;
-    margin-top: 15px;
-    margin-left: 5px;
-    justify-content: space-between;
-    width: auto;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 5px;
+  justify-content: space-between;
+  width: auto;
 }
 
 .navSearchBarDiv {
-    margin-left: 2%;
-    margin-top: 1%;
-    width: 50%;
-    height: 30px;
-}
-.navSearchBar {
-    height: 39px;
-    width: 47%;
-    outline: none;
-    border-right: none;
-    box-shadow: none;
-    border-bottom: none;
-    position: absolute;
-}
-.searchIconContainer {
-    background-color: #febd69;
-    width: 40px;
-    height: 37px;
-    float: right;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-left: none;
-    cursor: pointer;
-    margin-top: 2px;
-    position: relative;
-}
-.searchIconContainer:hover{
-    background-color: #f90;
-}
-.searchIconDiv{
-    margin-left: 8px;
-    margin-top: 8px;
-}
-.navSearchList {
-    width: 91%;
-    height: auto;
-    background-color: white;
-    position: relative;
-    z-index: 999;
-    margin-top: 37px;
-    margin-left: 1%;
-    border: 1px solid #ccc;
-}
-.navSearchList div{
-    margin: 1rem;
-}
-.navSearchList p{
-    font-weight: 700;
-    cursor: pointer;
+  margin-left: 40px;
+  margin-top: 1%;
+  width: 42%;
+  height: 30px;
 }
 
-.departmentRowHomeHeaderContainer{
-    margin-top: 0.5rem;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
+.navSearchBar {
+  height: 39px;
+  width: 40%;
+  outline: none;
+  border-right: none;
+  box-shadow: none;
+  border-bottom: none;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.searchIconContainer {
+  background-color: #ded9d6;
+  width: 40px;
+  height: 37px;
+  float: right;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 2px;
+  position: relative;
+}
+
+.searchIconContainer:hover {
+  background-color: rgb(196, 192, 190);
+}
+
+.searchIconDiv {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.navSearchList {
+  width: 91%;
+  height: auto;
+  background-color: white;
+  position: relative;
+  z-index: 999;
+  margin-top: 37px;
+  margin-left: 1%;
+  /* border: 1px solid #ccc; */
+}
+
+.navSearchList div {
+  margin: 1rem;
+}
+
+.navSearchList p {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.departmentRowHomeHeaderContainer {
+  margin-top: 0.5rem;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbarToggleIcon {
-    width: auto;
-    color: white;
-    font-weight: 900;
-    font-size: 1.5rem;
-    cursor: pointer;
-    float: left;
+  width: auto;
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: left;
 }
 
-.navSidebarCloseIcon{
-    margin-top: -3rem;
-    margin-left: 18rem;
-    width: 2rem;
-    cursor: pointer;
+.navSidebarCloseIcon {
+  margin-top: -3rem;
+  margin-left: 18rem;
+  width: 2rem;
+  cursor: pointer;
 }
-.departmentRowHomeHeaderContentText{
-    color: white;
-    font-size: 14px;
-    margin-top: 0.2rem;
-    float: left;
-    margin-left: 1rem;
-    cursor: pointer;
-}
-.departmentRowHomeHeaderContentText:hover{
-    border: 1px solid white;
+.departmentRowHomeHeaderContentText {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 0.2rem;
+  margin-right: 2px;
+  float: left;
+  margin-left: 2rem;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
 }
 
-
+.departmentRowHomeHeaderContentText:hover {
+  border: 1px solid white;
+}
+.navTextDivAccount {
+  margin-right: 15px;
+}
 /* Sidebar */
 
-p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.sidebarSection{
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(36, 41, 46, 0.9);
-    transition: 0.3s;
-    z-index: 999;
-}
-.sidebarContainer {
-    width: auto;
-    height: auto;
-    z-index: 1000;
-    display: flex;
-    position: fixed;
-    background-color: black;
-    overflow: auto;
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.sidebarHeader{
-    width: 100%;
-    height: 50px;
-    background-color: #232f3e;
-    position: absolute;
+.sidebarSection {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(36, 41, 46, 0.9);
+  transition: 0.3s;
+  z-index: 999;
 }
-.sidebarHeaderContainer{
-    margin-top: 0.5rem;
+
+.sidebarContainer {
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  background-color: black;
+  overflow: auto;
 }
-.sidebarHeaderText{
-    margin-left: 2rem;
+
+.sidebarHeader {
+  width: 100%;
+  height: 50px;
+  background-color: #232f3e;
+  position: absolute;
 }
-.sidebarHeaderTextSpan{
-    padding-top: 1rem;
-    margin-top: -3.3rem;
-    margin-left: 2.5rem;
-    font-weight: 700;
-    font-size: 19px;
-    color: white;
+
+.sidebarHeaderContainer {
+  margin-top: 0.5rem;
 }
-.sidebarBody{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    background-color: white;
-    padding-top: 4.5rem;
+
+.sidebarHeaderText {
+  margin-left: 2rem;
 }
-.sidebarBodyTitle{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #111;
-    margin-left: 2.5rem;
+
+.sidebarHeaderTextSpan {
+  padding-top: 1rem;
+  margin-top: -3.3rem;
+  margin-left: 2.5rem;
+  font-weight: 700;
+  font-size: 19px;
+  color: white;
 }
-.sidebarBodyTextDiv{
-    cursor: pointer;
-    height: 3rem;
+
+.sidebarBody {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background-color: white;
+  padding-top: 4.5rem;
 }
-.sidebarBodyTextDiv:hover{
-    background-color: #eaeded;
+
+.sidebarBodyTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #111;
+  margin-left: 2.5rem;
 }
-.sidebarBodyText{
-    color: #111;
-    font-size: 14px;
-    padding-top: 1rem;
-    margin-left: 2.5rem;
+
+.sidebarBodyTextDiv {
+  cursor: pointer;
+  height: 3rem;
+}
+
+.sidebarBodyTextDiv:hover {
+  background-color: #eaeded;
+}
+
+.sidebarBodyText {
+  color: #111;
+  font-size: 14px;
+  padding-top: 1rem;
+  margin-left: 2.5rem;
 }
 
 /**/
 
 .navTextDivCart {
-    width: auto;
-    margin-left: 1%;
-    margin-top: 1%;
+  width: auto;
+  margin-left: 2%;
+  margin-top: 1%;
 }
 
-@media only screen and (max-width: 650px){
-    .amazonNavLogo {
-        width: 50px;
-        height: 40px;
-        margin-top: 15px;
-    }
+@media only screen and (max-width: 650px) {
+  .amazonNavLogo {
+    width: 50px;
+    height: 40px;
+    margin-top: 15px;
+  }
 
-    .navSearchList {
-        width: 75%;
-    }
+  .navSearchList {
+    width: 75%;
+  }
 }
-
-
-
-
-
-

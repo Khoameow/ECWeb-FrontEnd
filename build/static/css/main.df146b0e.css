@@ -1,2 +1,4966 @@
-body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}*{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;margin:0;padding:0}button:focus{outline:0}input{padding-left:1rem}.navcontainer{margin:0 0 0 15px;padding:0;width:100%}.navbarContainer,.userHomeHeader{margin:0;padding:0;width:100%}.logoRowHomeHeader{background-color:#131921;height:60px}.departmentRowHomeHeader,.logoRowHomeHeader{display:flex;float:none;position:static;width:100%}.departmentRowHomeHeader{background-color:#232f3e;height:40px}.amazonNavLogoDiv{height:60px;width:12%}.amazonNavLogo{cursor:pointer;height:60px;position:absolute;width:96px}.navTextDivAccount{height:60px;justify-content:space-between;margin-left:2rem;margin-top:15px;width:9.4%}.navTextDivOrders{margin-top:15px;width:6.2%}.navTextDivCart{width:7.4%}.navText{color:#ccc;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:12px;font-weight:400;height:14px;line-height:14px}.navText:hover{color:#ffa53f}.navHighText{color:#fff;cursor:pointer;font-size:14px;font-weight:700;line-height:15px}.navHighText:hover .navText{color:#ffa53f}.cartNavLogo{height:35px;margin-top:12px;width:auto}.cartText{color:#fff;margin-left:42px;margin-top:-5px}.cartNavLogo:hover .cartText,.cartText:hover{color:#ffa53f}.navCartCountText{color:#ffa53f;font-size:larger;font-weight:700}.navCartCountDiv{margin-left:22px;margin-top:-40px}.navSignInBtn,a{text-decoration:none}.navSignInBtn{background:-webkit-linear-gradient(top,#f8e3ad,#eeba37);border-color:#c89411 #b0820f #99710d;border-radius:3px 3px 3px 3px;border-style:solid;border-width:1px;box-shadow:inset 0 1px 0 0 #fcf3dc;color:#111;cursor:pointer;display:block;font-size:13px;height:33px;line-height:31px;line-height:30px;margin-left:auto;margin-right:auto;outline:0;text-align:center;width:5rem}.navTextDivAccount:hover .dropdown-content{display:block}.navSignInDiv{background-color:#fff;height:4rem;margin-left:-.5rem;width:8rem}.navSignInDiv,.navSignOutDiv{border:1px solid #bbb;border-radius:3px 3px 3px 3px;box-shadow:0 2px 4px 0 rgba(0,0,0,.13);margin-top:1rem;overflow:visible;position:relative;z-index:10000}.navSignOutDiv{background:#fff;height:auto;margin-left:-1.5rem;overflow:auto;width:auto}.navSignOutContainer{margin-left:1rem;margin-right:2rem}.navSignOutTitle{color:#0f1111;font-size:16px;font-weight:700}.navSignOutYourAccount{color:#444;cursor:pointer;font-size:13px;font-weight:400;line-height:16px;margin-left:.5rem;margin-top:.5rem;white-space:normal}.navSignOutYourAccount:hover{color:#e47911;text-decoration:underline}.navSignOutWishList{color:#444;cursor:pointer;font-size:13px;font-weight:400;line-height:16px;margin-left:.5rem;margin-top:.25rem;white-space:normal}.navSignOutWishList:hover{color:#e47911;text-decoration:underline}.navSignOutOrders{color:#444;cursor:pointer;font-size:13px;font-weight:400;line-height:16px;margin-left:.5rem;margin-top:.25rem;white-space:normal}.navSignOutOrders:hover{color:#e47911;text-decoration:underline}.navSignOutSignOut{color:#444;cursor:pointer;font-size:13px;font-weight:400;line-height:16px;margin-bottom:1rem;margin-left:.5rem;margin-top:.25rem;white-space:normal}.navSignOutSignOut:hover{color:#e47911;text-decoration:underline}.locationRowHomeHeader{background-color:#131921;display:flex;float:none;height:60px;position:static;width:auto}.locationNavLogoDiv{height:60px}.locationNavLogo{cursor:pointer;margin-top:1.5rem;max-height:20px}.navShippingAddressDiv{height:60px;justify-content:space-between;margin-left:5px;margin-top:15px}.navSearchBarDiv{margin-left:2rem;margin-top:.65rem}.navSearchBar{border-bottom:none;border-right:none;box-shadow:none;height:39px;outline:none;width:600px}.searchIconContainer{background-color:#febd69;border-bottom-right-radius:8px;border-left:none;border-top-right-radius:8px;cursor:pointer;float:right;height:37px;margin-top:2px;width:40px}.searchIconContainer:hover{background-color:#f90}.searchIconDiv{margin-left:8px;margin-top:8px}.navSearchList{background-color:#fff;border:1px solid #ccc;height:auto;margin-left:342px;margin-top:49px;position:absolute;width:598px;z-index:999}.navSearchList div{margin:1rem}.navSearchList p{cursor:pointer;font-weight:700}.departmentRowHomeHeaderContainer{margin-left:auto;margin-right:auto;margin-top:.5rem;width:98%}.navbarToggleIcon{color:#fff;cursor:pointer;float:left;font-size:1.5rem;font-weight:900}.navSidebarCloseIcon{cursor:pointer;margin-left:18rem;margin-top:-3rem;width:2rem}.departmentRowHomeHeaderContentText{color:#fff;cursor:pointer;float:left;font-size:14px;margin-left:1rem;margin-top:.2rem}.departmentRowHomeHeaderContentText:hover{border:1px solid #fff}p{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.sidebarSection{background:rgba(36,41,46,.9);bottom:0;left:0;overflow:hidden;position:fixed;right:0;top:0;transition:.3s;z-index:999}.sidebarContainer{background-color:#000;display:flex;height:auto;overflow:auto;position:fixed;width:27%;z-index:1000}.sidebarHeader{background-color:#232f3e;height:50px;position:absolute;width:100%}.sidebarHeaderContainer{margin-top:.5rem}.sidebarHeaderText{margin-left:2rem}.sidebarHeaderTextSpan{color:#fff;font-size:19px;font-weight:700;margin-left:2.5rem;margin-top:-3.3rem;padding-top:1rem}.sidebarBody{background-color:#fff;height:auto;overflow:hidden;padding-top:4.5rem;scroll-behavior:smooth;width:100%}.sidebarBodyTitle{color:#111;font-size:18px;font-weight:700;line-height:24px;margin-left:2.5rem}.sidebarBodyTextDiv{cursor:pointer;height:3rem}.sidebarBodyTextDiv:hover{background-color:#eaeded}.sidebarBodyText{color:#111;font-size:14px;margin-left:2.5rem;padding-top:1rem}.departmentRootSection{background-color:#eaeded;width:100%}.departmentsSectionContainer{height:auto;overflow:auto}.departmentsDivContainer{height:auto;margin:auto;width:95.34%;z-index:100}.departmentBox{background-color:#fff;cursor:pointer;float:left;height:420px;margin:1rem;width:290px}.departmentTitleLink{color:#000;text-decoration:none}.departmentTitle{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;margin:1rem}.departmentImage{height:auto;margin-left:1rem;max-width:250px}.departmentShopLink{color:#15788b;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;margin:2rem;position:static}.departmentShopLink:hover{color:#5762cc}.loadingBoxContainer{margin-bottom:540px}.alert{background-color:#f8d7da;border:1px solid transparent;border-radius:1rem;color:#721c24;font-size:1rem;font-weight:400;height:3rem;line-height:1.5;margin:auto;padding-top:1.3rem;position:relative;text-align:center;width:95%}.BannerBackgroundImg{height:auto;margin-bottom:-150px;-webkit-mask-image:linear-gradient(180deg,#000,transparent);mask-image:linear-gradient(180deg,#000,transparent);width:100%}.rowPosterSection{background-color:#eaeded;height:350px;min-height:350px;width:100%}.rowPosterContainer{display:flex;height:auto;justify-content:center;margin:auto;width:95.34%}.divRow{background-color:#fff;float:left;height:280px;margin:1rem;width:98%}.posters{display:flex;overflow-x:scroll;overflow-y:hidden;padding:20px}.posters::-webkit-scrollbar{display:none}.poster{cursor:pointer;margin-right:10px;max-height:250px}.poster:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}.footerSection{background-color:#131a22;bottom:0;clear:both;height:100px;position:relative;width:100%}.footerLogo{display:block;height:40px;width:auto}.footerContentText,.footerLogo{margin-left:auto;margin-right:auto;padding-top:10px}.footerContentText{color:#fff;font-size:small;text-align:center}.footerBtn{background-color:#232f3e;border:1px solid #131a22;color:#fff;cursor:pointer;font-size:13px;height:49px;line-height:19px;position:relative;width:100%}.footerBtn:hover{background-color:#37475a}.footerBtn:focus{outline-color:#37475a;outline-style:solid;outline-width:1px}.productsSectionContainer{height:auto;min-height:600px;width:100%}.productsContainer{height:auto;margin:auto;width:95.34%}.productBox{background-color:#fff;cursor:pointer;float:left;height:500px;margin:1rem 1rem 5rem;width:290px}.productsImageDiv{margin:1rem}.productsImage{height:auto;max-width:250px}.productsTitleDiv{margin-left:2rem;margin-top:1rem}.productsTitleLink{color:#000}.productsTitle{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:18px;font-weight:400}.productsTitle:hover{color:#ffa53f}.productsRatingDiv{margin-left:2rem;margin-top:1rem}.productsPriceDiv{margin-left:2rem}.productsPrice{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.productsRatingDiv span{color:#ffa53f;float:left;margin:.1rem}.productsPriceDollar{font-size:smaller}.productsPriceText{font-size:large}.productsReviewDiv{color:#007185;font-size:smaller;padding-top:.3rem}.productScreenSection{height:auto;min-height:600px}.productScreenImageDiv{float:left;height:600px;width:40%}.productScreenContentDiv{float:left;height:600px;width:60%}.productScreenImage{height:auto;margin:5rem;max-width:100%}.productScreenTitle{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:24px;font-weight:400;margin-left:5rem;margin-top:5rem}.productScreenRatingDiv{margin-left:5rem;margin-top:1rem}.productScreenRatingDiv span{color:#ffa53f;float:left;margin:.1rem}.productScreenReviewDiv{color:#007185;font-size:smaller;padding-left:11.5rem;padding-top:.3rem}.productScreenPriceDiv{margin-left:5rem;margin-top:1rem}.productScreenPriceTitle{color:#565959;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-style:14px}.productScreenPriceValue{color:#b12704;font-size:18px;line-height:24px}.productScreenInStockDiv{color:#007600;margin-left:5rem;margin-top:1rem}.productScreenInStockDiv,.productScreenUnavailableText{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:18px;line-height:24px}.productScreenUnavailableText{color:#b12704}.btnQty{background-color:#e6e6e6;border:none;border-radius:.5rem;height:2rem;margin-left:5rem;margin-top:1rem;width:5rem}.btnText{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:15px}.selectBtnQty{background-color:#e6e6e6;border:none;outline:none}.CartBuyButtonsDiv{margin-left:5rem;margin-top:2rem}.ProductCartBtn{background-color:#ffd93c;border-color:#fcd200;border-radius:20px;border-width:.5px;cursor:pointer;height:45px;width:232px}.ProductCartBtn:hover{background-color:#fcd200}.ProductCartBtnText{font-size:14px;font-weight:600}.ProductBuyBtn{background-color:#ffa41c;border-color:#ff8f00;border-radius:20px;border-width:.5px;cursor:pointer;height:45px;margin-left:2rem;width:232px}.ProductBuyBtn:hover{background-color:#ff8f00}.ProductBuyBtnText{font-size:14px;font-weight:600}.productScreenBrandDiv{margin-left:5rem;margin-top:.5rem}.productScreenBrand{color:#565959;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-style:18px}.productScreenDescriptionDiv{margin-left:5rem}.productScreenDescription{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:small}.cartSection{background-color:#eaeded;height:auto;min-height:550px;overflow:auto;padding-top:1rem;width:100%}.cartContainer{margin:auto}.cartBoxContainer{background-color:#fff;float:left;margin-bottom:2rem;margin-left:1rem}.cartBox,.cartBoxContainer{height:auto;width:1000px}.checkoutBox{background-color:#fff;height:175px;margin-left:65rem;margin-top:1rem;text-align:center;width:300px}.shoppingCartText{font-size:28px;font-weight:400;line-height:36px;margin-left:1rem;margin-top:1rem}.CartBoxPriceTitleText{color:#565959;font-size:14px;line-height:20px;margin-left:950px}.cartTitleHr{background-color:#ddd;margin-left:1rem;margin-right:1rem}.cartImageDiv{float:left;height:200px;margin:0;width:200px}.cartImage{max-height:200px;max-width:200px}.cartContentBox{margin-left:220px;width:600px}.cartProductTitleDiv{margin-top:1rem;width:600px}.cartProductTitle{font-size:20px;font-weight:400}.cartStockDiv{color:#007600;font-size:12px;line-height:16px;margin-top:1rem}.cartQtyBtnDiv{float:left;width:6rem}.cartBtnQty{border-radius:.5rem;cursor:pointer;height:2rem;margin-top:2rem;width:5rem}.cartBtnQty,.cartSelectBtnQty{background-color:#e6e6e6;border:none}.cartSelectBtnQty{outline:none}.cartBtnText{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:15px}.cartDeleteDiv{margin-top:40px}.cartDeleteTextMark{color:#a9a9a9;font-size:12px;line-height:16px}.cartDeleteText{color:#047188;cursor:pointer;font-size:12px;line-height:16px;padding-left:1rem}.cartDeleteText:hover{text-decoration:underline}.cartProductPriceDiv{height:50px;margin-left:850px;margin-top:-9rem;text-align:right;width:140px}.cartProductPrice{font-family:sans-serif;font-size:18px;font-weight:700;line-height:24px}.subTotalCartDiv{height:60px;text-align:right;width:100%}.cartBottomHr{background-color:#ddd;margin-left:1rem;margin-right:1rem;margin-top:10rem}.subTotalCartText{margin-right:1rem;margin-top:1rem}.cartSubTotalPrice,.cartSubTotalText{font-size:18px;line-height:24px}.cartSubTotalPrice{font-family:sans-serif;font-weight:700}.subTotalText{padding-top:2rem}.checkOutSubTotalPrice,.checkOutSubTotalText{font-size:18px;line-height:24px}.checkOutSubTotalPrice{font-family:sans-serif;font-weight:700}.checkOutBtn{background-color:#ffd93c;border-color:#fcd200;border-radius:10px;border-width:.5px;cursor:pointer;height:30px;margin-top:2rem;width:258px}.checkOutBtn:hover{background-color:#fcd200}.emptyCartDiv{background-color:#fff;height:150px;width:60%}.emptyCart,.emptyCartDiv{margin-left:auto;margin-right:auto}.emptyCart{height:100%;width:90%}.emptyCartContentText{color:#0f1111;font-size:28px;font-weight:400;line-height:36px;padding-top:1rem}.emptyCartShoppingLink{padding-top:3rem;text-align:end}.goShoppingLink{color:#15788b}.goShoppingLink:hover{color:#c7511f;text-decoration:underline}.logo-login{cursor:pointer;height:auto;width:10rem}.login-box{border:1px solid #e8e8e8;color:#333;margin:auto;padding:10px;width:30%}#login-btn{background-color:#f0c14b;margin-left:10%;margin-top:3rem}#create-btn,#login-btn{border:none;border-radius:5px;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;height:2rem;width:20rem}#create-btn{background-color:#e7e9ec;margin-left:3rem;margin-top:2rem}#login-btn:hover{background-color:#eebb3b}#create-btn:hover{background-color:#f0c14b}.signin-text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:xx-large;font-weight:500;margin-bottom:2rem;margin-left:10%}.email-input{margin-bottom:1rem}.email-input,.password-input{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:28px;margin-left:10%;margin-top:.3rem;outline-color:#f69b3c;outline-width:thin;width:20rem}.privacy-text{padding-top:3rem}.new-to-amazon-text{font-size:small;margin-left:1rem;padding-top:1rem;text-align:center}.loginErrorContent{color:#a02020;margin-bottom:1rem;padding-bottom:.5rem;padding-top:.5rem;text-align:center}.loginErrorDiv{background-color:#ffe0e0;height:auto;margin-left:10%;width:20rem}.container-signup{color:#333}.logo-container{margin:auto;width:11%}.logo-signup{cursor:pointer;height:auto;width:10rem}.signup-box{border:1px solid #e8e8e8;margin:auto;padding:10px;width:30%}#signup-btn{background-color:#f0c14b;border:none;border-radius:5px;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;height:2rem;margin-left:10%;margin-top:2rem;width:20rem}#signup-btn:hover{background-color:#eebb3b}.create-account-text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:xx-large;font-weight:500;margin-bottom:1rem;margin-left:10%}.name-label{font-weight:700;line-height:19px}.input,.name-label{font-size:13px;margin-left:10%}.input{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;height:31px;margin-bottom:1rem;margin-top:.3rem;outline-color:#f69b3c;outline-width:thin;width:20rem}.email-label,.password-label{font-size:13px;font-weight:700;line-height:19px;margin-left:10%;padding-top:1rem}.privacy-text{font-size:small;margin-left:10%;padding-top:2rem}.signin{cursor:pointer;font-size:small;margin-left:25%}.signin:hover{color:#15788b}.signupErrorContent{color:#a02020;margin-bottom:1rem;padding-bottom:.5rem;padding-top:.5rem;text-align:center}.signupErrorDiv{background-color:#ffe0e0;height:auto;margin-left:10%;width:20rem}.addressContainer{color:#333;height:auto;margin:1rem auto 5rem;width:85%}.newAddressDiv{float:left;height:auto;width:50%}.addressTitleTextDiv{margin-bottom:1rem;margin-top:2.5rem}.SelectDeliveryAddressText{text-rendering:optimizeLegibility;color:#333;font-family:Arial,sans-serif;font-size:28px;font-weight:400;line-height:1.2}.newAddressFormContainer{width:95%}.addNewAddressText{font-size:21px;font-weight:700;line-height:1.3}.formDivTop{margin-top:2rem}.formDiv{margin-top:1rem}.newAddressLabel{font-size:13px;font-weight:700;line-height:19px}.selectCountry{background-color:transparent;background-color:#f1f2f4;border-color:#bcc1c8 #bababa #adb2bb;border-style:solid;border-width:1px;color:#111;display:block;display:inline-block;line-height:29px;outline:0;white-space:nowrap}.inputSpace,.selectCountry{border-radius:3px;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.3rem;width:94%}.inputSpace{border:1px solid #d0d0d0;border-top-color:#bbb}.inputCity,.inputSpace{outline-color:#f69b3c;outline-width:thin}.inputCity{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.3rem;width:260px}.inputCityDiv{float:left}.selectStateDiv{margin-left:282px;margin-top:1rem}.selectState{background-color:transparent;background-color:#f1f2f4;border-color:#bcc1c8 #bababa #adb2bb;border-radius:3px;border-style:solid;border-width:1px;color:#111;display:block;display:inline-block;font-family:Arial,sans-serif;font-size:13px;height:31px;line-height:29px;margin-top:.3rem;outline:0;white-space:nowrap;width:260px}.labelDefaultAddress{margin-left:1rem}.selectAddressType{background-color:transparent;background-color:#f1f2f4;border-color:#bcc1c8 #bababa #adb2bb;border-radius:3px;border-style:solid;border-width:1px;color:#111;display:block;display:inline-block;font-family:Arial,sans-serif;font-size:13px;height:31px;line-height:29px;margin-top:.3rem;outline:0;white-space:nowrap;width:94%}.deliveryInstructionDiv{margin-top:2rem}.deliveryInstructionText{text-rendering:optimizeLegibility;font-family:Arial,sans-serif;font-size:17px;font-weight:700;line-height:1.24}.deliveryInstructionContentDiv{margin-top:1rem}.deliveryInstructionContentText{font-size:13px;line-height:19px}.useAddressBtnDiv{margin-top:2rem}.useAddressBtn{background-color:transparent;background-color:#f0c24f;border:1px solid #bf942b;border-radius:3px;color:#111;cursor:pointer;display:block;font-family:Arial,sans-serif;font-size:13px;height:31px;line-height:29px;outline:#f69b3c;text-align:center;white-space:nowrap;width:120px}.newAddressLocationDiv{margin-left:50%;width:50%}.newAddressFormContainerRight{margin-top:2rem;padding-top:43px}.existingShippingAddressSection{margin-top:1rem}.existingShippingAddressName{color:#333;font-size:16px;font-weight:700;line-height:22px}.existingShippingAddress,.existingShippingAddressAddress,.existingShippingAddressCountry,.existingShippingAddressPlace{color:#333;font-size:13px;line-height:19px;margin-top:.25rem}.existingShippingAddInstructions{color:#007eb9;cursor:pointer;font-size:13px;line-height:19px;margin-top:.25rem}.existingShippingAddInstructions:hover{color:#e47911;text-decoration:underline}.existingShippingBtn{background-color:transparent;background-color:#f0c24f;border:1px solid #bf942b;border-radius:3px;color:#111;cursor:pointer;display:block;font-family:Arial,sans-serif;font-size:13px;height:31px;line-height:29px;margin-bottom:2rem;margin-top:1rem;outline:#f69b3c;text-align:center;white-space:nowrap;width:230px}.paymentSection{height:auto;margin-left:auto;margin-right:auto;margin-top:1rem;min-height:530px;width:85%}.paymentTitleDiv{margin-bottom:1rem;margin-top:2.5rem}.paymentTitle{text-rendering:optimizeLegibility;color:#333;font-family:Arial,sans-serif;font-size:28px;font-weight:400;line-height:1.2}.paymentContentContainer{border:1px solid #ddd;float:left;height:auto;margin-bottom:2rem;min-height:150px;width:70%}.paymentContentContainerDivSection{margin-top:-5rem}.paymentContentImageDiv{float:left}.paymentContentImage{margin:1rem;max-height:100px}.paymentContentContainerDiv{margin-bottom:1rem;margin-left:1rem;margin-top:1rem;width:40%}.paymentContentProductTitleDiv{padding-top:2rem}.paymentContentProductTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.paymentContentProductPriceDiv{margin-top:.2rem}.paymentContentProductPrice{color:#b12d2a;font-size:13px;font-weight:700;line-height:19px}.paymentContentProductQtyDiv{margin-top:.2rem}.paymentContentProductQtyTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.paymentContentProductQty{font-weight:400}.paymentContentProductQtyChange{color:#007eb9;cursor:pointer;font-weight:400}.paymentContentProductQtyChange:hover{text-decoration:underline}.paymentMethodContainerDiv{margin-left:70%;margin-top:2rem}.paymentMethodTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.paymentMethodContentDiv{color:#3f9a0e;font-size:13px;line-height:19px}.paymentPlaceSection{border:1px solid #ddd;float:left;height:auto;margin-left:1rem;width:25%}.paymentPlaceContainer{height:auto;margin-left:auto;margin-right:auto;margin-top:2rem;width:80%}.paymentPlaceOrderTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.paymentPlaceItemsTextDiv{margin-top:.25rem}.paymentPlaceItemsText{color:#333;float:left;font-size:12px}.paymentPlaceItemsPrice{color:#333;font-size:12px;text-align:right}.paymentPlaceDeliveryTextDiv{margin-top:.25rem}.paymentPlaceDeliveryText{color:#333;float:left;font-size:12px}.paymentPlaceDeliveryPrice{color:#333;font-size:12px;text-align:right}.paymentPlaceTotalTextDiv{margin-top:.25rem}.paymentPlaceTotalText{color:#333;float:left;font-size:12px}.paymentPlaceTotalPrice{color:#333;font-size:12px;text-align:right}.paymentPlacePromotionTextDiv{margin-bottom:.25rem;margin-top:.25rem}.paymentPlacePromotionText{color:#333;float:left;font-size:12px}.paymentPlacePromotionPrice{color:#333;font-size:12px;text-align:right}.paymentPlaceOrderTotalDiv{margin-bottom:.25rem;margin-top:.5rem}.paymentPlaceOrderTotal{float:left}.paymentPlaceOrderTotal,.paymentPlaceOrderTotalPrice{text-rendering:optimizeLegibility;color:#b12704;font-family:Arial,sans-serif;font-size:17px;font-weight:700;line-height:1.24}.paymentPlaceOrderTotalPrice{text-align:right}.paymentPlaceSavingsTextDiv{margin-bottom:1rem;margin-top:.25rem}.paymentPlaceSavingsText{float:left}.paymentPlaceSavingPrice,.paymentPlaceSavingsText{color:#b12704;font-size:13px;font-weight:700;line-height:19px}.paymentPlaceSavingPrice{padding-left:6rem}.paymentPlacePrice{text-align:right}.paymentPlaceContinueBtnDiv{height:auto;margin:2rem auto;width:100%}.paymentPlaceContinueBtn{background:-webkit-linear-gradient(top,#f7dfa5,#f0c14b);border-color:#cba957 #bf942a #aa8326;border-radius:3px;border-width:.5px;color:#111;cursor:pointer;display:block;font-family:Arial,sans-serif;font-size:13px;height:31px;line-height:29px;margin-left:auto;margin-right:auto;max-width:100%;outline:0;outline:none;overflow:hidden;text-align:center;text-decoration:none;width:90%}.ErrorDiv{background-color:#ffe0e0;height:auto;margin-left:auto;width:auto}.ErrorContent{color:#a02020;margin-bottom:1rem;padding-bottom:.5rem;padding-top:.5rem;text-align:center}.placeOrderSection{height:auto;margin-left:auto;margin-right:auto;margin-top:1rem;min-height:530px;width:85%}.placeOrderTitleDiv{margin-bottom:1rem;margin-top:2.5rem}.placeOrderTitle{text-rendering:optimizeLegibility;color:#333;font-family:Arial,sans-serif;font-size:28px;font-weight:400;line-height:1.2}.placeOrderIdTitleDiv{margin-bottom:.5rem}.placeOrderIdTitle{color:#333}.placeOrderContentContainer{border:1px solid #ddd;float:left;height:auto;margin-bottom:2rem;margin-top:0;min-height:150px;width:70%}.placeOrderContentContainerDivSection{margin-top:0}.placeOrderContentImageDiv{float:left}.placeOrderContentImage{margin:1rem;max-height:100px}.placeOrderContentContainerDiv{margin-bottom:1rem;margin-left:1rem;width:40%}.placeOrderContentProductTitleDiv{padding-top:2rem}.placeOrderContentProductTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.placeOrderContentProductPriceDiv{margin-top:.2rem}.placeOrderContentProductPrice{color:#b12d2a;font-size:13px;font-weight:700;line-height:19px}.placeOrderContentProductQtyDiv{margin-top:.2rem}.placeOrderContentProductQtyTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.placeOrderContentProductQty{font-weight:400}.placeOrderContentProductQtyChange{color:#007eb9;cursor:pointer;font-weight:400}.placeOrderContentProductQtyChange:hover{text-decoration:underline}.ulSection{color:#aaa;font-size:13px;line-height:19px;list-style-type:disc;margin-left:2rem}.placeOrderPlaceSection{border:1px solid #ddd;float:left;height:auto;margin-left:1rem;margin-top:-12.5rem;position:static;width:25%}.placeOrderPlaceContainer{height:auto;margin-left:auto;margin-right:auto;margin-top:2rem;width:80%}.placeOrderPlaceOrderTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.placeOrderPlaceItemsTextDiv{margin-top:.25rem}.placeOrderPlaceItemsText{color:#333;float:left;font-size:12px}.placeOrderPlaceItemsPrice{color:#333;font-size:12px;text-align:right}.placeOrderPlaceDeliveryTextDiv{margin-top:.25rem}.placeOrderPlaceDeliveryText{color:#333;float:left;font-size:12px}.placeOrderPlaceDeliveryPrice{color:#333;font-size:12px;text-align:right}.placeOrderPlaceTotalTextDiv{margin-top:.25rem}.placeOrderPlaceTotalText{color:#333;float:left;font-size:12px}.placeOrderPlaceTotalPrice{color:#333;font-size:12px;text-align:right}.placeOrderPlacePromotionTextDiv{margin-bottom:.25rem;margin-top:.25rem}.placeOrderPlacePromotionText{color:#333;float:left;font-size:12px}.placeOrderPlacePromotionPrice{color:#333;font-size:12px;text-align:right}.placeOrderPlaceOrderTotalDiv{margin-bottom:.25rem;margin-top:.5rem}.placeOrderPlaceOrderTotal{float:left}.placeOrderPlaceOrderTotal,.placeOrderPlaceOrderTotalPrice{text-rendering:optimizeLegibility;color:#b12704;font-family:Arial,sans-serif;font-size:17px;font-weight:700;line-height:1.24}.placeOrderPlaceOrderTotalPrice{text-align:right}.placeOrderPlaceSavingsTextDiv{margin-bottom:1rem;margin-top:.25rem}.placeOrderPlaceSavingsText{float:left}.placeOrderPlaceSavingPrice,.placeOrderPlaceSavingsText{color:#b12704;font-size:13px;font-weight:700;line-height:19px}.placeOrderPlaceSavingPrice{padding-left:6rem}.liText{color:#333}.placeOrderPlacePrice{text-align:right}.placeOrderPlaceContinueBtnDiv{height:auto;margin:2rem auto;width:100%}.placeOrderPlaceContinueBtn{background:-webkit-linear-gradient(top,#f7dfa5,#f0c14b);border-color:#cba957 #bf942a #aa8326;border-radius:3px;border-width:.5px;color:#111;cursor:pointer;display:block;font-family:Arial,sans-serif;font-size:13px;height:31px;line-height:29px;margin-left:auto;margin-right:auto;max-width:100%;outline:0;outline:none;overflow:hidden;text-align:center;text-decoration:none;width:90%}.placeOrderShippingSection{border:1px solid #ddd;float:left;height:auto;margin-bottom:1rem;min-height:183px;width:70%}.placeOrderShippingAddressContainer{float:left;margin:1rem;width:29.3%}.placeOrderShippingAddressTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.placeOrderShippingAddressTitleChange{color:#007eb9;cursor:pointer;font-size:11px;font-weight:400;line-height:1.465}.placeOrderShippingAddressTitleChange:hover{text-decoration:underline}.placeOrderShippingAddressNameDiv{margin-top:.5rem}.placeOrderShippingAddressCity,.placeOrderShippingAddressCountry,.placeOrderShippingAddressMobile,.placeOrderShippingAddressName,.placeOrderShippingAddressPlace,.placeOrderShippingAddressText{color:#333;font-size:13px;line-height:19px}.placeOrderPaymentMethodContainer{float:left;margin:1rem;width:29.3%}.placeOrderPaymentMethodTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.placeOrderPaymentMethodChange{color:#007eb9;cursor:pointer;font-size:11px;font-weight:400;line-height:1.465}.placeOrderPaymentMethodChange:hover{text-decoration:underline}.placeOrderPaymentMethodDiv{margin-top:.5rem}.placeOrderPaymentMethod{color:#333;font-size:13px;line-height:19px}.placeOrderGiftVoucherContainer{float:left;margin:1rem;width:29.3%}.placeOrderGiftVoucherTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.placeOrderGiftVoucherDiv{margin-top:.5rem}.placeOrderGiftVoucherInput{border:1.5px solid #ddd;border-radius:3px;height:31px;outline:none;width:157px}.placeOrderGiftVoucherInput:hover{outline-color:#ffa53f;outline-style:solid;outline-width:.1px}.placeOrderGiftVoucherBtn{border-color:#bcc1c8 #bababa #adb2bb;border-radius:3px;border-style:solid;border-width:1px;color:#333;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:13px;height:29px;line-height:19px;margin-left:.5rem;overflow:hidden;text-align:center;width:53px}.placeOrderGiftVoucherBtn:hover{background-color:#ddd}.placeOrderGiftVoucherCodeOutput{color:#b12704;font-size:12px;line-height:15px;margin-bottom:0;padding-top:.5rem;text-align:left}.paymentErrorDiv{background-color:#ffe0e0;height:auto;margin-left:auto;margin-right:auto;width:100%}.paymentErrorContent{color:#a02020;margin-bottom:1rem;padding-bottom:.5rem;padding-top:.5rem;text-align:center}.orderSection{height:auto;min-height:550px;width:100%}.orderSectionContainer{background-color:#f0f2f2;margin-left:auto;margin-right:auto;margin-top:1rem}.orderSectionContainer,.orderSectionContainerDiv{border-radius:8px;height:auto;overflow:auto;width:95%}.orderSectionContainerDiv{background-color:#fff;border:1px solid #d5d9d9;margin:1rem auto 2rem}.orderContainerSection{border-radius:8px;height:auto;margin-bottom:1rem;margin-left:auto;margin-right:auto;width:95%}.orderPlaceTitle{color:#067d62;font-family:Amazon Ember,Arial,sans-serif;font-size:18px;font-weight:700;line-height:24px;margin-left:2rem}.orderPlaceIcon{float:left;height:auto;width:24px}.orderPlaceConformationDiv{margin-top:1rem}.orderPlaceConformationText{color:#0f1111;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.orderPlaceShippingDiv{margin-top:1rem}.orderPlaceShipping{color:#0f1111;font-size:14px;font-weight:700;line-height:20px}.orderPlaceHr{color:#d5d9d9}.orderProductContainer{margin-top:1rem}.orderPlaceDeliveryDate{color:#007600;font-weight:700}.orderPlaceDeliveryDate,.orderPlaceDeliveryText{font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.orderPlaceDeliveryText{color:#0f1111}.orderPlaceReviewDiv{margin-top:2rem}.orderPlaceReview{color:#007185;cursor:pointer;font-size:14px;line-height:20px}.orderPlaceReview:hover{color:#c7511f;text-decoration:underline}.orderPlacePaidAtDiv{margin-bottom:1rem}.orderPlacePaidAt{color:#007600;font-size:14px;line-height:20px}.orderPlacePaidAtText{color:#0f1111;font-size:14px;line-height:20px}.orderPlaceProductImageDiv{float:left;margin-left:2rem}.orderPlaceProductImage{height:auto;margin-top:-1rem;max-height:150px;max-width:100px}.orderPlaceProductSectionContainer{float:left;width:15%}.orderProductContainer{height:auto;width:100%}.orderProductContainerAllContentDiv{height:150px;width:100%}.orderPlaceProductSection{width:70%}.orderPlaceProductContentDiv{margin-left:22rem}.orderPlaceProductTitle{color:#333;font-size:13px;font-weight:700;line-height:19px}.orderPlaceReturnDiv{margin:1rem}.orderPlaceReturn{color:#007185;cursor:pointer;font-size:14px;line-height:20px}.orderPlaceReturn:hover{color:#c7511f;text-decoration:underline}.orderHistorySection{height:auto;min-height:550px;overflow:auto;width:100%}.orderHistoryContainer{height:auto;margin-left:auto;margin-right:auto;margin-top:.5rem;width:80%}.orderHistoryAccountText{color:#555}.orderHistoryAccountText,.orderHistoryYourAccountText{cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.orderHistoryYourAccountText{color:#007185;padding-right:.5rem}.orderHistoryYourOrdersText{color:#c45500;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px;padding-left:.5rem}.orderHistoryYourAccountText:hover{color:#c45500;text-decoration:underline}.orderHistoryTitleDiv{margin-bottom:1rem;margin-top:1rem}.orderHistoryTitle{color:#0f1111;font-family:Amazon Ember,Arial,sans-serif;font-size:28px;font-weight:400;line-height:36px}.orderHistoryOrderNumberDiv{margin-top:1rem}.orderHistoryOrderNumber{color:#0f1111;font-family:Amazon Ember,Arial,sans-serif;font-weight:700}.orderHistoryOrderNumber,.orderHistoryOrderNumberText{font-size:14px;font-style:normal;line-height:20px;text-transform:none}.orderHistoryOrderNumberText{font-weight:400;text-decoration:none}.orderHistoryProductContainer{border:1px solid #d5d9d9;border-radius:8px 8px 0 0;height:auto;margin-bottom:1rem;margin-top:1rem;width:90%}.orderHistoryProductHeadContainer{background-color:#f0f2f2;height:auto;overflow:auto;width:100%}.orderHistoryProductHeadDiv{height:auto;margin-left:auto;margin-right:auto;width:90%}.orderHistoryOrderPlacedContainer{float:left}.orderHistoryOrderPlacedText{font-size:12px;line-height:16px;text-transform:uppercase}.orderHistoryOrderDateText,.orderHistoryOrderPlacedText{color:#565959;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.orderHistoryOrderDateText{font-size:14px;line-height:20px}.orderHistoryOrderTotalContainer{float:left;margin-left:4rem}.orderHistoryOrderTotalText{font-size:12px;line-height:16px;text-transform:uppercase}.orderHistoryOrderPriceText,.orderHistoryOrderTotalText{color:#565959;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.orderHistoryOrderPriceText{font-size:14px;line-height:20px}.orderHistoryOrderShipContainer{float:left;margin-left:4rem}.orderHistoryOrderShipText{color:#565959;font-size:12px;line-height:16px;text-transform:uppercase}.orderHistoryOrderShipText,.orderHistoryOrderShippingAddressText{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.orderHistoryOrderShippingAddressText{color:#007185;cursor:pointer;font-size:14px;line-height:20px}.orderHistoryOrderShippingAddressText:hover{color:#c45500;text-decoration:underline}.orderHistoryOrderIdContainer{float:left;margin-left:14rem}.orderHistoryOrderIdText{color:#565959;font-size:12px;line-height:16px;text-transform:uppercase}.orderHistoryOrderDetailsText,.orderHistoryOrderIdText{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.orderHistoryOrderDetailsText{color:#555;font-size:14px;line-height:20px}.orderHistoryOrderViewDetailsText{color:#007185;cursor:pointer}.orderHistoryOrderViewDetailsText:hover{color:#c45500;text-decoration:underline}.orderHistoryOrderInvoiceText{color:#007185;cursor:pointer}.orderHistoryOrderInvoiceText:hover{color:#c45500;text-decoration:underline}.orderHistoryProductContentContainer{height:auto;width:100%}.orderHistoryProductContentDiv{margin-left:auto;margin-right:auto;width:90%}.orderHistoryProductOrderStatus{color:#0f1111;font-size:18px!important;font-weight:700!important;line-height:24px!important}.orderHistoryProductOrderStatusText{color:#565959!important;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.orderHistoryProductImage{max-height:100px;width:auto}.orderHistoryProductImageDiv{margin-top:2rem;max-height:150px;width:auto}.orderHistoryProductNameDiv{margin-bottom:4rem;margin-left:8rem}.orderHistoryProductName{color:#007185;cursor:pointer;font-size:14px;line-height:20px;margin-top:-5rem}.orderHistoryProductName:hover{color:#c7511f;cursor:pointer;text-decoration:underline}.fas{color:#555}.orderHistoryOrderShippingAddressText:hover .dropdown-content{display:block}.orderShippingDropDownSection{background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:4px;box-shadow:0 2px 4px rgba(0,0,0,.13);height:150px;margin-left:-5rem;overflow:hidden;width:234px}.orderShippingDropDownDiv{margin-left:auto;margin-right:auto;margin-top:.5rem;width:80%}.orderShippingDropDownAddressName{color:#000;font-size:14px;font-weight:700;line-height:20px}.orderShippingDropDownAddress,.orderShippingDropDownAddressAddress,.orderShippingDropDownAddressCountry,.orderShippingDropDownAddressPlace,.orderShippingDropDownPhone{color:#000;font-size:14px;line-height:20px;margin-top:.2rem}.adminLoginContainer{height:39rem;width:100%}.imgLogo{height:auto;margin-left:35%;width:30%}.logincontainer{border:1px solid #d5d9d9;border-radius:8px 8px 0 0;height:20rem;margin-left:auto;margin-right:auto;width:40%}.signinContainer{background-color:#f0f2f2;height:4rem;width:100%}.AdminText{color:#565959;float:left;padding-left:1rem}.AdminText,.signInText{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:xx-large;font-weight:300;padding-top:1rem}.signInText{color:#333;margin-right:1rem;text-align:right}.fa-user{float:left;margin-left:-164px;padding-top:56px}.usernameInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:2rem;margin-left:50px;margin-top:2rem;outline-color:#f69b3c;outline-width:thin;width:80%}.fa-lock{float:left;margin-left:2rem;margin-top:2.5rem}.passwordInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;height:2rem;margin-left:5px;margin-top:2rem;outline-color:#f69b3c;outline-width:thin;width:80%}.btn-login,.passwordInput{font-family:Arial,sans-serif;font-size:13px}.btn-login{background-color:transparent;background-color:#f0c24f;border:1px solid #bf942b;border-radius:3px;color:#111;cursor:pointer;display:block;height:31px;margin:3rem 3.5rem 2rem auto;outline:#f69b3c;text-align:center;white-space:nowrap;width:150px}.adminLoginReturn{color:#007185;cursor:pointer;float:left;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:14px;line-height:20px;margin-left:3.5rem;margin-top:4rem}.adminLoginReturn:hover{color:#c45500;text-decoration:underline}.logInSecuritySection{height:auto;min-height:530px;width:100%}.logInSecurityContainer{height:auto;margin-left:auto;margin-right:auto;margin-top:.5rem;width:54%}.logInSecurityAccountText{color:#555}.logInSecurityAccountText,.logInSecurityYourAccountText{cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.logInSecurityYourAccountText{color:#007185;padding-right:.5rem}.logInSecurityLogInSecurityText{color:#c45500;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px;padding-left:.5rem}.logInSecurityYourAccountText:hover{color:#c45500;text-decoration:underline}.logInSecurityTitleDiv{margin-top:1rem}.logInSecurityTitle{color:#0f1111;font-family:Amazon Ember,Arial,sans-serif;font-size:28px;font-weight:400;line-height:36px}.logInSecurityContainerDiv{background-color:#fff;border:1px solid #ddd;border-radius:4px;height:306px;margin-bottom:2rem;margin-top:1rem;width:600px}.logInSecurityNameDiv{border-bottom:1px solid #ddd;height:102px;width:100%}.logInSecurityNameTextDiv{float:left;margin-left:2rem;margin-top:2rem;width:75%}.logInSecurityNameTitle{color:#111;font-size:13px;font-weight:700;line-height:19px}.logInSecurityName{color:#111;font-size:13px;line-height:19px;margin-top:.25rem}.logInSecurityNameBtnDiv{float:left;margin-top:2.5rem}.logInSecurityNameBtn{background:#e7e9ec;border-color:#adb1b8 #a2a6ac #8d9096;border-radius:3px;border-style:solid;border-width:1px;cursor:pointer;display:inline-block;height:31px;padding:0;text-align:center;text-decoration:none;vertical-align:middle;width:70px}.logInSecurityEmailDiv{border-bottom:1px solid #ddd;height:102px;width:100%}.logInSecurityEmailTextDiv{float:left;margin-left:2rem;margin-top:2rem;width:75%}.logInSecurityEmailTitle{color:#111;font-size:13px;font-weight:700;line-height:19px}.logInSecurityEmail{color:#111;font-size:13px;line-height:19px;margin-top:.25rem}.logInSecurityEmailBtnDiv{float:left;margin-top:2.5rem}.logInSecurityEmailBtn{background:#e7e9ec;border-color:#adb1b8 #a2a6ac #8d9096;border-radius:3px;border-style:solid;border-width:1px;cursor:pointer;display:inline-block;height:31px;padding:0;text-align:center;text-decoration:none;vertical-align:middle;width:70px}.logInSecurityPasswordDiv{height:102px;width:100%}.logInSecurityPasswordTextDiv{float:left;margin-left:2rem;margin-top:2rem;width:75%}.logInSecurityPasswordTitle{color:#111;font-size:13px;font-weight:700;line-height:19px}.logInSecurityPassword{color:#111;font-size:13px;line-height:19px;margin-top:.25rem}.logInSecurityPasswordBtnDiv{float:left;margin-top:2.5rem}.logInSecurityPasswordBtn{background:#e7e9ec;border-color:#adb1b8 #a2a6ac #8d9096;border-radius:3px;border-style:solid;border-width:1px;cursor:pointer;display:inline-block;height:31px;padding:0;text-align:center;text-decoration:none;vertical-align:middle;width:70px}.logInSecurityDoneBtnDiv{margin-left:1rem}.logInSecurityDoneBtn{background:linear-gradient(180deg,#f7dfa5,#f0c14b);border-color:#a88734 #9c7e31 #846a29;border-radius:3px;border-style:solid;border-width:1px;color:#111;cursor:pointer;height:31px;width:54px}.logInSecurityDoneBtn:focus:hover{border:1px solid #e47911}.nameChangeSection{height:auto;min-height:500px;width:100%}.nameChangeContainer{height:auto;margin-left:auto;margin-right:auto;margin-top:.5rem;width:54%}.nameChangeAccountText{color:#555;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.nameChangeLogInSecurityText,.nameChangeYourAccountText{color:#007185;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px;padding-right:.5rem}.nameChangeLogInSecurityText{padding-left:.5rem}.nameChangeNameChangeText{color:#c45500;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px;padding-left:.5rem}.nameChangeLogInSecurityText:hover,.nameChangeYourAccountText:hover{color:#c45500;text-decoration:underline}.nameChangeTitleDiv{margin-top:1rem}.nameChangeTitle{color:#0f1111;font-family:Amazon Ember,Arial,sans-serif;font-size:28px;font-weight:400;line-height:36px}.nameChangeContainerDiv{background-color:#fff;border:1px solid #ddd;border-radius:4px;height:auto;margin-bottom:2rem;margin-top:1rem;overflow:auto;width:600px}.nameChangeDiv{height:auto;margin-left:auto;margin-right:auto;margin-top:1rem;width:90%}.nameChangeBoxText{color:#111;font-size:13px;line-height:19px}.nameChangeBoxInputDiv{margin-top:2rem}.nameChangeBoxLabel{color:#111;font-size:13px;font-weight:700;line-height:19px}.nameChangeBoxInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.25rem;outline-color:#f69b3c;outline-width:thin;width:174px}.nameChangeSaveBtnDiv{margin-bottom:2rem;margin-top:1.5rem}.nameChangeSaveBtn{background:linear-gradient(180deg,#f7dfa5,#f0c14b);border-color:#a88734 #9c7e31 #846a29;border-radius:3px;border-style:solid;border-width:1px;color:#333;cursor:pointer;height:31px;width:120px}.nameChangeSaveBtn:hover{background-color:#fdbf1f}.nameChangeSaveBtn:focus:hover{border:1px solid #e47911}.nameChangeErrorContent{color:#721c24;margin-bottom:1rem;padding-bottom:.25rem;padding-top:1rem;text-align:center}.nameChangeErrorDiv{background-color:#f8d7da;border:1px solid #f5c6cb;border-radius:3px;height:auto;margin-bottom:.5rem;margin-left:auto;margin-right:auto;width:100%}.nameChangeSuccessContent{color:#155724;margin-bottom:1rem;padding-bottom:.25rem;padding-top:1rem;text-align:center}.nameChangeSuccessDiv{background-color:#d4edda;border:1px solid #c3e6cb;border-radius:3px;margin-bottom:.5rem;margin-left:auto;margin-right:auto}.emailChangeSection,.nameChangeSuccessDiv{height:auto;width:100%}.emailChangeContainer{width:60%}.emailChangeContainer,.emailChangeLogoDiv{height:auto;margin-left:auto;margin-right:auto}.emailChangeLogoDiv{width:256px}.emailChangeLogo{cursor:pointer;max-width:256px}.emailChangeBoxContainer{background-color:#fff;border:1px solid #d5d9d9;border-radius:8px;margin-top:1rem;overflow:auto;width:378px}.emailChangeBoxContainer,.emailChangeBoxDiv{height:auto;margin-left:auto;margin-right:auto}.emailChangeBoxDiv{margin-top:2rem;width:90%}.emailChangeBoxTitle{color:#0f1111;font-size:28px;font-weight:400;line-height:36px}.emailChangeBoxEmailTextDiv{margin-top:1rem}.emailChangeBoxEmailText{color:#0f1111;font-size:14px;line-height:20px}.emailChangeBoxParaTextDiv{margin-top:1rem}.emailChangeBoxParaText{color:#0f1111;font-size:14px;line-height:20px}.emailChangeBoxInputDiv{margin-top:2rem}.emailChangeBoxLabel{color:#0f1111;font-size:14px;font-weight:700;line-height:20px}.emailChangeBoxInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.25rem;outline-color:#f69b3c;outline-width:thin;width:100%}.emailChangeBoxBtnDiv{margin-bottom:2rem;margin-top:2rem}.emailChangeBoxBtn{background:#ffd814;border:1px solid #fcd200;border-radius:8px;box-shadow:0 2px 5px 0 hsla(180,5%,84%,.5);color:#0f1111;cursor:pointer;display:inline-block;font-size:14px;height:31px;line-height:20px;padding:0;text-align:center;text-decoration:none;vertical-align:middle;width:100%}.emailChangeBoxBtn:hover{background-color:#fdd000}.emailChangeErrorContent{color:#721c24;margin-bottom:1rem;padding-bottom:.25rem;padding-top:1rem;text-align:center}.emailChangeErrorDiv{background-color:#f8d7da;border:1px solid #f5c6cb;border-radius:3px;height:auto;margin-bottom:.5rem;margin-left:auto;margin-right:auto;width:100%}.emailChangeSuccessContent{color:#155724;margin-bottom:1rem;padding-bottom:.25rem;padding-top:1rem;text-align:center}.emailChangeSuccessDiv{background-color:#d4edda;border:1px solid #c3e6cb;border-radius:3px;height:auto;margin-bottom:.5rem;margin-left:auto;margin-right:auto;width:100%}.passwordChangeSection{height:auto;min-height:500px;overflow:auto;width:100%}.passwordChangeContainer{height:auto;margin-left:auto;margin-right:auto;margin-top:.5rem;width:54%}.passwordChangeAccountText{color:#555;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px}.passwordChangeLogInSecurityText,.passwordChangeYourAccountText{color:#007185;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px;padding-right:.5rem}.passwordChangeLogInSecurityText{padding-left:.5rem}.passwordChangePasswordChangeText{color:#c45500;cursor:pointer;font-family:Amazon Ember,Arial,sans-serif;font-size:14px;line-height:20px;padding-left:.5rem}.passwordChangeLogInSecurityText:hover,.passwordChangeYourAccountText:hover{color:#c45500;text-decoration:underline}.passwordChangeTitleDiv{margin-top:1rem}.passwordChangeTitle{color:#0f1111;font-family:Amazon Ember,Arial,sans-serif;font-size:28px;font-weight:400;line-height:36px}.passwordChangeBoxSection{background-color:#fff;border:1px solid #ddd;border-radius:4px;height:auto;margin-bottom:2rem;margin-top:.5rem;overflow:auto;width:80%}.passwordChangeBoxContainer{margin-left:1rem;margin-top:1rem}.passwordChangeBoxParaText{color:#111;font-size:13px;line-height:19px}.passwordChangeBoxCurrentPasswordInputDiv{margin-top:1rem}.passwordChangeBoxCurrentPasswordLabel{color:#111;font-size:13px;font-weight:700;line-height:19px}.passwordChangeBoxCurrentPasswordInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.25rem;outline-color:#f69b3c;outline-width:thin;width:174px}.passwordChangeBoxNewPasswordInputDiv{margin-top:1rem}.passwordChangeBoxNewPasswordLabel{color:#111;font-size:13px;font-weight:700;line-height:19px}.passwordChangeBoxNewPasswordInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.25rem;outline-color:#f69b3c;outline-width:thin;width:174px}.passwordChangeBoxConformPasswordInputDiv{margin-top:1rem}.passwordChangeBoxConformPasswordLabel{color:#111;font-size:13px;font-weight:700;line-height:19px}.passwordChangeBoxConformPasswordInput{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:31px;margin-top:.25rem;outline-color:#f69b3c;outline-width:thin;width:174px}.passwordChangeSaveChangeBtnDiv{margin-bottom:2rem;margin-top:2rem}.passwordChangeSaveChangeBtn{background:linear-gradient(180deg,#f7dfa5,#f0c14b);border-color:#a88734 #9c7e31 #846a29;border-radius:3px;border-style:solid;border-width:1px;color:#222;cursor:pointer;height:31px;width:120px}.passwordChangeSaveChangeBtn:hover{background-color:#fdbf1f}.passwordChangeSaveChangeBtn:focus:hover{border:1px solid #e47911}.passwordChangeErrorContent{color:#721c24;margin-bottom:1rem;padding-bottom:.25rem;padding-top:1rem;text-align:center}.passwordChangeErrorDiv{background-color:#f8d7da;border:1px solid #f5c6cb;border-radius:3px;height:auto;margin-bottom:.5rem;width:97%}.passwordChangeSuccessContent{color:#155724;margin-bottom:1rem;padding-bottom:.25rem;padding-top:1rem;text-align:center}.passwordChangeSuccessDiv{background-color:#d4edda;border:1px solid #c3e6cb;border-radius:3px;height:auto;margin-bottom:.5rem;width:97%}.adminPanelSectionContainer{background-color:#e9eef7;height:auto;overflow:auto;padding-bottom:1rem;padding-top:5rem;width:100%}.adminPanelOverviewSection{height:auto;margin-left:auto;margin-right:auto;width:90%}.adminPanelOverviewContainer{margin-top:0}.adminPanelOverviewTitle{color:#0f1111;font-size:28px;font-weight:400;line-height:36px}.adminPanelOverviewSubTitleDiv{margin-top:.5rem}.adminPanelOverviewSubTitleText{color:#8798ad;font-size:12px;text-shadow:none}.adminPanelOverviewSubAmazonDashboardTitle,.adminPanelOverviewSubDashboardTitle{color:#8798ad;cursor:pointer;margin-right:.5rem}.adminPanelOverviewSubAmazonDashboardTitle{margin-left:.5rem}.adminPanelOverviewBoxContainer{align-items:center;display:flex;height:auto;justify-content:center;margin-left:auto;margin-right:auto;margin-top:1rem;width:100%}.adminPanelOverviewOrdersBoxContainerDiv{background-color:#fff;border:1px solid #d5d9d9;border-radius:8px;cursor:pointer;display:block;float:left;height:auto;min-height:102px;width:320px}.adminPanelOverviewOrdersBoxContainerDiv:hover{background-color:#eee}.adminPanelOverviewOrdersBoxDiv{height:90%;margin-left:auto;margin-right:auto;margin-top:1rem;width:90%}.adminPanelOverviewOrdersImgDivContainer{float:left}.adminPanelOverviewOrdersImg{height:auto;width:66px}.adminPanelOverviewOrdersText{color:#111;cursor:pointer;font-size:17px;font-style:normal;font-weight:400;text-decoration:none;text-transform:none}.adminPanelOverviewOrdersSubText{color:#565959;cursor:pointer;font-size:14px}.adminPanelOverviewOrdersTextDivContainer{float:left;margin-left:1rem}.adminPanelOverviewUsersBoxContainerDiv{background-color:#fff;border:1px solid #d5d9d9;border-radius:8px;cursor:pointer;display:block;float:left;height:auto;min-height:102px;width:320px}.adminPanelOverviewUsersBoxContainerDiv:hover{background-color:#eee}.adminPanelOverviewUsersBoxDiv{height:90%;margin-left:auto;margin-right:auto;margin-top:1rem;width:90%}.adminPanelOverviewUsersImgDivContainer{float:left}.adminPanelOverviewUsersImg{height:auto;width:66px}.adminPanelOverviewUsersText{color:#111;cursor:pointer;font-size:17px;font-style:normal;font-weight:400;line-height:32px;text-decoration:none;text-transform:none}.adminPanelOverviewUsersSubText{color:#565959;cursor:pointer;font-size:14px;line-height:20px}.adminPanelOverviewUsersTextDivContainer{float:left;margin-left:1rem}.adminPanelOverviewProductsBoxContainerDiv{background-color:#fff;border:1px solid #d5d9d9;border-radius:8px;cursor:pointer;display:block;float:left;height:auto;min-height:102px;width:320px}.adminPanelOverviewProductsBoxContainerDiv:hover{background-color:#eee}.adminPanelOverviewProductsBoxDiv{height:90%;margin-left:auto;margin-right:auto;margin-top:1rem;width:90%}.adminPanelOverviewProductsImgDivContainer{float:left}.adminPanelOverviewProductsImg{height:auto;width:66px}.adminPanelOverviewProductsText{color:#111;cursor:pointer;font-size:17px;font-style:normal;font-weight:400;line-height:32px;text-decoration:none;text-transform:none}.adminPanelOverviewProductsSubText{color:#565959;cursor:pointer;font-size:14px;line-height:20px}.adminPanelOverviewProductsTextDivContainer{float:left;margin-left:1rem}.container-fluid{margin-left:auto;margin-right:auto;overflow:hidden;padding-left:0;padding-right:0;width:100%}.containerheader{background-color:#131921;height:60px;position:absolute;width:100%}.logo{cursor:pointer;margin:1.1rem;position:absolute;width:96px}.panelTextDiv{margin-left:70%}.adminText,.ordersText,.productsText,.usersText{cursor:pointer;float:left;margin-left:2rem;margin-top:1rem}.panelText{color:#a9a9a9;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:1rem;font-weight:400;line-height:1.5}.panelText:hover{color:#f5f5f5}.headerSignOutBtn{background:-webkit-linear-gradient(top,#f8e3ad,#eeba37);border-color:#c89411 #b0820f #99710d;border-radius:3px 3px 3px 3px;border-style:solid;border-width:1px;box-shadow:inset 0 1px 0 0 #fcf3dc;color:#111;cursor:pointer;display:block;font-size:13px;height:33px;line-height:31px;line-height:30px;margin-left:auto;margin-right:auto;outline:0;text-align:center;text-decoration:none;width:5rem}.headerSignOutDiv{background-color:#fff;border:1px solid #bbb;border-radius:3px 3px 3px 3px;box-shadow:0 2px 4px 0 rgba(0,0,0,.13);height:4rem;margin-left:-2.5rem;overflow:visible;position:relative;width:8rem;z-index:10000}.dropdown-content{display:none;position:absolute}.panelText:hover .dropdown-content{display:block}.adminSearchBarDiv{display:flex;float:left;justify-content:end;justify-items:end;margin-left:2rem;margin-top:.65rem;width:70%}.adminSearchBar{border-bottom:none;border-right:none;box-shadow:none;height:39px;outline:none;width:80%}.headerSearchList{background-color:#fff;border:1px solid #ccc;height:auto;margin-left:183px;margin-top:49px;position:absolute;width:755px;z-index:999}.headerSearchList div{margin:1rem}.headerSearchList p{cursor:pointer;font-weight:700}.adminPanelDashOrdersBoxContainerSection{align-items:center;background-color:#e9eef7;display:flex;height:auto;justify-content:center;margin-left:auto;margin-right:auto;padding-bottom:2rem;width:100%}.adminPanelDashContainer{align-items:center;display:flex;justify-content:center;margin:2rem auto}.adminPanelDashOrdersBoxContainer{background:#020024;background:linear-gradient(90deg,#005467,#630000);float:left;height:203px;width:230px}.adminPanelDashOrdersBoxDiv{height:90%;margin-left:auto;margin-right:auto;width:90%}.adminPanelDashOrdersTextBoxDiv{float:left;margin-left:1rem;padding-top:2rem}.adminPanelDashOrdersBoxTitle{color:#fff;font-family:roboto,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;text-shadow:none}.adminPanelDashOrdersBoxValueDiv{margin-top:.25rem}.adminPanelDashOrdersBoxValue{color:#fff;font-family:roboto,sans-serif;font-size:2rem;font-weight:600;text-align:center;text-shadow:none}.adminPanelDashOrdersImgBoxDiv{background-color:#fff;border-radius:50%;float:left;height:3rem;margin-left:1rem;margin-top:2rem;overflow:hidden;position:relative;width:3rem}.adminPanelDashOrdersBoxImg{height:auto;margin-left:.5rem;margin-top:.5rem;width:2rem}.adminPanelDashOrdersBoxIncreaseText{color:#fff;font-family:roboto,sans-serif;font-size:12px}.adminPanelDashTotalIncomeBoxContainer{background:#330a54;background:linear-gradient(90deg,#330a54,#032b79);float:left;height:203px;width:230px}.adminPanelDashTotalIncomeBoxDiv{height:90%;margin-left:auto;margin-right:auto;width:90%}.adminPanelDashTotalIncomeTextBoxDiv{float:left;margin-left:1rem;padding-top:2rem}.adminPanelDashTotalIncomeBoxTitle{color:#fff;font-family:roboto,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;text-shadow:none}.adminPanelDashTotalIncomeBoxValueDiv{margin-top:.25rem}.adminPanelDashTotalIncomeBoxValue{color:#fff;font-family:roboto,sans-serif;font-size:2rem;font-weight:600;text-align:center;text-shadow:none}.adminPanelDashTotalIncomeImgBoxDiv{background-color:#fff;border-radius:50%;float:left;height:3rem;margin-left:1rem;margin-top:2rem;overflow:hidden;position:relative;width:3rem}.adminPanelDashTotalIncomeBoxImg{height:auto;margin-left:.5rem;margin-top:.5rem;width:2rem}.adminPanelDashTotalIncomeBoxIncreaseText{color:#fff;font-family:roboto,sans-serif;font-size:12px}.adminPanelDashProductsBoxContainer{background:#0a1a3b;background:linear-gradient(90deg,#0a1a3b,#035179);float:left;height:203px;width:230px}.adminPanelDashProductsBoxDiv{height:90%;margin-left:auto;margin-right:auto;width:90%}.adminPanelDashProductsTextBoxDiv{float:left;margin-left:1rem;padding-top:2rem}.adminPanelDashProductsBoxTitle{color:#fff;font-family:roboto,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;text-shadow:none}.adminPanelDashProductsBoxValueDiv{margin-top:.25rem}.adminPanelDashProductsBoxValue{color:#fff;font-family:roboto,sans-serif;font-size:2rem;font-weight:600;text-align:center;text-shadow:none}.adminPanelDashProductsImgBoxDiv{background-color:#fff;border-radius:50%;float:left;height:3rem;margin-left:1rem;margin-top:2rem;overflow:hidden;position:relative;width:3rem}.adminPanelDashProductsBoxImg{height:auto;margin-left:.5rem;margin-top:.5rem;width:2rem}.adminPanelDashProductsBoxIncreaseText{color:#fff;font-family:roboto,sans-serif;font-size:12px}.adminPanelDashUsersBoxContainer{background:#070c0f;background:linear-gradient(90deg,#070c0f,#04757c);float:left;height:203px;width:230px}.adminPanelDashUsersBoxDiv{height:90%;margin-left:auto;margin-right:auto;width:90%}.adminPanelDashUsersTextBoxDiv{float:left;margin-left:1rem;padding-top:2rem}.adminPanelDashUsersBoxTitle{color:#fff;font-family:roboto,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;text-shadow:none}.adminPanelDashUsersBoxValueDiv{margin-top:.25rem}.adminPanelDashUsersBoxValue{color:#fff;font-family:roboto,sans-serif;font-size:2rem;font-weight:600;text-align:center;text-shadow:none}.adminPanelDashUsersImgBoxDiv{background-color:#fff;border-radius:50%;float:left;height:3rem;margin-left:1rem;margin-top:2rem;overflow:hidden;position:relative;width:3rem}.adminPanelDashUsersBoxImg{height:auto;margin-left:.5rem;margin-top:.5rem;width:2rem}.adminPanelDashUsersBoxIncreaseText{color:#fff;font-family:roboto,sans-serif;font-size:12px}.orderactivity{background-color:#e9eef7;height:auto;overflow:auto;padding-bottom:2rem;width:100%}.orderactivitycontainer{margin-left:auto;margin-right:auto;width:90%}.adminPanelOrderActivitySection{float:left;width:60%}.adminPanelOrderActivityContainer{margin-top:0;padding-left:0}.adminPanelOrderActivityDiv{height:auto;overflow:auto;width:95%}.adminPanelOrderActivityBox{background-color:#fff;height:auto;margin-bottom:2rem;width:100%}.adminPanelOrderActivityBoxTitleContainer{border-bottom:2px solid #dee2e6;border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0;height:4rem;width:100%}.adminPanelOrderActivityBoxTitleDiv{margin-left:auto;margin-right:auto;width:90%}.adminPanelOrderActivityBoxTitle{color:#212229;font-family:roboto,sans-serif;font-size:14px;font-weight:600;padding-top:1.5rem}.adminPanelOrderActivityBoxContentContainer{border-bottom:2px solid #dee2e6;height:auto;overflow:auto;width:100%}.adminPanelOrderActivityBoxContentDiv{height:auto;margin-bottom:2rem;margin-left:1rem;margin-top:1.5rem;overflow:auto}.adminPanelOrderActivityBoxContentUserImgContainer{float:left;height:55px;width:55px}.adminPanelOrderActivityBoxContentUserImgDiv{height:auto;margin-left:auto;margin-right:auto;width:55px}.adminPanelOrderActivityBoxContentUserImg{border-radius:50%;height:55px;width:55px}.adminPanelOrderActivityBoxContentUserContentContainer{float:left;padding-bottom:1rem;width:40%}.adminPanelOrderActivityBoxContentUserContentDiv{margin-left:auto;margin-right:auto;margin-top:1rem;width:90%}.adminPanelOrderActivityBoxContentUserName{color:#212529;font-family:roboto,sans-serif;font-size:1rem;font-weight:600}.adminPanelOrderActivityBoxContentUserOrderTimeDiv{margin-top:.05rem}.adminPanelOrderActivityBoxContentUserOrderTime{color:#8798ad;font-family:roboto,sans-serif;font-size:.875rem;line-height:1.8}.adminPanelOrderActivityBoxContentOrderContentContainer{padding-bottom:1rem}.adminPanelOrderActivityBoxContentOrderImgContainer{float:left;height:55px;width:55px}.adminPanelOrderActivityBoxContentOrderImgDiv{height:auto;margin-left:auto;margin-right:auto;width:55px}.adminPanelOrderActivityBoxContentOrderImg{height:55px;width:55px}.adminPanelOrderActivityBoxContentOrderContentContainer{float:left;width:48%}.adminPanelOrderActivityBoxContentOrderContentDiv{margin-left:1rem;margin-right:auto;margin-top:1rem;width:90%}.adminPanelOrderActivityBoxContentOrderContentName{color:#212529;font-family:roboto,sans-serif;font-size:1.0625rem;font-weight:600}.adminPanelOrderActivityBoxContentOrderContentOrderCategoryDiv{margin-top:.25rem}.adminPanelOrderActivityBoxContentOrderContentOrderCategory{color:#6c757d;font-family:roboto,sans-serif;font-size:.875rem;font-weight:400;line-height:10px}.adminPanelTopSellingProductSection{background-color:#e9eef7;height:auto;padding-bottom:2rem;width:40%}.adminPanelTopSellingProductContainer{margin-top:1rem}.adminPanelTopSellingProductDiv{width:100%}.adminPanelTopSellingProductContentImgDiv{height:55px}.adminPanelTopSellingProductSection{float:left;width:30%}.adminPanelTopSellingProductContainer{margin-top:0}.adminPanelTopSellingProductDiv{height:auto;overflow:auto;width:477px}.adminPanelTopSellingProductBox{background-color:#fff;height:auto;margin-bottom:2rem;width:100%}.adminPanelTopSellingProductTitleContainer{border-bottom:2px solid #dee2e6;border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0;height:4rem;width:100%}.adminPanelTopSellingProductTitleDiv{margin-left:auto;margin-right:auto;width:90%}.adminPanelTopSellingProductTitle{color:#212229;font-family:roboto,sans-serif;font-size:14px;font-weight:600;padding-top:1.5rem}.adminPanelTopSellingProductContentContainer{border-bottom:1px solid #dee2e6;height:auto;overflow:auto;width:100%}.adminPanelTopSellingProductContentDiv{height:auto;margin-bottom:2rem;margin-left:1rem;margin-top:1.5rem;overflow:auto}.adminPanelTopSellingProductContentImgDiv{border:1px solid #dee2e6;float:left;height:60px;width:80px}.adminPanelTopSellingProductContentImgDivCon{height:auto;margin-left:auto;margin-right:auto;margin-top:.25rem;width:45px}.adminPanelTopSellingProductContentImg{height:auto;width:45px}.adminPanelTopSellingProductContentTextContainer{float:left;height:auto;width:59%}.adminPanelTopSellingProductContentTextDiv{margin-left:auto;margin-right:auto;width:90%}.adminPanelTopSellingProductContentTextTitle{color:#212529;font-family:roboto,sans-serif;font-size:1.0625rem;font-weight:600}.adminPanelTopSellingProductContentTextCategoryDiv{margin-top:.25rem}.adminPanelTopSellingProductContentTextCategory{color:#6c757d;font-family:roboto,sans-serif;font-size:.875rem;font-weight:400;line-height:10px}.adminPanelTopSellingProductContentTextDescriptionDiv{margin-top:.25rem}.adminPanelTopSellingProductContentTextDescription{color:#6c757d;font-family:roboto,sans-serif;font-size:12px;line-height:1.8}.adminPanelTopSellingProductContentPriceSection{float:left;height:auto;width:23%}.adminPanelTopSellingProductContentPriceContainer{width:80%}.adminPanelTopSellingProductContentPrice{color:#212529;font-family:roboto,sans-serif;font-size:1.25rem;font-weight:550;text-align:right}.adminPanelTopSellingProductContentReviewsDiv{margin-top:.25rem}.adminPanelTopSellingProductContentReviews{color:#8798ad!important;font-family:roboto,sans-serif;font-size:.875rem;line-height:1.8;text-align:center}.CircularProgressbar{height:10rem;margin-bottom:2rem;width:auto}.circleProgressBarDiv{background-color:#e9eef7}.CircularProgressbar{vertical-align:middle;width:100%}.CircularProgressbar .CircularProgressbar-path{stroke:#3e98c7;stroke-linecap:round;transition:stroke-dashoffset .5s ease 0s}.CircularProgressbar .CircularProgressbar-trail{stroke:#d6d6d6;stroke-linecap:round}.CircularProgressbar .CircularProgressbar-text{fill:#3e98c7;dominant-baseline:middle;text-anchor:middle;font-size:20px}.CircularProgressbar .CircularProgressbar-background{fill:#d6d6d6}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background{fill:#3e98c7}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text{fill:#fff}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path{stroke:#fff}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail{stroke:transparent}.adminProductsSection{height:auto;margin-bottom:2rem;overflow:auto;padding-top:5rem;width:100%}.productAddBtnDiv{float:left;margin-bottom:2rem}.departmentAddBtnDiv{margin-left:1rem}.btn-product-option{float:left}.btn-delete{margin-left:1rem}.productIcon{font-size:1rem}.adminInputSpace{border:1px solid #d0d0d0;border-radius:3px;border-top-color:#bbb;font-family:Arial,sans-serif;font-size:13px;height:2.5rem;margin-left:50%;outline-color:gray;outline-width:thin}.AddProductContainer{margin-left:auto;margin-right:auto;width:80%}.addProductSubTitle{margin-bottom:0}.addProductInputContainer{margin-top:0}.addProductInputLabel{font-size:13px;font-weight:700;line-height:19px}.addProductFormLeft,.addProductFormRight{float:left;width:50%}.selectDepartment{background-color:transparent;background-color:#f1f2f4;border-color:#bcc1c8 #bababa #adb2bb;border-style:solid;border-width:1px;color:#111;display:block;display:inline-block;height:31px;line-height:29px;outline:0;white-space:nowrap}.inputSpaceDescription,.selectDepartment{border-radius:3px;font-family:Arial,sans-serif;font-size:13px;margin-top:.3rem;width:94%}.inputSpaceDescription{border:1px solid #d0d0d0;border-top-color:#bbb;height:100px;outline-color:#f69b3c;outline-width:thin}.btn-addProduct{float:right}.adminAddProductSection,.adminEditProductSection,.adminOrderDetailsSection{height:auto;margin-bottom:2rem;overflow:auto;padding-top:5rem;width:100%}.orderDetailsProductContentOrderDiv{width:50%}.addDepartmentSection{background-color:#fff;border:1px solid #ffebcd;display:flex;height:auto;margin-left:22%;margin-right:auto;position:fixed;width:40%;z-index:999}.addDepartmentContainer{margin:1rem auto;width:90%}.btn-addNewDepartment{display:flex;margin-left:auto;margin-right:1.5rem}.addNewDepartmentTitle{width:100%}.addNewDepartmentTitleIcon{cursor:pointer;display:flex;margin-left:auto}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+button:focus {
+    outline: 0
+}
+
+input {
+    padding-left: 1rem
+}
+
+.navcontainer {
+    margin: 0 0 0 15px;
+    padding: 0;
+    width: 100%
+}
+
+.navbarContainer,
+.userHomeHeader {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.logoRowHomeHeader {
+    background-color: #131921;
+    height: 60px
+}
+
+.departmentRowHomeHeader,
+.logoRowHomeHeader {
+    display: flex;
+    float: none;
+    position: static;
+    width: 100%
+}
+
+.departmentRowHomeHeader {
+    background-color: #232f3e;
+    height: 40px
+}
+
+.amazonNavLogoDiv {
+    height: 60px;
+    width: 12%
+}
+
+.amazonNavLogo {
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    width: 96px
+}
+
+.navTextDivAccount {
+    height: 60px;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-top: 15px;
+    width: 9.4%
+}
+
+.navTextDivOrders {
+    margin-top: 15px;
+    width: 6.2%
+}
+
+.navTextDivCart {
+    width: 7.4%
+}
+
+.navText {
+    color: #ccc;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 14px;
+    line-height: 14px
+}
+
+.navText:hover {
+    color: #ffa53f
+}
+
+.navHighText {
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px
+}
+
+.navHighText:hover .navText {
+    color: #ffa53f
+}
+
+.cartNavLogo {
+    height: 35px;
+    margin-top: 12px;
+    width: auto
+}
+
+.cartText {
+    color: #fff;
+    margin-left: 42px;
+    margin-top: -5px
+}
+
+.cartNavLogo:hover .cartText,
+.cartText:hover {
+    color: #ffa53f
+}
+
+.navCartCountText {
+    color: #ffa53f;
+    font-size: larger;
+    font-weight: 700
+}
+
+.navCartCountDiv {
+    margin-left: 22px;
+    margin-top: -40px
+}
+
+.navSignInBtn,
+a {
+    text-decoration: none
+}
+
+.navSignInBtn {
+    background: -webkit-linear-gradient(top, #f8e3ad, #eeba37);
+    border-color: #c89411 #b0820f #99710d;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0 1px 0 0 #fcf3dc;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    height: 33px;
+    line-height: 31px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 0;
+    text-align: center;
+    width: 5rem
+}
+
+.navTextDivAccount:hover .dropdown-content {
+    display: block
+}
+
+.navSignInDiv {
+    background-color: #fff;
+    height: 4rem;
+    margin-left: -.5rem;
+    width: 8rem
+}
+
+.navSignInDiv,
+.navSignOutDiv {
+    border: 1px solid #bbb;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13);
+    margin-top: 1rem;
+    overflow: visible;
+    position: relative;
+    z-index: 10000
+}
+
+.navSignOutDiv {
+    background: #fff;
+    height: auto;
+    margin-left: -1.5rem;
+    overflow: auto;
+    width: auto
+}
+
+.navSignOutContainer {
+    margin-left: 1rem;
+    margin-right: 2rem
+}
+
+.navSignOutTitle {
+    color: #0f1111;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.navSignOutYourAccount {
+    color: #444;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    white-space: normal
+}
+
+.navSignOutYourAccount:hover {
+    color: #e47911;
+    text-decoration: underline
+}
+
+.navSignOutWishList {
+    color: #444;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    white-space: normal
+}
+
+.navSignOutWishList:hover {
+    color: #e47911;
+    text-decoration: underline
+}
+
+.navSignOutOrders {
+    color: #444;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    white-space: normal
+}
+
+.navSignOutOrders:hover {
+    color: #e47911;
+    text-decoration: underline
+}
+
+.navSignOutSignOut {
+    color: #444;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    white-space: normal
+}
+
+.navSignOutSignOut:hover {
+    color: #e47911;
+    text-decoration: underline
+}
+
+.locationRowHomeHeader {
+    background-color: #131921;
+    display: flex;
+    float: none;
+    height: 60px;
+    position: static;
+    width: auto
+}
+
+.locationNavLogoDiv {
+    height: 60px
+}
+
+.locationNavLogo {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    max-height: 20px
+}
+
+.navShippingAddressDiv {
+    height: 60px;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-top: 15px
+}
+
+.navSearchBarDiv {
+    margin-left: 2rem;
+    margin-top: .65rem
+}
+
+.navSearchBar {
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    height: 39px;
+    outline: none;
+    width: 600px
+}
+
+.searchIconContainer {
+    background-color: #febd69;
+    border-bottom-right-radius: 8px;
+    border-left: none;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    float: right;
+    height: 37px;
+    margin-top: 2px;
+    width: 40px
+}
+
+.searchIconContainer:hover {
+    background-color: #f90
+}
+
+.searchIconDiv {
+    margin-left: 8px;
+    margin-top: 8px
+}
+
+.navSearchList {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: auto;
+    margin-left: 342px;
+    margin-top: 49px;
+    position: absolute;
+    width: 598px;
+    z-index: 999
+}
+
+.navSearchList div {
+    margin: 1rem
+}
+
+.navSearchList p {
+    cursor: pointer;
+    font-weight: 700
+}
+
+.departmentRowHomeHeaderContainer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    width: 98%
+}
+
+.navbarToggleIcon {
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: 900
+}
+
+.navSidebarCloseIcon {
+    cursor: pointer;
+    margin-left: 18rem;
+    margin-top: -3rem;
+    width: 2rem
+}
+
+.departmentRowHomeHeaderContentText {
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    margin-left: 1rem;
+    margin-top: .2rem
+}
+
+.departmentRowHomeHeaderContentText:hover {
+    border: 1px solid #fff
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.sidebarSection {
+    background: rgba(36, 41, 46, .9);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: .3s;
+    z-index: 999
+}
+
+.sidebarContainer {
+    background-color: #000;
+    display: flex;
+    height: auto;
+    overflow: auto;
+    position: fixed;
+    width: 27%;
+    z-index: 1000
+}
+
+.sidebarHeader {
+    background-color: #232f3e;
+    height: 50px;
+    position: absolute;
+    width: 100%
+}
+
+.sidebarHeaderContainer {
+    margin-top: .5rem
+}
+
+.sidebarHeaderText {
+    margin-left: 2rem
+}
+
+.sidebarHeaderTextSpan {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 2.5rem;
+    margin-top: -3.3rem;
+    padding-top: 1rem
+}
+
+.sidebarBody {
+    background-color: #fff;
+    height: auto;
+    overflow: hidden;
+    padding-top: 4.5rem;
+    scroll-behavior: smooth;
+    width: 100%
+}
+
+.sidebarBodyTitle {
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 2.5rem
+}
+
+.sidebarBodyTextDiv {
+    cursor: pointer;
+    height: 3rem
+}
+
+.sidebarBodyTextDiv:hover {
+    background-color: #eaeded
+}
+
+.sidebarBodyText {
+    color: #111;
+    font-size: 14px;
+    margin-left: 2.5rem;
+    padding-top: 1rem
+}
+
+.departmentRootSection {
+    background-color: #eaeded;
+    width: 100%
+}
+
+.departmentsSectionContainer {
+    height: auto;
+    overflow: auto
+}
+
+.departmentsDivContainer {
+    height: auto;
+    margin: auto;
+    width: 95.34%;
+    z-index: 100
+}
+
+.departmentBox {
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 420px;
+    margin: 1rem;
+    width: 290px
+}
+
+.departmentTitleLink {
+    color: #000;
+    text-decoration: none
+}
+
+.departmentTitle {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    margin: 1rem
+}
+
+.departmentImage {
+    height: auto;
+    margin-left: 1rem;
+    max-width: 250px
+}
+
+.departmentShopLink {
+    color: #15788b;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    margin: 2rem;
+    position: static
+}
+
+.departmentShopLink:hover {
+    color: #5762cc
+}
+
+.loadingBoxContainer {
+    margin-bottom: 540px
+}
+
+.alert {
+    background-color: #f8d7da;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    color: #721c24;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 3rem;
+    line-height: 1.5;
+    margin: auto;
+    padding-top: 1.3rem;
+    position: relative;
+    text-align: center;
+    width: 95%
+}
+
+.BannerBackgroundImg {
+    height: auto;
+    margin-bottom: -150px;
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+    mask-image: linear-gradient(180deg, #000, transparent);
+    width: 100%
+}
+
+.rowPosterSection {
+    background-color: #eaeded;
+    height: 350px;
+    min-height: 350px;
+    width: 100%
+}
+
+.rowPosterContainer {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    width: 95.34%
+}
+
+.divRow {
+    background-color: #fff;
+    float: left;
+    height: 280px;
+    margin: 1rem;
+    width: 98%
+}
+
+.posters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px
+}
+
+.posters::-webkit-scrollbar {
+    display: none
+}
+
+.poster {
+    cursor: pointer;
+    margin-right: 10px;
+    max-height: 250px
+}
+
+.poster:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.footerSection {
+    background-color: #131a22;
+    bottom: 0;
+    clear: both;
+    height: 100px;
+    position: relative;
+    width: 100%
+}
+
+.footerLogo {
+    display: block;
+    height: 40px;
+    width: auto
+}
+
+.footerContentText,
+.footerLogo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px
+}
+
+.footerContentText {
+    color: #fff;
+    font-size: small;
+    text-align: center
+}
+
+.footerBtn {
+    background-color: #232f3e;
+    border: 1px solid #131a22;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    height: 49px;
+    line-height: 19px;
+    position: relative;
+    width: 100%
+}
+
+.footerBtn:hover {
+    background-color: #37475a
+}
+
+.footerBtn:focus {
+    outline-color: #37475a;
+    outline-style: solid;
+    outline-width: 1px
+}
+
+.productsSectionContainer {
+    height: auto;
+    min-height: 600px;
+    width: 100%
+}
+
+.productsContainer {
+    height: auto;
+    margin: auto;
+    width: 95.34%
+}
+
+.productBox {
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 500px;
+    margin: 1rem 1rem 5rem;
+    width: 290px
+}
+
+.productsImageDiv {
+    margin: 1rem
+}
+
+.productsImage {
+    height: auto;
+    max-width: 250px
+}
+
+.productsTitleDiv {
+    margin-left: 2rem;
+    margin-top: 1rem
+}
+
+.productsTitleLink {
+    color: #000
+}
+
+.productsTitle {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.productsTitle:hover {
+    color: #ffa53f
+}
+
+.productsRatingDiv {
+    margin-left: 2rem;
+    margin-top: 1rem
+}
+
+.productsPriceDiv {
+    margin-left: 2rem
+}
+
+.productsPrice {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.productsRatingDiv span {
+    color: #ffa53f;
+    float: left;
+    margin: .1rem
+}
+
+.productsPriceDollar {
+    font-size: smaller
+}
+
+.productsPriceText {
+    font-size: large
+}
+
+.productsReviewDiv {
+    color: #007185;
+    font-size: smaller;
+    padding-top: .3rem
+}
+
+.productScreenSection {
+    height: auto;
+    min-height: 600px
+}
+
+.productScreenImageDiv {
+    float: left;
+    height: 600px;
+    width: 40%
+}
+
+.productScreenContentDiv {
+    float: left;
+    height: 600px;
+    width: 60%
+}
+
+.productScreenImage {
+    height: auto;
+    margin: 5rem;
+    max-width: 100%
+}
+
+.productScreenTitle {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 5rem;
+    margin-top: 5rem
+}
+
+.productScreenRatingDiv {
+    margin-left: 5rem;
+    margin-top: 1rem
+}
+
+.productScreenRatingDiv span {
+    color: #ffa53f;
+    float: left;
+    margin: .1rem
+}
+
+.productScreenReviewDiv {
+    color: #007185;
+    font-size: smaller;
+    padding-left: 11.5rem;
+    padding-top: .3rem
+}
+
+.productScreenPriceDiv {
+    margin-left: 5rem;
+    margin-top: 1rem
+}
+
+.productScreenPriceTitle {
+    color: #565959;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-style: 14px
+}
+
+.productScreenPriceValue {
+    color: #b12704;
+    font-size: 18px;
+    line-height: 24px
+}
+
+.productScreenInStockDiv {
+    color: #007600;
+    margin-left: 5rem;
+    margin-top: 1rem
+}
+
+.productScreenInStockDiv,
+.productScreenUnavailableText {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    line-height: 24px
+}
+
+.productScreenUnavailableText {
+    color: #b12704
+}
+
+.btnQty {
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: .5rem;
+    height: 2rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    width: 5rem
+}
+
+.btnText {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 15px
+}
+
+.selectBtnQty {
+    background-color: #e6e6e6;
+    border: none;
+    outline: none
+}
+
+.CartBuyButtonsDiv {
+    margin-left: 5rem;
+    margin-top: 2rem
+}
+
+.ProductCartBtn {
+    background-color: #ffd93c;
+    border-color: #fcd200;
+    border-radius: 20px;
+    border-width: .5px;
+    cursor: pointer;
+    height: 45px;
+    width: 232px
+}
+
+.ProductCartBtn:hover {
+    background-color: #fcd200
+}
+
+.ProductCartBtnText {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.ProductBuyBtn {
+    background-color: #ffa41c;
+    border-color: #ff8f00;
+    border-radius: 20px;
+    border-width: .5px;
+    cursor: pointer;
+    height: 45px;
+    margin-left: 2rem;
+    width: 232px
+}
+
+.ProductBuyBtn:hover {
+    background-color: #ff8f00
+}
+
+.ProductBuyBtnText {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.productScreenBrandDiv {
+    margin-left: 5rem;
+    margin-top: .5rem
+}
+
+.productScreenBrand {
+    color: #565959;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-style: 18px
+}
+
+.productScreenDescriptionDiv {
+    margin-left: 5rem
+}
+
+.productScreenDescription {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: small
+}
+
+.cartSection {
+    background-color: #eaeded;
+    height: auto;
+    min-height: 550px;
+    overflow: auto;
+    padding-top: 1rem;
+    width: 100%
+}
+
+.cartContainer {
+    margin: auto
+}
+
+.cartBoxContainer {
+    background-color: #fff;
+    float: left;
+    margin-bottom: 2rem;
+    margin-left: 1rem
+}
+
+.cartBox,
+.cartBoxContainer {
+    height: auto;
+    width: 1000px
+}
+
+.checkoutBox {
+    background-color: #fff;
+    height: 175px;
+    margin-left: 65rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 300px
+}
+
+.shoppingCartText {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 1rem;
+    margin-top: 1rem
+}
+
+.CartBoxPriceTitleText {
+    color: #565959;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 950px
+}
+
+.cartTitleHr {
+    background-color: #ddd;
+    margin-left: 1rem;
+    margin-right: 1rem
+}
+
+.cartImageDiv {
+    float: left;
+    height: 200px;
+    margin: 0;
+    width: 200px
+}
+
+.cartImage {
+    max-height: 200px;
+    max-width: 200px
+}
+
+.cartContentBox {
+    margin-left: 220px;
+    width: 600px
+}
+
+.cartProductTitleDiv {
+    margin-top: 1rem;
+    width: 600px
+}
+
+.cartProductTitle {
+    font-size: 20px;
+    font-weight: 400
+}
+
+.cartStockDiv {
+    color: #007600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 1rem
+}
+
+.cartQtyBtnDiv {
+    float: left;
+    width: 6rem
+}
+
+.cartBtnQty {
+    border-radius: .5rem;
+    cursor: pointer;
+    height: 2rem;
+    margin-top: 2rem;
+    width: 5rem
+}
+
+.cartBtnQty,
+.cartSelectBtnQty {
+    background-color: #e6e6e6;
+    border: none
+}
+
+.cartSelectBtnQty {
+    outline: none
+}
+
+.cartBtnText {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 15px
+}
+
+.cartDeleteDiv {
+    margin-top: 40px
+}
+
+.cartDeleteTextMark {
+    color: #a9a9a9;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.cartDeleteText {
+    color: #047188;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 1rem
+}
+
+.cartDeleteText:hover {
+    text-decoration: underline
+}
+
+.cartProductPriceDiv {
+    height: 50px;
+    margin-left: 850px;
+    margin-top: -9rem;
+    text-align: right;
+    width: 140px
+}
+
+.cartProductPrice {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.subTotalCartDiv {
+    height: 60px;
+    text-align: right;
+    width: 100%
+}
+
+.cartBottomHr {
+    background-color: #ddd;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 10rem
+}
+
+.subTotalCartText {
+    margin-right: 1rem;
+    margin-top: 1rem
+}
+
+.cartSubTotalPrice,
+.cartSubTotalText {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.cartSubTotalPrice {
+    font-family: sans-serif;
+    font-weight: 700
+}
+
+.subTotalText {
+    padding-top: 2rem
+}
+
+.checkOutSubTotalPrice,
+.checkOutSubTotalText {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.checkOutSubTotalPrice {
+    font-family: sans-serif;
+    font-weight: 700
+}
+
+.checkOutBtn {
+    background-color: #ffd93c;
+    border-color: #fcd200;
+    border-radius: 10px;
+    border-width: .5px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 2rem;
+    width: 258px
+}
+
+.checkOutBtn:hover {
+    background-color: #fcd200
+}
+
+.emptyCartDiv {
+    background-color: #fff;
+    height: 150px;
+    width: 60%
+}
+
+.emptyCart,
+.emptyCartDiv {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emptyCart {
+    height: 100%;
+    width: 90%
+}
+
+.emptyCartContentText {
+    color: #0f1111;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-top: 1rem
+}
+
+.emptyCartShoppingLink {
+    padding-top: 3rem;
+    text-align: end
+}
+
+.goShoppingLink {
+    color: #15788b
+}
+
+.goShoppingLink:hover {
+    color: #c7511f;
+    text-decoration: underline
+}
+
+.logo-login {
+    cursor: pointer;
+    height: auto;
+    width: 10rem
+}
+
+.login-box {
+    border: 1px solid #e8e8e8;
+    color: #333;
+    margin: auto;
+    padding: 10px;
+    width: 30%
+}
+
+#login-btn {
+    background-color: #f0c14b;
+    margin-left: 10%;
+    margin-top: 3rem
+}
+
+#create-btn,
+#login-btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    height: 2rem;
+    width: 20rem
+}
+
+#create-btn {
+    background-color: #e7e9ec;
+    margin-left: 3rem;
+    margin-top: 2rem
+}
+
+#login-btn:hover {
+    background-color: #eebb3b
+}
+
+#create-btn:hover {
+    background-color: #f0c14b
+}
+
+.signin-text {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-left: 10%
+}
+
+.email-input {
+    margin-bottom: 1rem
+}
+
+.email-input,
+.password-input {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 28px;
+    margin-left: 10%;
+    margin-top: .3rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 20rem
+}
+
+.privacy-text {
+    padding-top: 3rem
+}
+
+.new-to-amazon-text {
+    font-size: small;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.loginErrorContent {
+    color: #a02020;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center
+}
+
+.loginErrorDiv {
+    background-color: #ffe0e0;
+    height: auto;
+    margin-left: 10%;
+    width: 20rem
+}
+
+.container-signup {
+    color: #333
+}
+
+.logo-container {
+    margin: auto;
+    width: 11%
+}
+
+.logo-signup {
+    cursor: pointer;
+    height: auto;
+    width: 10rem
+}
+
+.signup-box {
+    border: 1px solid #e8e8e8;
+    margin: auto;
+    padding: 10px;
+    width: 30%
+}
+
+#signup-btn {
+    background-color: #f0c14b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    height: 2rem;
+    margin-left: 10%;
+    margin-top: 2rem;
+    width: 20rem
+}
+
+#signup-btn:hover {
+    background-color: #eebb3b
+}
+
+.create-account-text {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-left: 10%
+}
+
+.name-label {
+    font-weight: 700;
+    line-height: 19px
+}
+
+.input,
+.name-label {
+    font-size: 13px;
+    margin-left: 10%
+}
+
+.input {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    height: 31px;
+    margin-bottom: 1rem;
+    margin-top: .3rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 20rem
+}
+
+.email-label,
+.password-label {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-left: 10%;
+    padding-top: 1rem
+}
+
+.privacy-text {
+    font-size: small;
+    margin-left: 10%;
+    padding-top: 2rem
+}
+
+.signin {
+    cursor: pointer;
+    font-size: small;
+    margin-left: 25%
+}
+
+.signin:hover {
+    color: #15788b
+}
+
+.signupErrorContent {
+    color: #a02020;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center
+}
+
+.signupErrorDiv {
+    background-color: #ffe0e0;
+    height: auto;
+    margin-left: 10%;
+    width: 20rem
+}
+
+.addressContainer {
+    color: #333;
+    height: auto;
+    margin: 1rem auto 5rem;
+    width: 85%
+}
+
+.newAddressDiv {
+    float: left;
+    height: auto;
+    width: 50%
+}
+
+.addressTitleTextDiv {
+    margin-bottom: 1rem;
+    margin-top: 2.5rem
+}
+
+.SelectDeliveryAddressText {
+    text-rendering: optimizeLegibility;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.newAddressFormContainer {
+    width: 95%
+}
+
+.addNewAddressText {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3
+}
+
+.formDivTop {
+    margin-top: 2rem
+}
+
+.formDiv {
+    margin-top: 1rem
+}
+
+.newAddressLabel {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.selectCountry {
+    background-color: transparent;
+    background-color: #f1f2f4;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    display: block;
+    display: inline-block;
+    line-height: 29px;
+    outline: 0;
+    white-space: nowrap
+}
+
+.inputSpace,
+.selectCountry {
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .3rem;
+    width: 94%
+}
+
+.inputSpace {
+    border: 1px solid #d0d0d0;
+    border-top-color: #bbb
+}
+
+.inputCity,
+.inputSpace {
+    outline-color: #f69b3c;
+    outline-width: thin
+}
+
+.inputCity {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .3rem;
+    width: 260px
+}
+
+.inputCityDiv {
+    float: left
+}
+
+.selectStateDiv {
+    margin-left: 282px;
+    margin-top: 1rem
+}
+
+.selectState {
+    background-color: transparent;
+    background-color: #f1f2f4;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    display: block;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    line-height: 29px;
+    margin-top: .3rem;
+    outline: 0;
+    white-space: nowrap;
+    width: 260px
+}
+
+.labelDefaultAddress {
+    margin-left: 1rem
+}
+
+.selectAddressType {
+    background-color: transparent;
+    background-color: #f1f2f4;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    display: block;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    line-height: 29px;
+    margin-top: .3rem;
+    outline: 0;
+    white-space: nowrap;
+    width: 94%
+}
+
+.deliveryInstructionDiv {
+    margin-top: 2rem
+}
+
+.deliveryInstructionText {
+    text-rendering: optimizeLegibility;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.24
+}
+
+.deliveryInstructionContentDiv {
+    margin-top: 1rem
+}
+
+.deliveryInstructionContentText {
+    font-size: 13px;
+    line-height: 19px
+}
+
+.useAddressBtnDiv {
+    margin-top: 2rem
+}
+
+.useAddressBtn {
+    background-color: transparent;
+    background-color: #f0c24f;
+    border: 1px solid #bf942b;
+    border-radius: 3px;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    line-height: 29px;
+    outline: #f69b3c;
+    text-align: center;
+    white-space: nowrap;
+    width: 120px
+}
+
+.newAddressLocationDiv {
+    margin-left: 50%;
+    width: 50%
+}
+
+.newAddressFormContainerRight {
+    margin-top: 2rem;
+    padding-top: 43px
+}
+
+.existingShippingAddressSection {
+    margin-top: 1rem
+}
+
+.existingShippingAddressName {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px
+}
+
+.existingShippingAddress,
+.existingShippingAddressAddress,
+.existingShippingAddressCountry,
+.existingShippingAddressPlace {
+    color: #333;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: .25rem
+}
+
+.existingShippingAddInstructions {
+    color: #007eb9;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: .25rem
+}
+
+.existingShippingAddInstructions:hover {
+    color: #e47911;
+    text-decoration: underline
+}
+
+.existingShippingBtn {
+    background-color: transparent;
+    background-color: #f0c24f;
+    border: 1px solid #bf942b;
+    border-radius: 3px;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    line-height: 29px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    outline: #f69b3c;
+    text-align: center;
+    white-space: nowrap;
+    width: 230px
+}
+
+.paymentSection {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    min-height: 530px;
+    width: 85%
+}
+
+.paymentTitleDiv {
+    margin-bottom: 1rem;
+    margin-top: 2.5rem
+}
+
+.paymentTitle {
+    text-rendering: optimizeLegibility;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.paymentContentContainer {
+    border: 1px solid #ddd;
+    float: left;
+    height: auto;
+    margin-bottom: 2rem;
+    min-height: 150px;
+    width: 70%
+}
+
+.paymentContentContainerDivSection {
+    margin-top: -5rem
+}
+
+.paymentContentImageDiv {
+    float: left
+}
+
+.paymentContentImage {
+    margin: 1rem;
+    max-height: 100px
+}
+
+.paymentContentContainerDiv {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 40%
+}
+
+.paymentContentProductTitleDiv {
+    padding-top: 2rem
+}
+
+.paymentContentProductTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.paymentContentProductPriceDiv {
+    margin-top: .2rem
+}
+
+.paymentContentProductPrice {
+    color: #b12d2a;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.paymentContentProductQtyDiv {
+    margin-top: .2rem
+}
+
+.paymentContentProductQtyTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.paymentContentProductQty {
+    font-weight: 400
+}
+
+.paymentContentProductQtyChange {
+    color: #007eb9;
+    cursor: pointer;
+    font-weight: 400
+}
+
+.paymentContentProductQtyChange:hover {
+    text-decoration: underline
+}
+
+.paymentMethodContainerDiv {
+    margin-left: 70%;
+    margin-top: 2rem
+}
+
+.paymentMethodTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.paymentMethodContentDiv {
+    color: #3f9a0e;
+    font-size: 13px;
+    line-height: 19px
+}
+
+.paymentPlaceSection {
+    border: 1px solid #ddd;
+    float: left;
+    height: auto;
+    margin-left: 1rem;
+    width: 25%
+}
+
+.paymentPlaceContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 80%
+}
+
+.paymentPlaceOrderTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.paymentPlaceItemsTextDiv {
+    margin-top: .25rem
+}
+
+.paymentPlaceItemsText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.paymentPlaceItemsPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.paymentPlaceDeliveryTextDiv {
+    margin-top: .25rem
+}
+
+.paymentPlaceDeliveryText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.paymentPlaceDeliveryPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.paymentPlaceTotalTextDiv {
+    margin-top: .25rem
+}
+
+.paymentPlaceTotalText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.paymentPlaceTotalPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.paymentPlacePromotionTextDiv {
+    margin-bottom: .25rem;
+    margin-top: .25rem
+}
+
+.paymentPlacePromotionText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.paymentPlacePromotionPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.paymentPlaceOrderTotalDiv {
+    margin-bottom: .25rem;
+    margin-top: .5rem
+}
+
+.paymentPlaceOrderTotal {
+    float: left
+}
+
+.paymentPlaceOrderTotal,
+.paymentPlaceOrderTotalPrice {
+    text-rendering: optimizeLegibility;
+    color: #b12704;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.24
+}
+
+.paymentPlaceOrderTotalPrice {
+    text-align: right
+}
+
+.paymentPlaceSavingsTextDiv {
+    margin-bottom: 1rem;
+    margin-top: .25rem
+}
+
+.paymentPlaceSavingsText {
+    float: left
+}
+
+.paymentPlaceSavingPrice,
+.paymentPlaceSavingsText {
+    color: #b12704;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.paymentPlaceSavingPrice {
+    padding-left: 6rem
+}
+
+.paymentPlacePrice {
+    text-align: right
+}
+
+.paymentPlaceContinueBtnDiv {
+    height: auto;
+    margin: 2rem auto;
+    width: 100%
+}
+
+.paymentPlaceContinueBtn {
+    background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+    border-color: #cba957 #bf942a #aa8326;
+    border-radius: 3px;
+    border-width: .5px;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    line-height: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    outline: 0;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    width: 90%
+}
+
+.ErrorDiv {
+    background-color: #ffe0e0;
+    height: auto;
+    margin-left: auto;
+    width: auto
+}
+
+.ErrorContent {
+    color: #a02020;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center
+}
+
+.placeOrderSection {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    min-height: 530px;
+    width: 85%
+}
+
+.placeOrderTitleDiv {
+    margin-bottom: 1rem;
+    margin-top: 2.5rem
+}
+
+.placeOrderTitle {
+    text-rendering: optimizeLegibility;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.placeOrderIdTitleDiv {
+    margin-bottom: .5rem
+}
+
+.placeOrderIdTitle {
+    color: #333
+}
+
+.placeOrderContentContainer {
+    border: 1px solid #ddd;
+    float: left;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    min-height: 150px;
+    width: 70%
+}
+
+.placeOrderContentContainerDivSection {
+    margin-top: 0
+}
+
+.placeOrderContentImageDiv {
+    float: left
+}
+
+.placeOrderContentImage {
+    margin: 1rem;
+    max-height: 100px
+}
+
+.placeOrderContentContainerDiv {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    width: 40%
+}
+
+.placeOrderContentProductTitleDiv {
+    padding-top: 2rem
+}
+
+.placeOrderContentProductTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderContentProductPriceDiv {
+    margin-top: .2rem
+}
+
+.placeOrderContentProductPrice {
+    color: #b12d2a;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderContentProductQtyDiv {
+    margin-top: .2rem
+}
+
+.placeOrderContentProductQtyTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderContentProductQty {
+    font-weight: 400
+}
+
+.placeOrderContentProductQtyChange {
+    color: #007eb9;
+    cursor: pointer;
+    font-weight: 400
+}
+
+.placeOrderContentProductQtyChange:hover {
+    text-decoration: underline
+}
+
+.ulSection {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 19px;
+    list-style-type: disc;
+    margin-left: 2rem
+}
+
+.placeOrderPlaceSection {
+    border: 1px solid #ddd;
+    float: left;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: -12.5rem;
+    position: static;
+    width: 25%
+}
+
+.placeOrderPlaceContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 80%
+}
+
+.placeOrderPlaceOrderTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderPlaceItemsTextDiv {
+    margin-top: .25rem
+}
+
+.placeOrderPlaceItemsText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.placeOrderPlaceItemsPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.placeOrderPlaceDeliveryTextDiv {
+    margin-top: .25rem
+}
+
+.placeOrderPlaceDeliveryText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.placeOrderPlaceDeliveryPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.placeOrderPlaceTotalTextDiv {
+    margin-top: .25rem
+}
+
+.placeOrderPlaceTotalText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.placeOrderPlaceTotalPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.placeOrderPlacePromotionTextDiv {
+    margin-bottom: .25rem;
+    margin-top: .25rem
+}
+
+.placeOrderPlacePromotionText {
+    color: #333;
+    float: left;
+    font-size: 12px
+}
+
+.placeOrderPlacePromotionPrice {
+    color: #333;
+    font-size: 12px;
+    text-align: right
+}
+
+.placeOrderPlaceOrderTotalDiv {
+    margin-bottom: .25rem;
+    margin-top: .5rem
+}
+
+.placeOrderPlaceOrderTotal {
+    float: left
+}
+
+.placeOrderPlaceOrderTotal,
+.placeOrderPlaceOrderTotalPrice {
+    text-rendering: optimizeLegibility;
+    color: #b12704;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.24
+}
+
+.placeOrderPlaceOrderTotalPrice {
+    text-align: right
+}
+
+.placeOrderPlaceSavingsTextDiv {
+    margin-bottom: 1rem;
+    margin-top: .25rem
+}
+
+.placeOrderPlaceSavingsText {
+    float: left
+}
+
+.placeOrderPlaceSavingPrice,
+.placeOrderPlaceSavingsText {
+    color: #b12704;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderPlaceSavingPrice {
+    padding-left: 6rem
+}
+
+.liText {
+    color: #333
+}
+
+.placeOrderPlacePrice {
+    text-align: right
+}
+
+.placeOrderPlaceContinueBtnDiv {
+    height: auto;
+    margin: 2rem auto;
+    width: 100%
+}
+
+.placeOrderPlaceContinueBtn {
+    background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+    border-color: #cba957 #bf942a #aa8326;
+    border-radius: 3px;
+    border-width: .5px;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    line-height: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    outline: 0;
+    outline: none;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    width: 90%
+}
+
+.placeOrderShippingSection {
+    border: 1px solid #ddd;
+    float: left;
+    height: auto;
+    margin-bottom: 1rem;
+    min-height: 183px;
+    width: 70%
+}
+
+.placeOrderShippingAddressContainer {
+    float: left;
+    margin: 1rem;
+    width: 29.3%
+}
+
+.placeOrderShippingAddressTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderShippingAddressTitleChange {
+    color: #007eb9;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.465
+}
+
+.placeOrderShippingAddressTitleChange:hover {
+    text-decoration: underline
+}
+
+.placeOrderShippingAddressNameDiv {
+    margin-top: .5rem
+}
+
+.placeOrderShippingAddressCity,
+.placeOrderShippingAddressCountry,
+.placeOrderShippingAddressMobile,
+.placeOrderShippingAddressName,
+.placeOrderShippingAddressPlace,
+.placeOrderShippingAddressText {
+    color: #333;
+    font-size: 13px;
+    line-height: 19px
+}
+
+.placeOrderPaymentMethodContainer {
+    float: left;
+    margin: 1rem;
+    width: 29.3%
+}
+
+.placeOrderPaymentMethodTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderPaymentMethodChange {
+    color: #007eb9;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.465
+}
+
+.placeOrderPaymentMethodChange:hover {
+    text-decoration: underline
+}
+
+.placeOrderPaymentMethodDiv {
+    margin-top: .5rem
+}
+
+.placeOrderPaymentMethod {
+    color: #333;
+    font-size: 13px;
+    line-height: 19px
+}
+
+.placeOrderGiftVoucherContainer {
+    float: left;
+    margin: 1rem;
+    width: 29.3%
+}
+
+.placeOrderGiftVoucherTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.placeOrderGiftVoucherDiv {
+    margin-top: .5rem
+}
+
+.placeOrderGiftVoucherInput {
+    border: 1.5px solid #ddd;
+    border-radius: 3px;
+    height: 31px;
+    outline: none;
+    width: 157px
+}
+
+.placeOrderGiftVoucherInput:hover {
+    outline-color: #ffa53f;
+    outline-style: solid;
+    outline-width: .1px
+}
+
+.placeOrderGiftVoucherBtn {
+    border-color: #bcc1c8 #bababa #adb2bb;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 13px;
+    height: 29px;
+    line-height: 19px;
+    margin-left: .5rem;
+    overflow: hidden;
+    text-align: center;
+    width: 53px
+}
+
+.placeOrderGiftVoucherBtn:hover {
+    background-color: #ddd
+}
+
+.placeOrderGiftVoucherCodeOutput {
+    color: #b12704;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+    padding-top: .5rem;
+    text-align: left
+}
+
+.paymentErrorDiv {
+    background-color: #ffe0e0;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.paymentErrorContent {
+    color: #a02020;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    text-align: center
+}
+
+.orderSection {
+    height: auto;
+    min-height: 550px;
+    width: 100%
+}
+
+.orderSectionContainer {
+    background-color: #f0f2f2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem
+}
+
+.orderSectionContainer,
+.orderSectionContainerDiv {
+    border-radius: 8px;
+    height: auto;
+    overflow: auto;
+    width: 95%
+}
+
+.orderSectionContainerDiv {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    margin: 1rem auto 2rem
+}
+
+.orderContainerSection {
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%
+}
+
+.orderPlaceTitle {
+    color: #067d62;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 2rem
+}
+
+.orderPlaceIcon {
+    float: left;
+    height: auto;
+    width: 24px
+}
+
+.orderPlaceConformationDiv {
+    margin-top: 1rem
+}
+
+.orderPlaceConformationText {
+    color: #0f1111;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderPlaceShippingDiv {
+    margin-top: 1rem
+}
+
+.orderPlaceShipping {
+    color: #0f1111;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.orderPlaceHr {
+    color: #d5d9d9
+}
+
+.orderProductContainer {
+    margin-top: 1rem
+}
+
+.orderPlaceDeliveryDate {
+    color: #007600;
+    font-weight: 700
+}
+
+.orderPlaceDeliveryDate,
+.orderPlaceDeliveryText {
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderPlaceDeliveryText {
+    color: #0f1111
+}
+
+.orderPlaceReviewDiv {
+    margin-top: 2rem
+}
+
+.orderPlaceReview {
+    color: #007185;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderPlaceReview:hover {
+    color: #c7511f;
+    text-decoration: underline
+}
+
+.orderPlacePaidAtDiv {
+    margin-bottom: 1rem
+}
+
+.orderPlacePaidAt {
+    color: #007600;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderPlacePaidAtText {
+    color: #0f1111;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderPlaceProductImageDiv {
+    float: left;
+    margin-left: 2rem
+}
+
+.orderPlaceProductImage {
+    height: auto;
+    margin-top: -1rem;
+    max-height: 150px;
+    max-width: 100px
+}
+
+.orderPlaceProductSectionContainer {
+    float: left;
+    width: 15%
+}
+
+.orderProductContainer {
+    height: auto;
+    width: 100%
+}
+
+.orderProductContainerAllContentDiv {
+    height: 150px;
+    width: 100%
+}
+
+.orderPlaceProductSection {
+    width: 70%
+}
+
+.orderPlaceProductContentDiv {
+    margin-left: 22rem
+}
+
+.orderPlaceProductTitle {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.orderPlaceReturnDiv {
+    margin: 1rem
+}
+
+.orderPlaceReturn {
+    color: #007185;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderPlaceReturn:hover {
+    color: #c7511f;
+    text-decoration: underline
+}
+
+.orderHistorySection {
+    height: auto;
+    min-height: 550px;
+    overflow: auto;
+    width: 100%
+}
+
+.orderHistoryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    width: 80%
+}
+
+.orderHistoryAccountText {
+    color: #555
+}
+
+.orderHistoryAccountText,
+.orderHistoryYourAccountText {
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderHistoryYourAccountText {
+    color: #007185;
+    padding-right: .5rem
+}
+
+.orderHistoryYourOrdersText {
+    color: #c45500;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: .5rem
+}
+
+.orderHistoryYourAccountText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.orderHistoryTitleDiv {
+    margin-bottom: 1rem;
+    margin-top: 1rem
+}
+
+.orderHistoryTitle {
+    color: #0f1111;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px
+}
+
+.orderHistoryOrderNumberDiv {
+    margin-top: 1rem
+}
+
+.orderHistoryOrderNumber {
+    color: #0f1111;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-weight: 700
+}
+
+.orderHistoryOrderNumber,
+.orderHistoryOrderNumberText {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    text-transform: none
+}
+
+.orderHistoryOrderNumberText {
+    font-weight: 400;
+    text-decoration: none
+}
+
+.orderHistoryProductContainer {
+    border: 1px solid #d5d9d9;
+    border-radius: 8px 8px 0 0;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.orderHistoryProductHeadContainer {
+    background-color: #f0f2f2;
+    height: auto;
+    overflow: auto;
+    width: 100%
+}
+
+.orderHistoryProductHeadDiv {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.orderHistoryOrderPlacedContainer {
+    float: left
+}
+
+.orderHistoryOrderPlacedText {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase
+}
+
+.orderHistoryOrderDateText,
+.orderHistoryOrderPlacedText {
+    color: #565959;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.orderHistoryOrderDateText {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderHistoryOrderTotalContainer {
+    float: left;
+    margin-left: 4rem
+}
+
+.orderHistoryOrderTotalText {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase
+}
+
+.orderHistoryOrderPriceText,
+.orderHistoryOrderTotalText {
+    color: #565959;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.orderHistoryOrderPriceText {
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderHistoryOrderShipContainer {
+    float: left;
+    margin-left: 4rem
+}
+
+.orderHistoryOrderShipText {
+    color: #565959;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase
+}
+
+.orderHistoryOrderShipText,
+.orderHistoryOrderShippingAddressText {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.orderHistoryOrderShippingAddressText {
+    color: #007185;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderHistoryOrderShippingAddressText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.orderHistoryOrderIdContainer {
+    float: left;
+    margin-left: 14rem
+}
+
+.orderHistoryOrderIdText {
+    color: #565959;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase
+}
+
+.orderHistoryOrderDetailsText,
+.orderHistoryOrderIdText {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.orderHistoryOrderDetailsText {
+    color: #555;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderHistoryOrderViewDetailsText {
+    color: #007185;
+    cursor: pointer
+}
+
+.orderHistoryOrderViewDetailsText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.orderHistoryOrderInvoiceText {
+    color: #007185;
+    cursor: pointer
+}
+
+.orderHistoryOrderInvoiceText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.orderHistoryProductContentContainer {
+    height: auto;
+    width: 100%
+}
+
+.orderHistoryProductContentDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.orderHistoryProductOrderStatus {
+    color: #0f1111;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 24px !important
+}
+
+.orderHistoryProductOrderStatusText {
+    color: #565959 !important;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.orderHistoryProductImage {
+    max-height: 100px;
+    width: auto
+}
+
+.orderHistoryProductImageDiv {
+    margin-top: 2rem;
+    max-height: 150px;
+    width: auto
+}
+
+.orderHistoryProductNameDiv {
+    margin-bottom: 4rem;
+    margin-left: 8rem
+}
+
+.orderHistoryProductName {
+    color: #007185;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -5rem
+}
+
+.orderHistoryProductName:hover {
+    color: #c7511f;
+    cursor: pointer;
+    text-decoration: underline
+}
+
+.fas {
+    color: #555
+}
+
+.orderHistoryOrderShippingAddressText:hover .dropdown-content {
+    display: block
+}
+
+.orderShippingDropDownSection {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .13);
+    height: 150px;
+    margin-left: -5rem;
+    overflow: hidden;
+    width: 234px
+}
+
+.orderShippingDropDownDiv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    width: 80%
+}
+
+.orderShippingDropDownAddressName {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.orderShippingDropDownAddress,
+.orderShippingDropDownAddressAddress,
+.orderShippingDropDownAddressCountry,
+.orderShippingDropDownAddressPlace,
+.orderShippingDropDownPhone {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: .2rem
+}
+
+.adminLoginContainer {
+    height: 39rem;
+    width: 100%
+}
+
+.imgLogo {
+    height: auto;
+    margin-left: 35%;
+    width: 30%
+}
+
+.logincontainer {
+    border: 1px solid #d5d9d9;
+    border-radius: 8px 8px 0 0;
+    height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+
+.signinContainer {
+    background-color: #f0f2f2;
+    height: 4rem;
+    width: 100%
+}
+
+.AdminText {
+    color: #565959;
+    float: left;
+    padding-left: 1rem
+}
+
+.AdminText,
+.signInText {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: xx-large;
+    font-weight: 300;
+    padding-top: 1rem
+}
+
+.signInText {
+    color: #333;
+    margin-right: 1rem;
+    text-align: right
+}
+
+.fa-user {
+    float: left;
+    margin-left: -164px;
+    padding-top: 56px
+}
+
+.usernameInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 2rem;
+    margin-left: 50px;
+    margin-top: 2rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 80%
+}
+
+.fa-lock {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2.5rem
+}
+
+.passwordInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    height: 2rem;
+    margin-left: 5px;
+    margin-top: 2rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 80%
+}
+
+.btn-login,
+.passwordInput {
+    font-family: Arial, sans-serif;
+    font-size: 13px
+}
+
+.btn-login {
+    background-color: transparent;
+    background-color: #f0c24f;
+    border: 1px solid #bf942b;
+    border-radius: 3px;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    height: 31px;
+    margin: 3rem 3.5rem 2rem auto;
+    outline: #f69b3c;
+    text-align: center;
+    white-space: nowrap;
+    width: 150px
+}
+
+.adminLoginReturn {
+    color: #007185;
+    cursor: pointer;
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 3.5rem;
+    margin-top: 4rem
+}
+
+.adminLoginReturn:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.logInSecuritySection {
+    height: auto;
+    min-height: 530px;
+    width: 100%
+}
+
+.logInSecurityContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    width: 54%
+}
+
+.logInSecurityAccountText {
+    color: #555
+}
+
+.logInSecurityAccountText,
+.logInSecurityYourAccountText {
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.logInSecurityYourAccountText {
+    color: #007185;
+    padding-right: .5rem
+}
+
+.logInSecurityLogInSecurityText {
+    color: #c45500;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: .5rem
+}
+
+.logInSecurityYourAccountText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.logInSecurityTitleDiv {
+    margin-top: 1rem
+}
+
+.logInSecurityTitle {
+    color: #0f1111;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px
+}
+
+.logInSecurityContainerDiv {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 306px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 600px
+}
+
+.logInSecurityNameDiv {
+    border-bottom: 1px solid #ddd;
+    height: 102px;
+    width: 100%
+}
+
+.logInSecurityNameTextDiv {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 75%
+}
+
+.logInSecurityNameTitle {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.logInSecurityName {
+    color: #111;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: .25rem
+}
+
+.logInSecurityNameBtnDiv {
+    float: left;
+    margin-top: 2.5rem
+}
+
+.logInSecurityNameBtn {
+    background: #e7e9ec;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    height: 31px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 70px
+}
+
+.logInSecurityEmailDiv {
+    border-bottom: 1px solid #ddd;
+    height: 102px;
+    width: 100%
+}
+
+.logInSecurityEmailTextDiv {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 75%
+}
+
+.logInSecurityEmailTitle {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.logInSecurityEmail {
+    color: #111;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: .25rem
+}
+
+.logInSecurityEmailBtnDiv {
+    float: left;
+    margin-top: 2.5rem
+}
+
+.logInSecurityEmailBtn {
+    background: #e7e9ec;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    height: 31px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 70px
+}
+
+.logInSecurityPasswordDiv {
+    height: 102px;
+    width: 100%
+}
+
+.logInSecurityPasswordTextDiv {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 75%
+}
+
+.logInSecurityPasswordTitle {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.logInSecurityPassword {
+    color: #111;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: .25rem
+}
+
+.logInSecurityPasswordBtnDiv {
+    float: left;
+    margin-top: 2.5rem
+}
+
+.logInSecurityPasswordBtn {
+    background: #e7e9ec;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    height: 31px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 70px
+}
+
+.logInSecurityDoneBtnDiv {
+    margin-left: 1rem
+}
+
+.logInSecurityDoneBtn {
+    background: linear-gradient(180deg, #f7dfa5, #f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    cursor: pointer;
+    height: 31px;
+    width: 54px
+}
+
+.logInSecurityDoneBtn:focus:hover {
+    border: 1px solid #e47911
+}
+
+.nameChangeSection {
+    height: auto;
+    min-height: 500px;
+    width: 100%
+}
+
+.nameChangeContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    width: 54%
+}
+
+.nameChangeAccountText {
+    color: #555;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.nameChangeLogInSecurityText,
+.nameChangeYourAccountText {
+    color: #007185;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: .5rem
+}
+
+.nameChangeLogInSecurityText {
+    padding-left: .5rem
+}
+
+.nameChangeNameChangeText {
+    color: #c45500;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: .5rem
+}
+
+.nameChangeLogInSecurityText:hover,
+.nameChangeYourAccountText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.nameChangeTitleDiv {
+    margin-top: 1rem
+}
+
+.nameChangeTitle {
+    color: #0f1111;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px
+}
+
+.nameChangeContainerDiv {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    overflow: auto;
+    width: 600px
+}
+
+.nameChangeDiv {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.nameChangeBoxText {
+    color: #111;
+    font-size: 13px;
+    line-height: 19px
+}
+
+.nameChangeBoxInputDiv {
+    margin-top: 2rem
+}
+
+.nameChangeBoxLabel {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.nameChangeBoxInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .25rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 174px
+}
+
+.nameChangeSaveBtnDiv {
+    margin-bottom: 2rem;
+    margin-top: 1.5rem
+}
+
+.nameChangeSaveBtn {
+    background: linear-gradient(180deg, #f7dfa5, #f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    cursor: pointer;
+    height: 31px;
+    width: 120px
+}
+
+.nameChangeSaveBtn:hover {
+    background-color: #fdbf1f
+}
+
+.nameChangeSaveBtn:focus:hover {
+    border: 1px solid #e47911
+}
+
+.nameChangeErrorContent {
+    color: #721c24;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.nameChangeErrorDiv {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+    height: auto;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.nameChangeSuccessContent {
+    color: #155724;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.nameChangeSuccessDiv {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 3px;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emailChangeSection,
+.nameChangeSuccessDiv {
+    height: auto;
+    width: 100%
+}
+
+.emailChangeContainer {
+    width: 60%
+}
+
+.emailChangeContainer,
+.emailChangeLogoDiv {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emailChangeLogoDiv {
+    width: 256px
+}
+
+.emailChangeLogo {
+    cursor: pointer;
+    max-width: 256px
+}
+
+.emailChangeBoxContainer {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    margin-top: 1rem;
+    overflow: auto;
+    width: 378px
+}
+
+.emailChangeBoxContainer,
+.emailChangeBoxDiv {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emailChangeBoxDiv {
+    margin-top: 2rem;
+    width: 90%
+}
+
+.emailChangeBoxTitle {
+    color: #0f1111;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px
+}
+
+.emailChangeBoxEmailTextDiv {
+    margin-top: 1rem
+}
+
+.emailChangeBoxEmailText {
+    color: #0f1111;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.emailChangeBoxParaTextDiv {
+    margin-top: 1rem
+}
+
+.emailChangeBoxParaText {
+    color: #0f1111;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.emailChangeBoxInputDiv {
+    margin-top: 2rem
+}
+
+.emailChangeBoxLabel {
+    color: #0f1111;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.emailChangeBoxInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .25rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 100%
+}
+
+.emailChangeBoxBtnDiv {
+    margin-bottom: 2rem;
+    margin-top: 2rem
+}
+
+.emailChangeBoxBtn {
+    background: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 hsla(180, 5%, 84%, .5);
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 31px;
+    line-height: 20px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%
+}
+
+.emailChangeBoxBtn:hover {
+    background-color: #fdd000
+}
+
+.emailChangeErrorContent {
+    color: #721c24;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.emailChangeErrorDiv {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+    height: auto;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.emailChangeSuccessContent {
+    color: #155724;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.emailChangeSuccessDiv {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 3px;
+    height: auto;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.passwordChangeSection {
+    height: auto;
+    min-height: 500px;
+    overflow: auto;
+    width: 100%
+}
+
+.passwordChangeContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    width: 54%
+}
+
+.passwordChangeAccountText {
+    color: #555;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.passwordChangeLogInSecurityText,
+.passwordChangeYourAccountText {
+    color: #007185;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: .5rem
+}
+
+.passwordChangeLogInSecurityText {
+    padding-left: .5rem
+}
+
+.passwordChangePasswordChangeText {
+    color: #c45500;
+    cursor: pointer;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: .5rem
+}
+
+.passwordChangeLogInSecurityText:hover,
+.passwordChangeYourAccountText:hover {
+    color: #c45500;
+    text-decoration: underline
+}
+
+.passwordChangeTitleDiv {
+    margin-top: 1rem
+}
+
+.passwordChangeTitle {
+    color: #0f1111;
+    font-family: Amazon Ember, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px
+}
+
+.passwordChangeBoxSection {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+    overflow: auto;
+    width: 80%
+}
+
+.passwordChangeBoxContainer {
+    margin-left: 1rem;
+    margin-top: 1rem
+}
+
+.passwordChangeBoxParaText {
+    color: #111;
+    font-size: 13px;
+    line-height: 19px
+}
+
+.passwordChangeBoxCurrentPasswordInputDiv {
+    margin-top: 1rem
+}
+
+.passwordChangeBoxCurrentPasswordLabel {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.passwordChangeBoxCurrentPasswordInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .25rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 174px
+}
+
+.passwordChangeBoxNewPasswordInputDiv {
+    margin-top: 1rem
+}
+
+.passwordChangeBoxNewPasswordLabel {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.passwordChangeBoxNewPasswordInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .25rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 174px
+}
+
+.passwordChangeBoxConformPasswordInputDiv {
+    margin-top: 1rem
+}
+
+.passwordChangeBoxConformPasswordLabel {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.passwordChangeBoxConformPasswordInput {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 31px;
+    margin-top: .25rem;
+    outline-color: #f69b3c;
+    outline-width: thin;
+    width: 174px
+}
+
+.passwordChangeSaveChangeBtnDiv {
+    margin-bottom: 2rem;
+    margin-top: 2rem
+}
+
+.passwordChangeSaveChangeBtn {
+    background: linear-gradient(180deg, #f7dfa5, #f0c14b);
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: #222;
+    cursor: pointer;
+    height: 31px;
+    width: 120px
+}
+
+.passwordChangeSaveChangeBtn:hover {
+    background-color: #fdbf1f
+}
+
+.passwordChangeSaveChangeBtn:focus:hover {
+    border: 1px solid #e47911
+}
+
+.passwordChangeErrorContent {
+    color: #721c24;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.passwordChangeErrorDiv {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+    height: auto;
+    margin-bottom: .5rem;
+    width: 97%
+}
+
+.passwordChangeSuccessContent {
+    color: #155724;
+    margin-bottom: 1rem;
+    padding-bottom: .25rem;
+    padding-top: 1rem;
+    text-align: center
+}
+
+.passwordChangeSuccessDiv {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 3px;
+    height: auto;
+    margin-bottom: .5rem;
+    width: 97%
+}
+
+.adminPanelSectionContainer {
+    background-color: #e9eef7;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    width: 100%
+}
+
+.adminPanelOverviewSection {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelOverviewContainer {
+    margin-top: 0
+}
+
+.adminPanelOverviewTitle {
+    color: #0f1111;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px
+}
+
+.adminPanelOverviewSubTitleDiv {
+    margin-top: .5rem
+}
+
+.adminPanelOverviewSubTitleText {
+    color: #8798ad;
+    font-size: 12px;
+    text-shadow: none
+}
+
+.adminPanelOverviewSubAmazonDashboardTitle,
+.adminPanelOverviewSubDashboardTitle {
+    color: #8798ad;
+    cursor: pointer;
+    margin-right: .5rem
+}
+
+.adminPanelOverviewSubAmazonDashboardTitle {
+    margin-left: .5rem
+}
+
+.adminPanelOverviewBoxContainer {
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 100%
+}
+
+.adminPanelOverviewOrdersBoxContainerDiv {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: auto;
+    min-height: 102px;
+    width: 320px
+}
+
+.adminPanelOverviewOrdersBoxContainerDiv:hover {
+    background-color: #eee
+}
+
+.adminPanelOverviewOrdersBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.adminPanelOverviewOrdersImgDivContainer {
+    float: left
+}
+
+.adminPanelOverviewOrdersImg {
+    height: auto;
+    width: 66px
+}
+
+.adminPanelOverviewOrdersText {
+    color: #111;
+    cursor: pointer;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none
+}
+
+.adminPanelOverviewOrdersSubText {
+    color: #565959;
+    cursor: pointer;
+    font-size: 14px
+}
+
+.adminPanelOverviewOrdersTextDivContainer {
+    float: left;
+    margin-left: 1rem
+}
+
+.adminPanelOverviewUsersBoxContainerDiv {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: auto;
+    min-height: 102px;
+    width: 320px
+}
+
+.adminPanelOverviewUsersBoxContainerDiv:hover {
+    background-color: #eee
+}
+
+.adminPanelOverviewUsersBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.adminPanelOverviewUsersImgDivContainer {
+    float: left
+}
+
+.adminPanelOverviewUsersImg {
+    height: auto;
+    width: 66px
+}
+
+.adminPanelOverviewUsersText {
+    color: #111;
+    cursor: pointer;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: none
+}
+
+.adminPanelOverviewUsersSubText {
+    color: #565959;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.adminPanelOverviewUsersTextDivContainer {
+    float: left;
+    margin-left: 1rem
+}
+
+.adminPanelOverviewProductsBoxContainerDiv {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: auto;
+    min-height: 102px;
+    width: 320px
+}
+
+.adminPanelOverviewProductsBoxContainerDiv:hover {
+    background-color: #eee
+}
+
+.adminPanelOverviewProductsBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.adminPanelOverviewProductsImgDivContainer {
+    float: left
+}
+
+.adminPanelOverviewProductsImg {
+    height: auto;
+    width: 66px
+}
+
+.adminPanelOverviewProductsText {
+    color: #111;
+    cursor: pointer;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: none
+}
+
+.adminPanelOverviewProductsSubText {
+    color: #565959;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.adminPanelOverviewProductsTextDivContainer {
+    float: left;
+    margin-left: 1rem
+}
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%
+}
+
+.containerheader {
+    background-color: #131921;
+    height: 60px;
+    position: absolute;
+    width: 100%
+}
+
+.logo {
+    cursor: pointer;
+    margin: 1.1rem;
+    position: absolute;
+    width: 96px
+}
+
+.panelTextDiv {
+    margin-left: 70%
+}
+
+.adminText,
+.ordersText,
+.productsText,
+.usersText {
+    cursor: pointer;
+    float: left;
+    margin-left: 2rem;
+    margin-top: 1rem
+}
+
+.panelText {
+    color: #a9a9a9;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+.panelText:hover {
+    color: #f5f5f5
+}
+
+.headerSignOutBtn {
+    background: -webkit-linear-gradient(top, #f8e3ad, #eeba37);
+    border-color: #c89411 #b0820f #99710d;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: inset 0 1px 0 0 #fcf3dc;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    height: 33px;
+    line-height: 31px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 5rem
+}
+
+.headerSignOutDiv {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13);
+    height: 4rem;
+    margin-left: -2.5rem;
+    overflow: visible;
+    position: relative;
+    width: 8rem;
+    z-index: 10000
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute
+}
+
+.panelText:hover .dropdown-content {
+    display: block
+}
+
+.adminSearchBarDiv {
+    display: flex;
+    float: left;
+    justify-content: end;
+    justify-items: end;
+    margin-left: 2rem;
+    margin-top: .65rem;
+    width: 70%
+}
+
+.adminSearchBar {
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    height: 39px;
+    outline: none;
+    width: 80%
+}
+
+.headerSearchList {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: auto;
+    margin-left: 183px;
+    margin-top: 49px;
+    position: absolute;
+    width: 755px;
+    z-index: 999
+}
+
+.headerSearchList div {
+    margin: 1rem
+}
+
+.headerSearchList p {
+    cursor: pointer;
+    font-weight: 700
+}
+
+.adminPanelDashOrdersBoxContainerSection {
+    align-items: center;
+    background-color: #e9eef7;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    width: 100%
+}
+
+.adminPanelDashContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto
+}
+
+.adminPanelDashOrdersBoxContainer {
+    background: #020024;
+    background: linear-gradient(90deg, #005467, #630000);
+    float: left;
+    height: 203px;
+    width: 230px
+}
+
+.adminPanelDashOrdersBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelDashOrdersTextBoxDiv {
+    float: left;
+    margin-left: 1rem;
+    padding-top: 2rem
+}
+
+.adminPanelDashOrdersBoxTitle {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: none
+}
+
+.adminPanelDashOrdersBoxValueDiv {
+    margin-top: .25rem
+}
+
+.adminPanelDashOrdersBoxValue {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: none
+}
+
+.adminPanelDashOrdersImgBoxDiv {
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    width: 3rem
+}
+
+.adminPanelDashOrdersBoxImg {
+    height: auto;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    width: 2rem
+}
+
+.adminPanelDashOrdersBoxIncreaseText {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 12px
+}
+
+.adminPanelDashTotalIncomeBoxContainer {
+    background: #330a54;
+    background: linear-gradient(90deg, #330a54, #032b79);
+    float: left;
+    height: 203px;
+    width: 230px
+}
+
+.adminPanelDashTotalIncomeBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelDashTotalIncomeTextBoxDiv {
+    float: left;
+    margin-left: 1rem;
+    padding-top: 2rem
+}
+
+.adminPanelDashTotalIncomeBoxTitle {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: none
+}
+
+.adminPanelDashTotalIncomeBoxValueDiv {
+    margin-top: .25rem
+}
+
+.adminPanelDashTotalIncomeBoxValue {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: none
+}
+
+.adminPanelDashTotalIncomeImgBoxDiv {
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    width: 3rem
+}
+
+.adminPanelDashTotalIncomeBoxImg {
+    height: auto;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    width: 2rem
+}
+
+.adminPanelDashTotalIncomeBoxIncreaseText {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 12px
+}
+
+.adminPanelDashProductsBoxContainer {
+    background: #0a1a3b;
+    background: linear-gradient(90deg, #0a1a3b, #035179);
+    float: left;
+    height: 203px;
+    width: 230px
+}
+
+.adminPanelDashProductsBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelDashProductsTextBoxDiv {
+    float: left;
+    margin-left: 1rem;
+    padding-top: 2rem
+}
+
+.adminPanelDashProductsBoxTitle {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: none
+}
+
+.adminPanelDashProductsBoxValueDiv {
+    margin-top: .25rem
+}
+
+.adminPanelDashProductsBoxValue {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: none
+}
+
+.adminPanelDashProductsImgBoxDiv {
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    width: 3rem
+}
+
+.adminPanelDashProductsBoxImg {
+    height: auto;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    width: 2rem
+}
+
+.adminPanelDashProductsBoxIncreaseText {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 12px
+}
+
+.adminPanelDashUsersBoxContainer {
+    background: #070c0f;
+    background: linear-gradient(90deg, #070c0f, #04757c);
+    float: left;
+    height: 203px;
+    width: 230px
+}
+
+.adminPanelDashUsersBoxDiv {
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelDashUsersTextBoxDiv {
+    float: left;
+    margin-left: 1rem;
+    padding-top: 2rem
+}
+
+.adminPanelDashUsersBoxTitle {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: none
+}
+
+.adminPanelDashUsersBoxValueDiv {
+    margin-top: .25rem
+}
+
+.adminPanelDashUsersBoxValue {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: none
+}
+
+.adminPanelDashUsersImgBoxDiv {
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    width: 3rem
+}
+
+.adminPanelDashUsersBoxImg {
+    height: auto;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    width: 2rem
+}
+
+.adminPanelDashUsersBoxIncreaseText {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 12px
+}
+
+.orderactivity {
+    background-color: #e9eef7;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 2rem;
+    width: 100%
+}
+
+.orderactivitycontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelOrderActivitySection {
+    float: left;
+    width: 60%
+}
+
+.adminPanelOrderActivityContainer {
+    margin-top: 0;
+    padding-left: 0
+}
+
+.adminPanelOrderActivityDiv {
+    height: auto;
+    overflow: auto;
+    width: 95%
+}
+
+.adminPanelOrderActivityBox {
+    background-color: #fff;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 100%
+}
+
+.adminPanelOrderActivityBoxTitleContainer {
+    border-bottom: 2px solid #dee2e6;
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    height: 4rem;
+    width: 100%
+}
+
+.adminPanelOrderActivityBoxTitleDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelOrderActivityBoxTitle {
+    color: #212229;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 1.5rem
+}
+
+.adminPanelOrderActivityBoxContentContainer {
+    border-bottom: 2px solid #dee2e6;
+    height: auto;
+    overflow: auto;
+    width: 100%
+}
+
+.adminPanelOrderActivityBoxContentDiv {
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    overflow: auto
+}
+
+.adminPanelOrderActivityBoxContentUserImgContainer {
+    float: left;
+    height: 55px;
+    width: 55px
+}
+
+.adminPanelOrderActivityBoxContentUserImgDiv {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55px
+}
+
+.adminPanelOrderActivityBoxContentUserImg {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px
+}
+
+.adminPanelOrderActivityBoxContentUserContentContainer {
+    float: left;
+    padding-bottom: 1rem;
+    width: 40%
+}
+
+.adminPanelOrderActivityBoxContentUserContentDiv {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.adminPanelOrderActivityBoxContentUserName {
+    color: #212529;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 600
+}
+
+.adminPanelOrderActivityBoxContentUserOrderTimeDiv {
+    margin-top: .05rem
+}
+
+.adminPanelOrderActivityBoxContentUserOrderTime {
+    color: #8798ad;
+    font-family: roboto, sans-serif;
+    font-size: .875rem;
+    line-height: 1.8
+}
+
+.adminPanelOrderActivityBoxContentOrderContentContainer {
+    padding-bottom: 1rem
+}
+
+.adminPanelOrderActivityBoxContentOrderImgContainer {
+    float: left;
+    height: 55px;
+    width: 55px
+}
+
+.adminPanelOrderActivityBoxContentOrderImgDiv {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55px
+}
+
+.adminPanelOrderActivityBoxContentOrderImg {
+    height: 55px;
+    width: 55px
+}
+
+.adminPanelOrderActivityBoxContentOrderContentContainer {
+    float: left;
+    width: 48%
+}
+
+.adminPanelOrderActivityBoxContentOrderContentDiv {
+    margin-left: 1rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 90%
+}
+
+.adminPanelOrderActivityBoxContentOrderContentName {
+    color: #212529;
+    font-family: roboto, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600
+}
+
+.adminPanelOrderActivityBoxContentOrderContentOrderCategoryDiv {
+    margin-top: .25rem
+}
+
+.adminPanelOrderActivityBoxContentOrderContentOrderCategory {
+    color: #6c757d;
+    font-family: roboto, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 10px
+}
+
+.adminPanelTopSellingProductSection {
+    background-color: #e9eef7;
+    height: auto;
+    padding-bottom: 2rem;
+    width: 40%
+}
+
+.adminPanelTopSellingProductContainer {
+    margin-top: 1rem
+}
+
+.adminPanelTopSellingProductDiv {
+    width: 100%
+}
+
+.adminPanelTopSellingProductContentImgDiv {
+    height: 55px
+}
+
+.adminPanelTopSellingProductSection {
+    float: left;
+    width: 30%
+}
+
+.adminPanelTopSellingProductContainer {
+    margin-top: 0
+}
+
+.adminPanelTopSellingProductDiv {
+    height: auto;
+    overflow: auto;
+    width: 477px
+}
+
+.adminPanelTopSellingProductBox {
+    background-color: #fff;
+    height: auto;
+    margin-bottom: 2rem;
+    width: 100%
+}
+
+.adminPanelTopSellingProductTitleContainer {
+    border-bottom: 2px solid #dee2e6;
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    height: 4rem;
+    width: 100%
+}
+
+.adminPanelTopSellingProductTitleDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelTopSellingProductTitle {
+    color: #212229;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 1.5rem
+}
+
+.adminPanelTopSellingProductContentContainer {
+    border-bottom: 1px solid #dee2e6;
+    height: auto;
+    overflow: auto;
+    width: 100%
+}
+
+.adminPanelTopSellingProductContentDiv {
+    height: auto;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    overflow: auto
+}
+
+.adminPanelTopSellingProductContentImgDiv {
+    border: 1px solid #dee2e6;
+    float: left;
+    height: 60px;
+    width: 80px
+}
+
+.adminPanelTopSellingProductContentImgDivCon {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .25rem;
+    width: 45px
+}
+
+.adminPanelTopSellingProductContentImg {
+    height: auto;
+    width: 45px
+}
+
+.adminPanelTopSellingProductContentTextContainer {
+    float: left;
+    height: auto;
+    width: 59%
+}
+
+.adminPanelTopSellingProductContentTextDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.adminPanelTopSellingProductContentTextTitle {
+    color: #212529;
+    font-family: roboto, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600
+}
+
+.adminPanelTopSellingProductContentTextCategoryDiv {
+    margin-top: .25rem
+}
+
+.adminPanelTopSellingProductContentTextCategory {
+    color: #6c757d;
+    font-family: roboto, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 10px
+}
+
+.adminPanelTopSellingProductContentTextDescriptionDiv {
+    margin-top: .25rem
+}
+
+.adminPanelTopSellingProductContentTextDescription {
+    color: #6c757d;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    line-height: 1.8
+}
+
+.adminPanelTopSellingProductContentPriceSection {
+    float: left;
+    height: auto;
+    width: 23%
+}
+
+.adminPanelTopSellingProductContentPriceContainer {
+    width: 80%
+}
+
+.adminPanelTopSellingProductContentPrice {
+    color: #212529;
+    font-family: roboto, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 550;
+    text-align: right
+}
+
+.adminPanelTopSellingProductContentReviewsDiv {
+    margin-top: .25rem
+}
+
+.adminPanelTopSellingProductContentReviews {
+    color: #8798ad !important;
+    font-family: roboto, sans-serif;
+    font-size: .875rem;
+    line-height: 1.8;
+    text-align: center
+}
+
+.CircularProgressbar {
+    height: 10rem;
+    margin-bottom: 2rem;
+    width: auto
+}
+
+.circleProgressBarDiv {
+    background-color: #e9eef7
+}
+
+.CircularProgressbar {
+    vertical-align: middle;
+    width: 100%
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #3e98c7;
+    stroke-linecap: round;
+    transition: stroke-dashoffset .5s ease 0s
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6;
+    stroke-linecap: round
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #3e98c7;
+    dominant-baseline: middle;
+    text-anchor: middle;
+    font-size: 20px
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+    fill: #3e98c7
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent
+}
+
+.adminProductsSection {
+    height: auto;
+    margin-bottom: 2rem;
+    overflow: auto;
+    padding-top: 5rem;
+    width: 100%
+}
+
+.productAddBtnDiv {
+    float: left;
+    margin-bottom: 2rem
+}
+
+.departmentAddBtnDiv {
+    margin-left: 1rem
+}
+
+.btn-product-option {
+    float: left
+}
+
+.btn-delete {
+    margin-left: 1rem
+}
+
+.productIcon {
+    font-size: 1rem
+}
+
+.adminInputSpace {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    border-top-color: #bbb;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 2.5rem;
+    margin-left: 50%;
+    outline-color: gray;
+    outline-width: thin
+}
+
+.AddProductContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+.addProductSubTitle {
+    margin-bottom: 0
+}
+
+.addProductInputContainer {
+    margin-top: 0
+}
+
+.addProductInputLabel {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px
+}
+
+.addProductFormLeft,
+.addProductFormRight {
+    float: left;
+    width: 50%
+}
+
+.selectDepartment {
+    background-color: transparent;
+    background-color: #f1f2f4;
+    border-color: #bcc1c8 #bababa #adb2bb;
+    border-style: solid;
+    border-width: 1px;
+    color: #111;
+    display: block;
+    display: inline-block;
+    height: 31px;
+    line-height: 29px;
+    outline: 0;
+    white-space: nowrap
+}
+
+.inputSpaceDescription,
+.selectDepartment {
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-top: .3rem;
+    width: 94%
+}
+
+.inputSpaceDescription {
+    border: 1px solid #d0d0d0;
+    border-top-color: #bbb;
+    height: 100px;
+    outline-color: #f69b3c;
+    outline-width: thin
+}
+
+.btn-addProduct {
+    float: right
+}
+
+.adminAddProductSection,
+.adminEditProductSection,
+.adminOrderDetailsSection {
+    height: auto;
+    margin-bottom: 2rem;
+    overflow: auto;
+    padding-top: 5rem;
+    width: 100%
+}
+
+.orderDetailsProductContentOrderDiv {
+    width: 50%
+}
+
+.addDepartmentSection {
+    background-color: #fff;
+    border: 1px solid #ffebcd;
+    display: flex;
+    height: auto;
+    margin-left: 22%;
+    margin-right: auto;
+    position: fixed;
+    width: 40%;
+    z-index: 999
+}
+
+.addDepartmentContainer {
+    margin: 1rem auto;
+    width: 90%
+}
+
+.btn-addNewDepartment {
+    display: flex;
+    margin-left: auto;
+    margin-right: 1.5rem
+}
+
+.addNewDepartmentTitle {
+    width: 100%
+}
+
+.addNewDepartmentTitleIcon {
+    cursor: pointer;
+    display: flex;
+    margin-left: auto
+}
+
 /*# sourceMappingURL=main.df146b0e.css.map*/

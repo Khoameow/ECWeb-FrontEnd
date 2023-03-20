@@ -31,8 +31,8 @@ function AdminLogin() {
         <img src={logo} alt="" className="imgLogo" />
         <div className="logincontainer">
           <div className="signinContainer">
-            <p className="AdminText">Admin Panel</p>
-            <p className="signInText">Sign In</p>
+            <p className="AdminText">管理者ページ</p>
+            <p className="signInText">サイン</p>
           </div>
           <div className="signinInputDiv">
             <div className="signinEmailInputDiv">
@@ -63,10 +63,10 @@ function AdminLogin() {
             </div>
           </div>
           <Link to={"/"} className="adminLoginReturn">
-            Return to home page
+            ホームページへ戻る
           </Link>
           <button className="btn btn-warning btn-login" onClick={handleLogin}>
-            Login
+            ログイン
           </button>
         </div>
       </section>

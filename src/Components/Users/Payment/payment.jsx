@@ -25,18 +25,25 @@ function Payment() {
     cartItems.reduce((a, c) => a + Number(c.priceValue) * Number(c.qty), 0)
   );
   const shippingPrice = Math.ceil(
-    cartItems.reduce((a, c) => a + ( Number(c.priceValue) * Number(c.qty) * 5) / 100, 0)
+    cartItems.reduce(
+      (a, c) => a + (Number(c.priceValue) * Number(c.qty) * 5) / 100,
+      0
+    )
   );
-  console.log("itemsPrice",  cartItems.reduce((a, c) => a + (Number(c.priceValue) * Number(c.qty)), 0));
+  console.log(
+    "itemsPrice",
+    cartItems.reduce((a, c) => a + Number(c.priceValue) * Number(c.qty), 0)
+  );
   console.log("shippingPrice", shippingPrice);
   const totalOrderPrice = itemsPrice + shippingPrice;
-  const promotionalApplied =
-    totalOrderPrice - shippingPrice - (itemsPrice * 5) / 100;
+  const promotionalApplied = Number(
+    totalOrderPrice - shippingPrice - (itemsPrice * 5) / 100
+  );
   const discountPrice = toPrice(totalOrderPrice - promotionalApplied);
   const totalPrice = toPrice(totalOrderPrice - discountPrice);
 
   const orderCreate = useSelector((state) => state.orderCreate);
-  console.log("orderCreate" , orderCreate)
+  console.log("orderCreate", orderCreate);
   const { loading, success, error, order } = orderCreate;
 
   cart.itemsPrice = itemsPrice;
@@ -44,7 +51,6 @@ function Payment() {
   cart.discountPrice = discountPrice;
   cart.totalPrice = totalPrice;
   cart.userName = userInfo ? userInfo.username : "";
-
 
   useEffect(() => {
     if (!userInfo) {
@@ -60,18 +66,15 @@ function Payment() {
     let url = "/api/products/edit";
     await axios.post(url, data);
   };
-
   const dispatch = useDispatch();
-
+  //click sang phan complete payment
   const placeOrderHandler = () => {
-    
-
     for (let i = 0; i < cart.cartItems.length; i++) {
       let countInStock = cart.cartItems[i].countInStock - cart.cartItems[i].qty;
       let proId = cart.cartItems[i].product;
       const data = {
         _id: proId,
-        countInStock: countInStock+'',
+        countInStock: countInStock + "",
       };
       // update_stock(data)
     }
@@ -80,13 +83,12 @@ function Payment() {
   };
   useEffect(() => {
     if (success) {
-      console.log("order111", order)
+      console.log("order111", order);
       navigate(`/order/${order.deliveryId}`);
       dispatch({ type: ORDER_CREATE_RESET });
-      
     }
-  }, [dispatch, order, success, navigate]);
-  console.log("cartitem", cartItems)
+  }, [dispatch, success, navigate, order]);
+  console.log("cartitem", cartItems);
   return (
     <div className="paymentSection">
       {error && (
@@ -99,15 +101,15 @@ function Payment() {
           <img src={paymentLogo} alt="" />
         </div>
         <div className="paymentTitleDiv">
-          <p className="paymentTitle">Select a payment method</p>
+          <p className="paymentTitle">支払い方法を選択する</p>
         </div>
         <div className="paymentContentContainer">
           <div className="paymentMethodContainerDiv">
             <div className="paymentMethodTitleDiv">
-              <p className="paymentMethodTitle">Payment method</p>
+              <p className="paymentMethodTitle">支払い方法</p>
             </div>
             <div className="paymentMethodContentDiv">
-              <p className="paymentMethodContent">PayPal</p>
+              <p className="paymentMethodContent">現金</p>
             </div>
           </div>
           <div className="paymentContentContainerDivSection">
@@ -122,17 +124,19 @@ function Payment() {
                 </div>
                 <div className="paymentContentContainerDiv">
                   <div className="paymentContentProductTitleDiv">
-                    <p className="paymentContentProductTitle">{product.productName}</p>
+                    <p className="paymentContentProductTitle">
+                      {product.productName}
+                    </p>
                   </div>
 
                   <div className="paymentContentProductPriceDiv">
                     <p className="paymentContentProductPrice">
-                      ${product.priceValue}
+                      金額 :￥{product.priceValue}
                     </p>
                   </div>
                   <div className="paymentContentProductQtyDiv">
                     <p className="paymentContentProductQtyTitle">
-                      Quantity:{" "}
+                      数量 :{" "}
                       <span className="paymentContentProductQty">
                         {product.qty}{" "}
                       </span>{" "}
@@ -144,7 +148,7 @@ function Payment() {
                         }}
                       >
                         {" "}
-                        Change
+                        変更
                       </span>
                     </p>
                   </div>
@@ -164,43 +168,43 @@ function Payment() {
                 placeOrderHandler();
               }}
             >
-              Place your order
+              レジに進む
             </button>
           </div>
           <div className="paymentPlaceOrderTitleDiv">
-            <p className="paymentPlaceOrderTitle">Order Summary</p>
+            <p className="paymentPlaceOrderTitle">注文情報</p>
           </div>
           <div className="paymentPlaceItemsTextDiv">
-            <p className="paymentPlaceItemsText">Items : </p>
-            <p className="paymentPlaceItemsPrice">$ {itemsPrice}</p>
+            <p className="paymentPlaceItemsText">金額 : </p>
+            <p className="paymentPlaceItemsPrice">￥{itemsPrice}</p>
           </div>
           <div className="paymentPlaceDeliveryTextDiv">
-            <p className="paymentPlaceDeliveryText">Delivery : </p>
-            <p className="paymentPlaceDeliveryPrice">$ {shippingPrice}</p>
+            <p className="paymentPlaceDeliveryText">配送料 : </p>
+            <p className="paymentPlaceDeliveryPrice">￥{shippingPrice}</p>
           </div>
           <div className="paymentPlaceTotalTextDiv">
-            <p className="paymentPlaceTotalText">Total : </p>
-            <p className="paymentPlaceTotalPrice">$ {totalOrderPrice}</p>
+            <p className="paymentPlaceTotalText">合計 : </p>
+            <p className="paymentPlaceTotalPrice">￥{totalOrderPrice}</p>
           </div>
           <div className="paymentPlacePromotionTextDiv">
-            <p className="paymentPlacePromotionText">Promotion Applied :</p>
-            <p className="paymentPlacePromotionPrice">‒ $ {discountPrice}</p>
+            <p className="paymentPlacePromotionText">プロモーション適用 :</p>
+            <p className="paymentPlacePromotionPrice">‒￥{discountPrice}</p>
           </div>
           <hr />
           <div className="paymentPlaceOrderTotalDiv">
-            <p className="paymentPlaceOrderTotal">Order Total :</p>
-            <p className="paymentPlaceOrderTotalPrice">$ {totalPrice}</p>
+            <p className="paymentPlaceOrderTotal">注文合計 :</p>
+            <p className="paymentPlaceOrderTotalPrice">￥{totalPrice}</p>
           </div>
           <hr />
           <div className="paymentPlaceSavingsTextDiv">
-            <p className="paymentPlaceSavingsText">Your Savings :</p>
-            <p className="paymentPlaceSavingPrice">$ {discountPrice}</p>
+            <p className="paymentPlaceSavingsText">クーポン :</p>
+            <p className="paymentPlaceSavingPrice">￥{discountPrice}</p>
             <ul className="ulSection">
               <li>
-                <span className="liText">Free Delivery</span>
+                <span className="liText">配送料</span>
               </li>
               <li>
-                <span className="liText">Item discount</span>
+                <span className="liText">商品割引</span>
               </li>
             </ul>
           </div>

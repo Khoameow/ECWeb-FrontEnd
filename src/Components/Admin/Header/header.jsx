@@ -39,7 +39,13 @@ function Header() {
         />
 
         <div className="adminSearchBarDiv">
-          <input type="text" className="adminSearchBar" onChange={(e)=>{setSearch(e.target.value)}} />
+          <input
+            type="text"
+            className="adminSearchBar"
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
           <div className="searchIconContainer">
             <div className="searchIconDiv">
               <Search className="searchIcon" />
@@ -47,34 +53,40 @@ function Header() {
           </div>
         </div>
         {products && (
-              <div className="headerSearchList">
-                {products
-                  .filter((product) => {
-                    if (search == "") {
-                      return false;
-                    }else if(product.name.toLowerCase().includes(search.toLowerCase())){
-                      return product
-                    }
-                  })
-                  .map((product, key) => {
-                    return (
-                      <div key={key}>
-                        <p onClick={(e)=>{
-                          e.preventDefault()
-                          navigate(`/product/${product.department}`)
-                        }}>{product.name}</p>
-                      </div>
-                    );
-                  })}
-              </div>
-            )}
+          <div className="headerSearchList">
+            {products
+              .filter((product) => {
+                if (search == "") {
+                  return false;
+                } else if (
+                  product.name.toLowerCase().includes(search.toLowerCase())
+                ) {
+                  return product;
+                }
+              })
+              .map((product, key) => {
+                return (
+                  <div key={key}>
+                    <p
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigate(`/product/${product.department}`);
+                      }}
+                    >
+                      {product.name}
+                    </p>
+                  </div>
+                );
+              })}
+          </div>
+        )}
         <div className="panelTextDiv">
           <Link
             to="/admin/products"
             className="productsText"
             style={{ textDecoration: "none" }}
           >
-            <span className="panelText">Products</span>
+            <span className="panelText">商品</span>
           </Link>
           <Link
             to="/admin/users"
@@ -88,11 +100,11 @@ function Header() {
             style={{ textDecoration: "none" }}
             className="ordersText"
           >
-            <span className="panelText">Orders</span>
+            <span className="panelText">注文</span>
           </Link>
           <a className="adminText">
             <span className="panelText">
-              Admin
+              管理者
               <ul className="dropdown-content">
                 <div className="headerSignOutDiv">
                   <br />
@@ -105,7 +117,7 @@ function Header() {
                       navigate("/admin/login");
                     }}
                   >
-                    Sign out
+                    サイアウト
                   </button>
                 </div>
               </ul>
